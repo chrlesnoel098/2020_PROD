@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- SQL XML created by WWW SQL Designer, https://github.com/ondras/wwwsqldesigner/ -->
+<!-- Active URL: http://127.0.0.1/edsa-sqlDesigner/ -->
+<sql>
+<datatypes db="mysql">
+	<group label="Numeric" color="rgb(238,238,170)">
+		<type label="Integer" length="0" sql="INTEGER" quote=""/>
+	 	<type label="TINYINT" length="0" sql="TINYINT" quote=""/>
+	 	<type label="SMALLINT" length="0" sql="SMALLINT" quote=""/>
+	 	<type label="MEDIUMINT" length="0" sql="MEDIUMINT" quote=""/>
+	 	<type label="INT" length="0" sql="INT" quote=""/>
+		<type label="BIGINT" length="0" sql="BIGINT" quote=""/>
+		<type label="Decimal" length="1" sql="DECIMAL" re="DEC" quote=""/>
+		<type label="Single precision" length="0" sql="FLOAT" quote=""/>
+		<type label="Double precision" length="0" sql="DOUBLE" re="DOUBLE" quote=""/>
+	</group>
+
+	<group label="Character" color="rgb(255,200,200)">
+		<type label="Char" length="1" sql="CHAR" quote="'"/>
+		<type label="Varchar" length="1" sql="VARCHAR" quote="'"/>
+		<type label="Text" length="0" sql="MEDIUMTEXT" re="TEXT" quote="'"/>
+		<type label="Binary" length="1" sql="BINARY" quote="'"/>
+		<type label="Varbinary" length="1" sql="VARBINARY" quote="'"/>
+		<type label="BLOB" length="0" sql="BLOB" re="BLOB" quote="'"/>
+	</group>
+
+	<group label="Date &amp; Time" color="rgb(200,255,200)">
+		<type label="Date" length="0" sql="DATE" quote="'"/>
+		<type label="Time" length="0" sql="TIME" quote="'"/>
+		<type label="Datetime" length="0" sql="DATETIME" quote="'"/>
+		<type label="Year" length="0" sql="YEAR" quote=""/>
+		<type label="Timestamp" length="0" sql="TIMESTAMP" quote="'"/>
+	</group>
+	
+	<group label="Miscellaneous" color="rgb(200,200,255)">
+		<type label="ENUM" length="1" sql="ENUM" quote=""/>
+		<type label="SET" length="1" sql="SET" quote=""/>
+		<type label="Bit" length="0" sql="bit" quote=""/>
+	</group>
+</datatypes><table x="249" y="151" name="cours">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="titre-cours" null="0" autoincrement="0">
+<datatype>VARCHAR(100)</datatype>
+<default>'NULL'</default><comment>Titre du cours</comment>
+</row>
+<row name="prealable-cours" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="ponderation-cours" null="0" autoincrement="0">
+<datatype>CHAR(5)</datatype>
+<default>'NULL'</default></row>
+<row name="heures-cours" null="1" autoincrement="0">
+<datatype>INT</datatype>
+<default>NULL</default></row>
+<row name="description-cours" null="1" autoincrement="0">
+<datatype>MEDIUMTEXT</datatype>
+<default>NULL</default></row>
+<row name="session-cours" null="0" autoincrement="0">
+<datatype>INT(1)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="437" y="152" name="professeurs">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="nom-prof" null="0" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+</row>
+<row name="img-prof" null="1" autoincrement="0">
+<datatype>BLOB</datatype>
+</row>
+<row name="courte-bibli-prof" null="1" autoincrement="0">
+<datatype>MEDIUMTEXT</datatype>
+<default>NULL</default></row>
+<row name="quote-prof" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="805" y="143" name="etudiants">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="img-etu" null="1" autoincrement="0">
+<datatype>BLOB</datatype>
+<default>NULL</default></row>
+<row name="temoignage-etu" null="1" autoincrement="0">
+<datatype>MEDIUMTEXT</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+<key type="INDEX" name="">
+<part>id</part>
+</key>
+<key type="UNIQUE" name="">
+<part>img-etu</part>
+</key>
+</table>
+<table x="622" y="149" name="projets">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="nom-proj" null="0" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<comment>Le nom du projet</comment>
+</row>
+<row name="etudiants-proj" null="0" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<comment>Liste de nom des étudiants qui ont participés au projet</comment>
+</row>
+<row name="annee-proj" null="1" autoincrement="0">
+<datatype>YEAR(4)</datatype>
+<comment>En quelle année le projet a été fait. Année complète (ex. 2015)</comment>
+</row>
+<row name="cours-proj" null="0" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<comment>Dans le cadre de quel cours</comment>
+</row>
+<row name="programme-proj" null="0" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<comment>Programmes utilisés</comment>
+</row>
+<row name="categorie-proj" null="0" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<comment>Projet créatif ou programmation</comment>
+</row>
+<row name="lien-proj" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="img-proj" null="1" autoincrement="0">
+<datatype>BLOB</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="810" y="291" name="stage">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="971" y="286" name="evenements">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="1039" y="138" name="description-img-etu">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="etudiants" row="id" />
+</row>
+<row name="description-img" null="1" autoincrement="0">
+<datatype>BLOB</datatype>
+<default>NULL</default><relation table="etudiants" row="img-etu" />
+<comment>Petite description des images de la vie étudiante</comment>
+</row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+<key type="INDEX" name="">
+<part>description-img</part>
+</key>
+</table>
+</sql>
