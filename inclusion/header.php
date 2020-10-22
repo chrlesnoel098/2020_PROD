@@ -8,15 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script src="/js/scriptAccordion.js"></script>
 </head>
 <body>
     <!-- Début header -->
     <header id="masthead" class="site-header">
         <div class="site-branding">
-            <h1 class="site-title"><a href="" rel="home">TIM</a></h1>
+            <h1 class="site-title"><a href="" rel="home"></a></h1>
             <div id="logo-cercle"></div>
 		</div>
 
+        <!-- Navigation verticale du site -->
 		<nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
 			<div class="menu-menu-1-container">
@@ -33,9 +36,9 @@
                     <li><a target="_blank" href="https://discord.com/invite/53vFvr9"><img src="images/icone-discord.png" alt=""></a></li>
                 </ul>
             </div>		
-        </nav>
+        </nav> <!-- fin de la Navigation verticale du site -->
     </header>
     <!-- Fin header -->
 
 
-    <div class="site-main"> <!-- Début de la section Stage -->
+    <div class="site-main"> <!-- Début du div class="site-main" -->
