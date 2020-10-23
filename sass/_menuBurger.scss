@@ -1,0 +1,24 @@
+.main-navigation ul {
+  background-color: aqua;
+
+  li {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    a {
+      color: yellow;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 700;
+      font-size: 3vh;
+    }
+    a:hover {
+      color: gray;
+    }
+    a:active {
+      font-size: 4vh;
+      color: black;
+    }
+  }
+}
