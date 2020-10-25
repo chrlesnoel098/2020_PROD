@@ -14,15 +14,16 @@
 <body>
     <!-- Début header -->
     <header id="masthead" class="site-header">
-        <div class="site-branding">
+      <!--  <div class="site-branding">
             <h1 class="site-title"><a href="" rel="home">TIM</a></h1>
             <div id="logo-cercle"></div>
 		</div>
+    -->
 
-         
+         <!--
 		<nav id="site-navigation" class="main-navigation">
-            <!--
-            this line could be deleted .... ask to the team what they think about it-->
+            
+            this line could be deleted .... ask to the team what they think about it
             <div class="burger-menu" id="burger_menu"><i class="fas fa-bars" aria-controls="primary-menu" aria-expanded="false"></i></div>
             
             <div class="menu-menu-1-container">
@@ -40,36 +41,53 @@
                 </ul>
             </div>		
         </nav>
-        
+        -->
 
-       <!-- Burger menu 
-        <div class="menu-bar-mobile">
-			<div class="burger-menu" id="burger_menu">
-            <i class="fas fa-bars" aria-controls="primary-menu" aria-expanded="false"></i>
-            </div>
-            
-			<div class="slideMenu" id="slideMenu">
-				<nav class="menu-principal">
-					<a href="#" class="volver-arriba">Accueil</a>
-					<a href="#SectionProgramme" class="scroll-suave">Programme</a>
-					<a href="#SectionProfesseur" class="scroll-suave">Professeur</a>
-					<a href="#SectionProjet" class="scroll-suave">Projet</a>
-                    <a href="#SectionStage" class="scroll-suave">Stages</a>
-                    <a href="#SectionEvenement" class="scroll-suave">Évènement</a>
-                </nav>
+       <!-- Burger menu -->
+       <div class="menu-bar-pc">
+			<nav class="menu-principal">
+				<a href="#" class="volver-arriba">Inicio</a>
+				<a href="#nosotros" class="scroll-suave">Nosotros</a>
+				<a href="#chef" class="scroll-suave">Nuestro Chef</a>
+				<a href="#nuestro_menu" class="scroll-suave">Menú</a>
+				<a href="#contacto" class="scroll-suave">Contacto</a>
+			</nav>
 
-                <div class="top-redes">
-					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				</div>
+			<div class="top-redes">
+				<a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 			</div>
-        </div>
-         Fin burger menu -->
+		</div>
+
+		<!-- Menu hamburguesa -->
+		<div class="menu-bar-movil">
+			
+			<div class="burger-menu" id="burger_menu">
+            <i class="fas fa-bars" aria-expanded="false"></i>
+			</div>
+
+			<div class="slideMenu" id="slideMenu">
+				<div class="top-redes">
+					<a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+					<a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+				</div>
+
+				<nav class="menu-principal">
+					<a href="#" class="volver-arriba">Inicio</a>
+					<a href="#nosotros" class="scroll-suave">Nosotros</a>
+					<a href="#chef" class="scroll-suave">Nuestro Chef</a>
+					<a href="#nuestro_menu" class="scroll-suave">Menú</a>
+					<a href="#contacto" class="scroll-suave">Contacto</a>
+				</nav>
+			</div>
+		</div>
+        <!--Fin burger menu -->
         
         
     </header>
     <!-- Fin header -->
 
-
+   
     <div class="site-main"> <!-- Début de la section Stage -->
