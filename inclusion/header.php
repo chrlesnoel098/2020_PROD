@@ -7,11 +7,14 @@
     <meta name="description" content="TIM - Techinque d'Intégration multimédia collège Maisonneuve">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Début header -->
     <header id="masthead" class="site-header">
+        <i class="fas fa-bars"></i>
         <div class="site-branding">
             <h1 class="site-title"><a href="" rel="home">TIM</a></h1>
             <div id="logo-cercle"></div>
