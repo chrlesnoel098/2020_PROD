@@ -251,31 +251,77 @@ html {
   justify-content: center;
 }
 
-.main-navigation ul {
-  background-color: aqua;
-}
+/*.main-navigation ul {
+    background-color: aqua;
 
-.main-navigation ul li {
+  li {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    a {
+      color: yellow;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 700;
+      font-size: 3vh;
+    }
+    a:hover {
+      color: gray;
+    }
+    a:active {
+      font-size: 4vh;
+      color: black;
+    }
+  }
+}*/
+.menu-bar-mobile {
   display: flex;
-  position: relative;
-  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding: 0 2.25rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.875rem;
+  border-bottom: 1px solid gray;
 }
 
-.main-navigation ul li a {
-  color: yellow;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 700;
-  font-size: 3vh;
+.menu-bar-mobile .burger-menu {
+  cursor: pointer;
+  font-size: 2.1875rem;
 }
 
-.main-navigation ul li a:hover {
-  color: gray;
+.menu-bar-mobile .slideMenu {
+  position: fixed;
+  top: 5.875rem;
+  left: -80%;
+  /*oculto, colocado par default*/
+  background: white;
+  text-align: center;
+  padding: 1.25rem 2.25rem;
+  width: 80%;
+  transition: all 0.3s ease;
 }
 
-.main-navigation ul li a:active {
-  font-size: 4vh;
-  color: black;
+.menu-bar-mobile .slideMenu.active {
+  left: 0;
+}
+
+.menu-bar-mobile .slideMenu .top-redes {
+  margin-bottom: 0.625rem;
+}
+
+.menu-bar-mobile .slideMenu .top-redes a {
+  padding: 0 0.5625rem;
+}
+
+.menu-bar-mobile .slideMenu .menu-principal a {
+  display: block;
+  padding: 0.625rem 0;
+  border-top: 1px solid gray;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -283,7 +329,7 @@ html {
     font-size: 50px;
     color: red;
   }*/
-  .menu-toggle {
+  .fas {
     display: none;
   }
   .main-navigation ul li {

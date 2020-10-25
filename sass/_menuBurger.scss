@@ -1,5 +1,5 @@
-.main-navigation ul {
-  background-color: aqua;
+/*.main-navigation ul {
+    background-color: aqua;
 
   li {
     display: flex;
@@ -21,4 +21,56 @@
       color: black;
     }
   }
-}
+}*/
+
+/*
+.menu-bar-mobile {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding: 0 2.25rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.875rem;
+  border-bottom: 1px solid gray;
+
+  .burger-menu {
+    cursor: pointer;
+    font-size: 2.1875rem;
+  }
+
+  .slideMenu {
+    position: fixed;
+    top: 5.875rem;
+    left: -80%; /*oculto, colocado par default*/
+    background: white;
+    text-align: center;
+    padding: 1.25rem 2.25rem;
+    width: 80%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &.active {
+      left: 0;
+    }
+
+    .top-redes {
+      margin-bottom: 0.625rem;
+      a {
+        padding: 0 0.5625rem;
+      }
+    }
+
+    .menu-principal {
+      a {
+        display: block;
+        padding: 0.625rem 0;
+        border-top: 1px solid gray;
+      }
+    }
+  }
+}*/

@@ -14,15 +14,17 @@
 <body>
     <!-- Début header -->
     <header id="masthead" class="site-header">
-        <i class="fas fa-bars"></i>
         <div class="site-branding">
             <h1 class="site-title"><a href="" rel="home">TIM</a></h1>
             <div id="logo-cercle"></div>
 		</div>
 
+         
 		<nav id="site-navigation" class="main-navigation">
-        
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
+            <!--
+            this line could be deleted .... ask to the team what they think about it-->
+            <div class="burger-menu" id="burger_menu"><i class="fas fa-bars" aria-controls="primary-menu" aria-expanded="false"></i></div>
+            
             <div class="menu-menu-1-container">
                 <ul id="primary-menu" class="menu nav-menu">
                     <li><a href="" aria-current="page">Accueil</a></li>
@@ -38,7 +40,33 @@
                 </ul>
             </div>		
         </nav>
+        
 
+       <!-- Burger menu 
+        <div class="menu-bar-mobile">
+			<div class="burger-menu" id="burger_menu">
+            <i class="fas fa-bars" aria-controls="primary-menu" aria-expanded="false"></i>
+            </div>
+            
+			<div class="slideMenu" id="slideMenu">
+				<nav class="menu-principal">
+					<a href="#" class="volver-arriba">Accueil</a>
+					<a href="#SectionProgramme" class="scroll-suave">Programme</a>
+					<a href="#SectionProfesseur" class="scroll-suave">Professeur</a>
+					<a href="#SectionProjet" class="scroll-suave">Projet</a>
+                    <a href="#SectionStage" class="scroll-suave">Stages</a>
+                    <a href="#SectionEvenement" class="scroll-suave">Évènement</a>
+                </nav>
+
+                <div class="top-redes">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
+			</div>
+        </div>
+         Fin burger menu -->
+        
         
     </header>
     <!-- Fin header -->
