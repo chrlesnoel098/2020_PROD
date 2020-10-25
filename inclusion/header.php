@@ -20,13 +20,14 @@
 
 		<nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
-			<div class="menu-menu-1-container">
+            <div class="menu-menu-1-container">
                 <ul id="primary-menu" class="menu nav-menu">
                     <li><a href="" aria-current="page">Accueil</a></li>
                     <li><a href="#SectionProgramme">Programme</a></li>
                     <li><a href="#SectionProfesseur">Professeur</a></li>
                     <li><a href="#SectionProjet">Projet</a></li>
                     <li><a href="#SectionStage">Stages</a></li>
+                    <i class="fad fa-bars"></i>
                     <li><a href="#SectionEvenement">Évènement</a></li>
                     <li><a target="_blank" href="https://www.facebook.com/maisonneuvetim/"><img src="images/icone-facebook.png" alt=""></a></li>
                     <li><a target="_blank" href="https://www.instagram.com/maisonneuvetim/"><img src="images/icone-instagram.png" alt=""></a></li>
