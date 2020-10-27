@@ -23,7 +23,7 @@
              
             <div class="menu-menu-1-container">
                 <ul id="primary-menu" class="menu nav-menu">
-                    <li><a href="" aria-current="page">aaaaaAccueil</a></li>
+                    <li><a href="" aria-current="page">Accueil</a></li>
                     <li><a href="#SectionProgramme">Programme</a></li>
                     <li><a href="#SectionProfesseur">Professeur</a></li>
                     <li><a href="#SectionProjet">Projet</a></li>
