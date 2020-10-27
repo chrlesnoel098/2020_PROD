@@ -7,6 +7,7 @@
         "../sass/_cours.scss",
         "../sass/_entete.scss",
         "../sass/_miseenpage.scss",
+        "../sass/_menuBurger.scss",
         "../sass/_navigation.scss"
     ],
     "names": [],

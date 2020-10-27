@@ -1,0 +1,71 @@
+/*Menu de navigation burger*/
+@media screen and (max-width: 37.5em) {
+  header {
+    .main-navigation {
+      display: none;
+    }
+    .menu-bar-movil {
+      display: flex;
+      width: 100%;
+      position: fixed;
+      z-index: 99;
+      top: 20px;
+      left: 10px;
+      padding: 0 25px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 16px;
+
+      .burger-menu {
+        cursor: pointer;
+        font-size: 35px;
+        color: white;
+      }
+
+      .slideMenu {
+        position: fixed;
+        top: 60px;
+        left: -100%; // hidden menu
+        background: aqua;
+        text-align: center;
+        padding: 20px 40px;
+        width: 80%;
+        max-height: 250px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        &.active {
+          left: 0; //show menu
+        }
+
+        .top-redes {
+          margin-bottom: 10px;
+          width: 40%;
+          position: relative;
+          left: 0;
+          top: 50px;
+          a {
+            display: flex;
+            flex-direction: column;
+            padding: 9px;
+            text-decoration: none;
+          }
+        }
+
+        .menu-principal {
+          width: 40%;
+          position: relative;
+          left: 150px;
+          top: -115px;
+          a {
+            display: block;
+            padding: 10px 0;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
