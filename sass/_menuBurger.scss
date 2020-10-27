@@ -5,19 +5,16 @@
     }
     .menu-bar-movil {
       display: flex;
-      // background: white;
       width: 100%;
       position: fixed;
       z-index: 99;
       top: 20px;
       left: 10px;
       padding: 0 25px;
-      //display: none;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       min-height: 16px;
-      //border-bottom: 1px solid gray;
 
       .burger-menu {
         cursor: pointer;
@@ -27,8 +24,8 @@
 
       .slideMenu {
         position: fixed;
-        top: 60px; //coolocandolo justo debajo de la barra de menu
-        left: -100%; /* -80% o 100% oculto, colocado par default**********************************************/
+        top: 60px;
+        left: -100%; // hidden menu
         background: aqua;
         text-align: center;
         padding: 20px 40px;
@@ -39,7 +36,7 @@
         transition: all 0.3s ease;
 
         &.active {
-          left: 0; /* -80% o 100% oculto, colocado par default**********************************************/
+          left: 0; //show menu
         }
 
         .top-redes {
@@ -64,7 +61,6 @@
           a {
             display: block;
             padding: 10px 0;
-            //border-top: 1px solid gray;
             text-decoration: none;
           }
         }

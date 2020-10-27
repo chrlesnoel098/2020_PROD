@@ -53,12 +53,12 @@
 				</div>
 
 				<nav class="menu-principal">
-					<a href="#" class="volver-arriba">Accueil</a>
-					<a href="#SectionProgramme" class="scroll-suave">Programme</a>
-					<a href="#SectionProfesseur" class="scroll-suave">Professeur</a>
-					<a href="#SectionProjet" class="scroll-suave">Projet</a>
-                    <a href="#SectionStage" class="scroll-suave">Stages</a>
-                    <a href="#SectionEvenement" class="scroll-suave">Évènement</a>
+					<a href="#" >Accueil</a>
+					<a href="#SectionProgramme">Programme</a>
+					<a href="#SectionProfesseur">Professeur</a>
+					<a href="#SectionProjet">Projet</a>
+                    <a href="#SectionStage">Stages</a>
+                    <a href="#SectionEvenement">Évènement</a>
 				</nav>
 			</div>
 		</div>
