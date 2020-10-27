@@ -15,7 +15,7 @@
     <!-- Début header -->
     <header id="masthead" class="site-header">
         <div class="site-branding">
-            <h1 class="site-title"><a href="" rel="home">TIM</a></h1>
+            <h1 class="site-title"><a url="#"></a></h1>
             <div id="logo-cercle"></div>
 		</div>
     
