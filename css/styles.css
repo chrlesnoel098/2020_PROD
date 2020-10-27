@@ -251,102 +251,210 @@ html {
   justify-content: center;
 }
 
-header .menu-bar-pc {
-  background: white;
-  width: 100%;
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  /*que este pegado a la barra de busqueda google*/
-  padding: 0 36px;
-  display: flex;
-  /*para que se coloque un elemento al lado del otro*/
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-height: 94px;
-  border-bottom: 1px solid gray;
-}
-
-header .menu-bar-pc .menu-principal a {
-  padding: 9px;
-  text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
-}
-
-header .menu-bar-pc .menu-principal a:hover {
-  color: red;
-}
-
-header .menu-bar-pc .top-redes a {
-  padding: 9px;
-  color: black;
-  transition: all 0.3s ease;
-}
-
-header .menu-bar-pc .top-redes a:hover {
-  color: red;
-}
-
-header .menu-bar-movil {
-  background: white;
-  width: 100%;
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  padding: 0 2.25rem;
-  display: none;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 5.875rem;
-  border-bottom: 1px solid gray;
-}
-
-header .menu-bar-movil .burger-menu {
-  cursor: pointer;
-  font-size: 35px;
-  color: red;
-}
-
-header .menu-bar-movil .slideMenu {
-  position: fixed;
-  top: 94px;
-  left: -100%;
-  /* -80% o 100% oculto, colocado par default**********************************************/
-  background: aqua;
-  text-align: center;
-  padding: 20px 40px;
-  width: 80%;
-  transition: all 0.3s ease;
-}
-
-header .menu-bar-movil .slideMenu.active {
-  left: 0;
-  /* -80% o 100% oculto, colocado par default**********************************************/
-}
-
-header .menu-bar-movil .slideMenu .top-redes {
-  margin-bottom: 10px;
-}
-
-header .menu-bar-movil .slideMenu .top-redes a {
-  padding: 9px;
-}
-
-header .menu-bar-movil .slideMenu .menu-principal a {
-  display: block;
-  padding: 10px 0;
-  text-decoration: none;
-}
-
-@media all and (max-width: 800px) {
-  header .menu-bar-pc {
+@media screen and (max-width: 37.5em) {
+  header .main-navigation {
     display: none;
   }
   header .menu-bar-movil {
     display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 20px;
+    left: 10px;
+    padding: 0 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 16px;
+  }
+  header .menu-bar-movil .burger-menu {
+    cursor: pointer;
+    font-size: 35px;
+    color: white;
+  }
+  header .menu-bar-movil .slideMenu {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    /* -80% o 100% oculto, colocado par default**********************************************/
+    background: aqua;
+    text-align: center;
+    padding: 20px 40px;
+    width: 80%;
+    max-height: 250px;
+    transition: all 0.3s ease;
+  }
+  header .menu-bar-movil .slideMenu.active {
+    left: 0;
+    /* -80% o 100% oculto, colocado par default**********************************************/
+  }
+  header .menu-bar-movil .slideMenu .top-redes {
+    margin-bottom: 10px;
+    width: 40%;
+    position: relative;
+    left: 0;
+    top: 50px;
+  }
+  header .menu-bar-movil .slideMenu .top-redes a {
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    text-decoration: none;
+  }
+  header .menu-bar-movil .slideMenu .menu-principal {
+    width: 40%;
+    position: relative;
+    left: 150px;
+    top: -115px;
+  }
+  header .menu-bar-movil .slideMenu .menu-principal a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-bar-movil {
+    display: none;
+  }
+  .main-navigation ul li {
+    display: flex;
+    position: fixed;
+  }
+  .main-navigation ul li a {
+    color: whitesmoke;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 3vh;
+  }
+  .main-navigation ul li a:hover {
+    color: #08f7fe;
+  }
+  .main-navigation ul li a:active {
+    font-size: 3.5vh;
+    color: lightblue;
+  }
+  .main-navigation ul li img {
+    width: 36px;
+    height: 36px;
+  }
+  .main-navigation ul li:nth-child(1) {
+    left: 0;
+    top: 5%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    transition: 0.1s;
+  }
+  .main-navigation ul li:nth-child(1):hover {
+    top: 8%;
+  }
+  .main-navigation ul li:nth-child(2) {
+    left: 0;
+    top: 30%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    transition: 0.1s;
+  }
+  .main-navigation ul li:nth-child(2):hover {
+    top: 33%;
+  }
+  .main-navigation ul li:nth-child(3) {
+    left: 0;
+    top: 60%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    transition: 0.1s;
+  }
+  .main-navigation ul li:nth-child(3):hover {
+    top: 63%;
+  }
+  .main-navigation ul li:nth-child(4) {
+    left: 0;
+    top: 85%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    transition: 0.1s;
+  }
+  .main-navigation ul li:nth-child(4):hover {
+    top: 88%;
+  }
+  .main-navigation ul li:nth-child(5) {
+    right: 0;
+    top: 5%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transition: 0.1s;
+  }
+  .main-navigation ul li:nth-child(5):hover {
+    top: 8%;
+  }
+  .main-navigation ul li:nth-child(6) {
+    right: 0;
+    top: 30%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transition: 0.1s;
+  }
+  .main-navigation ul li:nth-child(6):hover {
+    top: 33%;
+  }
+  .main-navigation ul li:nth-child(7) {
+    right: 0.5%;
+    top: 60%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  .main-navigation ul li:nth-child(7):hover {
+    background-color: #08f7fe;
+    border-radius: 25%;
+    transform: rotateY(180deg);
+  }
+  .main-navigation ul li:nth-child(8) {
+    right: 0.5%;
+    top: 70%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  .main-navigation ul li:nth-child(8):hover {
+    background-color: #08f7fe;
+    border-radius: 25%;
+    transform: rotateY(180deg);
+  }
+  .main-navigation ul li:nth-child(9) {
+    right: 0.5%;
+    top: 80%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  .main-navigation ul li:nth-child(9):hover {
+    background-color: #08f7fe;
+    border-radius: 25%;
+    transform: rotateY(180deg);
+  }
+  .main-navigation ul li:nth-child(10) {
+    right: 0.5%;
+    top: 90%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  .main-navigation ul li:nth-child(10):hover {
+    background-color: #08f7fe;
+    border-radius: 25%;
+    transform: rotateY(180deg);
   }
 }
 /*# sourceMappingURL=styles.css.map */
