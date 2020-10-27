@@ -1,9 +1,9 @@
 
 var propMenu = {
-	burger_menu: document.getElementById('burger_menu'),/*hamburguesa*/
-	elem_menu: document.querySelectorAll('#slideMenu .menu-principal a'), /*URLS*/
-	slideMenu: document.getElementById('slideMenu'), /*contenedor de elementos*/
-	menu_activo: false /*sirve tanto para el ICONO hamburguesa como para los links de los elementos*/
+	burger_menu: document.getElementById('burger_menu'),
+	elem_menu: document.querySelectorAll('#slideMenu .menu-principal a'), 
+	slideMenu: document.getElementById('slideMenu'), 
+	menu_activo: false 
 }
 
 
@@ -16,21 +16,22 @@ var metMenu = {
 		}
 	},
 
-/*solo para ICONO hamburguesa*/
-	toggleMenu: function () { /*Mostrar icono hamburguesa y sus urls*/
+/* show & hide le menu de navigation*/
+	toggleMenu: function () {
 		if ( propMenu.menu_activo == false ) {
 			propMenu.menu_activo = true;
-			propMenu.slideMenu.className = propMenu.slideMenu.className + ' active'; /*lett: 0*/
+			propMenu.slideMenu.className = propMenu.slideMenu.className + ' active';
 
-		} else{/*ocultar las urls al volver a apretar sobre el icono hamburguesa*/
+		} else{
 			propMenu.menu_activo = false;
 			propMenu.slideMenu.className = propMenu.slideMenu.className.replace('active', '');
 
 		}
 	},
 
-	ocultarMenu: function () { /*solo para los URL del menu*/
-		propMenu.menu_activo = false;/*una vez que el usuario le de click a algun link/urg del mi menu, que este se olculte*/
+	/*cache les choix du menu*/
+	ocultarMenu: function () { 
+		propMenu.menu_activo = false;
 		propMenu.slideMenu.className = propMenu.slideMenu.className.replace('active', '');
 	}
 

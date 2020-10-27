@@ -277,7 +277,6 @@ html {
     position: fixed;
     top: 60px;
     left: -100%;
-    /* -80% o 100% oculto, colocado par default**********************************************/
     background: aqua;
     text-align: center;
     padding: 20px 40px;
@@ -287,7 +286,6 @@ html {
   }
   header .menu-bar-movil .slideMenu.active {
     left: 0;
-    /* -80% o 100% oculto, colocado par default**********************************************/
   }
   header .menu-bar-movil .slideMenu .top-redes {
     margin-bottom: 10px;
@@ -316,9 +314,9 @@ html {
 }
 
 @media screen and (min-width: 37.5em) {
-  .menu-bar-movil {
+  /* .menu-bar-mobile {
     display: none;
-  }
+  }*/
   .main-navigation ul li {
     display: flex;
     position: fixed;
