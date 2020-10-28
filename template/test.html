@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/scriptAccordion.js"></script>
+    <!-- <script src="/js/scriptAccordion.js"></script> -->
 </head>
 <body>
     <!-- Début header -->
@@ -70,7 +70,7 @@
                     <button>Voir tous cours</button>
                 </div>
                 <div class="session session_1">
-                    <button class="boutonSession"><h2>Session 1</h2></button>
+                    <button  onclick="afficherCours()" class="boutonSession"><h2>Session 1</h2></button>
                     <div class="fenetreCours">
                         <ul class="listeCours cachee">
                             <li>
@@ -157,5 +157,6 @@
             </div>  
         </section>
         <!-- Fin de la section programme -->
+        <script src="/js/scriptAccordion.js"></script>
 </body>
 </html>
