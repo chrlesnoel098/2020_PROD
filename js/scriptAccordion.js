@@ -1,17 +1,30 @@
-// Toggle l'affichage de tous les cours d'une session
+// Toggle l'affichage de tous les cours d'une session ////////////////////////////////////////////////////////////
+let boutonSessions = document.querySelectorAll(".boutonSession");
+
+for (const elemBouton of boutonSessions) {
+    elemBouton.addEventListener("click", function(){
+        console.log("ok")
+        afficherLesCours(this)
+    });
+}
+
 function afficherLesCours() {
     console.log("Allo");
     let fenetreDesCours = document.querySelector("div.fenetreCours");
     fenetreDesCours.classList.toggle("cachee");
 }
 
-// Toggle l'affichage de la description d'un cours
-let fenetreDescriptionCours = document.getElementsByClassName("h3.titreCours");
-fenetreDescriptionCours.addEventListener("click", afficherUnCours);
+// Toggle l'affichage de la description d'un cours////////////////////////////////////////////////////////////////
+let fenetreDescriptionCours = document.querySelectorAll(".descriptionCours h3");
+console.log(fenetreDescriptionCours);
 
+for (const elemTitreCours of fenetreDescriptionCours) {
+    elemTitreCours.addEventListener("click", function(){
+        console.log("ok")
+        afficherUnCours(this)
+    });
+}
 
-function afficherUnCours() {
-    console.log("Allo");
-    let descriptionCours = document.querySelector("section.descriptionCours ul");
-    descriptionCours.classList.toggle("cachee");
+function afficherUnCours(elem) {
+    elem.parentNode.querySelector("ul").classList.toggle("cachee");
 }
