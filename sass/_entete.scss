@@ -1,21 +1,29 @@
-.site-branding{
+.site-branding {
   display: flex;
   justify-content: center;
   position: relative;
 }
-#logo-cercle{
+#logo-cercle {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   height: 37vw;
   width: 37vw;
-  background: linear-gradient(90deg, rgba(113,207,148,1) 0%, rgba(228,237,14,1) 22%, rgba(238,184,19,1) 39%, rgba(220,163,50,1) 56%, rgba(193,131,98,1) 75%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(113, 207, 148, 1) 0%,
+    rgba(228, 237, 14, 1) 22%,
+    rgba(238, 184, 19, 1) 39%,
+    rgba(220, 163, 50, 1) 56%,
+    rgba(193, 131, 98, 1) 75%,
+    rgba(0, 212, 255, 1) 100%
+  );
   border: solid 1px white;
   justify-content: center;
   border-radius: 50%;
-  animation: rotation 10s infinite linear, glowing 5s infinite alternate; 
-} 
+  animation: rotation 10s infinite linear, glowing 5s infinite alternate;
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -25,14 +33,14 @@
   }
 }
 @keyframes glowing {
-  from{
-     box-shadow: 0 0 5vw #ffffff; 
-    }
+  from {
+    box-shadow: 0 0 5vw #ffffff;
+  }
   to {
-     box-shadow: 0 0 10vw #d3d1c5; 
-    }
+    box-shadow: 0 0 10vw #d3d1c5;
+  }
 }
-.site-title{
+.site-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,25 +49,33 @@
   font-size: 8em;
   text-align: center;
   border-radius: 100%;
-  height: 35vw;    
+  height: 35vw;
   width: 35vw;
   justify-content: center;
   background-color: black;
-  color: linear-gradient(90deg, rgba(113,207,148,1) 0%, rgba(228,237,14,1) 22%, rgba(238,184,19,1) 39%, rgba(220,163,50,1) 56%, rgba(193,131,98,1) 75%, rgba(0,212,255,1) 100%);
-  box-shadow: 1px -1px 8px 1px rgba(252,252,252,1);
-} 
-.site-title>a{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 25vw;
-height: 25vw;
-background-image: url(../images/LogoTIM.png);
-background-repeat: no-repeat;
-background-size: 100%;
-background-position: center;
+  color: linear-gradient(
+    90deg,
+    rgba(113, 207, 148, 1) 0%,
+    rgba(228, 237, 14, 1) 22%,
+    rgba(238, 184, 19, 1) 39%,
+    rgba(220, 163, 50, 1) 56%,
+    rgba(193, 131, 98, 1) 75%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  box-shadow: 1px -1px 8px 1px rgba(252, 252, 252, 1);
 }
-.site-title>a:hover{
+.site-title > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 25vw;
+  background-image: url(../images/LogoTIM.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.site-title > a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,5 +85,4 @@ background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  }
-
+}
