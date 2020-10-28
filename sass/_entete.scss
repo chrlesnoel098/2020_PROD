@@ -24,14 +24,14 @@
     transform: rotate(359deg);
   }
 }
-/*@keyframes glowing {
+@keyframes glowing {
   from{
      box-shadow: 0 0 5vw #ffffff; 
     }
   to {
      box-shadow: 0 0 10vw #d3d1c5; 
     }
-}*/
+}
 .site-title{
   display: flex;
   justify-content: center;
