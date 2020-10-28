@@ -6,7 +6,6 @@
 section#Programme {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
 }
 
 section#Programme h1#SectionProgramme {
@@ -14,6 +13,7 @@ section#Programme h1#SectionProgramme {
 }
 
 section#Programme #DescriptionGenerale {
+  display: none;
   flex-basis: 50%;
 }
 
@@ -31,38 +31,46 @@ section#Programme #DescriptionGenerale ul.listeEtapeProduction li::before {
 section#Programme #ToutesSessions {
   display: flex;
   flex-direction: row;
-  flex-basis: 50%;
+  flex-basis: 100%;
   justify-content: space-evenly;
 }
 
-section#Programme #ToutesSessions section {
-  display: flex;
-  border: 5px solid red;
+section#Programme #ToutesSessions .session_1 {
   background-color: white;
 }
 
-section#Programme #ToutesSessions section button {
+section#Programme #ToutesSessions div.session {
   display: flex;
+}
+
+section#Programme #ToutesSessions div.session .boutonSession {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 20%;
+  order: 1;
   background-color: white;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  border: none;
 }
 
-section#Programme #ToutesSessions section h2 {
+section#Programme #ToutesSessions div.session .boutonSession h2 {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   align-self: flex-end;
   margin: 0 20px 0 0;
   padding-bottom: 20px;
+  margin: 0;
 }
 
-section#Programme #ToutesSessions .fenetreCours {
-  width: 75vw;
-  display: none;
+section#Programme #ToutesSessions div.session .fenetreCours {
+  display: flex;
+  flex-basis: 60%;
+  order: 0;
 }
 
-section#Programme #ToutesSessions .fenetreCours .listeCours {
+section#Programme #ToutesSessions div.session .fenetreCours .listeCours {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -72,26 +80,24 @@ section#Programme #ToutesSessions .fenetreCours .listeCours {
   padding: 0;
 }
 
-section#Programme #ToutesSessions .fenetreCours .listeCours li {
+section#Programme #ToutesSessions div.session .fenetreCours .listeCours li {
   margin: 0;
   padding: 0;
 }
 
-section#Programme #ToutesSessions .fenetreCours .listeCours li button {
-  margin: 0;
-  padding: 0;
+section#Programme #ToutesSessions div.session .fenetreCours .listeCours li .descriptionCours {
+  width: 60vw;
+  height: fit-content;
 }
 
-section#Programme #ToutesSessions .descriptionCours {
-  display: none;
-  width: 75vw;
-  min-height: 50vh;
-}
-
-section#Programme #ToutesSessions .descriptionCours ul {
+section#Programme #ToutesSessions div.session .fenetreCours .listeCours li .descriptionCours ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+section#Programme #ToutesSessions div.session .cachee {
+  display: none;
 }
 
 @media (min-width: 521px) and (max-width: 980px) {
@@ -101,6 +107,7 @@ section#Programme #ToutesSessions .descriptionCours ul {
   }
   section#Programme #DescriptionGenerale {
     flex-basis: 100%;
+    display: block;
   }
   section#Programme #ToutesSessions {
     display: flex;
@@ -108,15 +115,21 @@ section#Programme #ToutesSessions .descriptionCours ul {
     flex-basis: 100%;
     justify-content: space-evenly;
   }
-  section#Programme #ToutesSessions section button {
+  section#Programme #ToutesSessions div.session {
+    flex-direction: column;
+  }
+  section#Programme #ToutesSessions div.session .boutonSession {
     justify-content: center;
     background-color: white;
     border: none;
     padding: 0;
+    margin: 0;
     width: 100%;
+    order: 0;
   }
-  section#Programme #ToutesSessions section h2 {
+  section#Programme #ToutesSessions div.session .boutonSession h2 {
     writing-mode: horizontal-tb;
+    width: 80vw;
     padding: 4vh 0;
     margin: 0;
   }
@@ -136,14 +149,18 @@ section#Programme #ToutesSessions .descriptionCours ul {
     flex-basis: 100%;
     justify-content: space-evenly;
   }
-  section#Programme #ToutesSessions section button {
+  section#Programme #ToutesSessions div.session {
+    flex-direction: column;
+  }
+  section#Programme #ToutesSessions div.session .boutonSession {
     justify-content: center;
     background-color: white;
     border: none;
     padding: 0;
     width: 100%;
+    order: 0;
   }
-  section#Programme #ToutesSessions section h2 {
+  section#Programme #ToutesSessions div.session .boutonSession h2 {
     writing-mode: horizontal-tb;
     padding: 3vh 0;
     margin: 0;
@@ -250,7 +267,7 @@ html {
   justify-content: center;
 }
 
-/*Menu navigation burger*/
+/*Menu de navigation burger*/
 @media screen and (max-width: 37.5em) {
   header .main-navigation {
     display: none;

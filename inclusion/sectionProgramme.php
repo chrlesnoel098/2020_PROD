@@ -1,71 +1,86 @@
 <!-- Début de la section programme -->
 <section id="Programme">
-            <h1 id="SectionProgramme">Programme</h1>
-            <div id="DescriptionGenerale">
-                <p>Maisonneuve est le seul cégep sur l’Île de Montréal à offrir ce programme qui vous offre une immersion dans le monde du jeu 2D/3D, du Web, des technologies mobiles et des médias numériques, tout en apprenant différents langages de programmation. <br>
-                
-                Dans ce programme, vous apprendrez à identifier, analyser, imaginer, réaliser et coordonner un projet multimédia et les différentes étapes de production qui y sont liées : </p>
-    
-                <ul class="listeEtapeProduction">
-                    <li><span>La médiatisation :</span> Créer ou modifier des éléments graphiques et multimédias.</li>
-                    <li><span>La conception :</span> Concevoir le design et l’interactivité d’un projet multimédia.</li>
-                    <li><span>L’intégration :</span> Intégrer de façon cohérente et artistique les composantes d’un projet interactif.</li>
-                    <li><span>L’environnement professionnel :</span> Développer une vision globale du multimédia et connaître l’environnement de travail tant du point de vue technologique qu’interpersonnel.</li>
+    <h1 id="SectionProgramme">Programme</h1>
+    <div id="DescriptionGenerale">
+        <p>Maisonneuve est le seul cégep sur l’Île de Montréal à offrir ce programme qui vous offre une immersion dans
+            le monde du jeu 2D/3D, du Web, des technologies mobiles et des médias numériques, tout en apprenant
+            différents langages de programmation. <br>
+
+            Dans ce programme, vous apprendrez à identifier, analyser, imaginer, réaliser et coordonner un projet
+            multimédia et les différentes étapes de production qui y sont liées : </p>
+
+        <ul class="listeEtapeProduction">
+            <li><span>La médiatisation :</span> Créer ou modifier des éléments graphiques et multimédias.</li>
+            <li><span>La conception :</span> Concevoir le design et l’interactivité d’un projet multimédia.</li>
+            <li><span>L’intégration :</span> Intégrer de façon cohérente et artistique les composantes d’un projet
+                interactif.</li>
+            <li><span>L’environnement professionnel :</span> Développer une vision globale du multimédia et connaître
+                l’environnement de travail tant du point de vue technologique qu’interpersonnel.</li>
+        </ul>
+
+        <p>En laboratoire, vous connaîtrez :</p>
+
+        <ul class="listeEtapeProduction">
+            <li><span>Les logiciels :</span> Photoshop, Illustrator, Maya (3D), Unity, AfterEffects, etc.</li>
+            <li><span>Les langages :</span> HTML, CSS, JavaScript, SQL, PHP, C#, etc.</li>
+        </ul>
+
+    </div>
+    <div>
+        <button>Voir les cours de création</button>
+        <button>Voir les cours de programmation</button>
+        <button>Voir tous cours</button>
+    </div>
+    <div id="ToutesSessions">
+        <?php
+            // Lire le fichier JSON dans une chaîne de caractères
+            $listeCoursJSONString = file_get_contents("data/listeCours.json");
+
+            // Décoder la chaîne JSON dans une structure de données PHP
+            $coursJSON = json_decode($listeCoursJSONString, true);
+
+            // Parcourir le tableau associatif coursJSON
+            foreach ($coursJSON as $session => $uneSession) :
+            ?>
+        <div class="session">
+            <button class="boutonSession">
+                <h2><?= $session; ?></h2>
+            </button>
+            <div class="fenetreCours">
+                <ul class="listeCours">
+
+                    <!-- Chaque cours d'une session dans un LI -->
+                    <?php
+                        // Traverser le tableau numérique "plats"
+                        foreach ($uneSession as $unCours) :
+                    ?>
+                    <li>
+                        <section class="descriptionCours">
+                            <h3><?= $unCours["nom"]; ?></h3>
+                            <ul>
+                                <li>Sigle : <?= $unCours["sigle"]; ?></li>
+                                <li>Préalable : <?= $unCours["prealable"]; ?></li>
+                                <li>Pondération : <?= $unCours["ponderation"]; ?></li>
+                                <li>Nombre d'heures : <?= $unCours["heure"]; ?></li>
+                                <li><p>
+                                Description
+                                </p></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <?php
+                        endforeach;
+                    ?>
+
                 </ul>
-            
-                <p>En laboratoire, vous connaîtrez :</p>
-            
-                <ul class="listeEtapeProduction">
-                    <li><span>Les logiciels :</span> Photoshop, Illustrator, Maya (3D), Unity, AfterEffects, etc.</li>
-                    <li><span>Les langages :</span> HTML, CSS, JavaScript, SQL, PHP, C#, etc.</li>
-                </ul>
-                
             </div>
-            
-            <div id="ToutesSessions">
-                <section id="session_1">
-                    <button class="boutonAfficheFenetre"><h2>Session 1</h2></button>
-                    <div class="fenetreCours">
-                        <ul class="listeCours">
-                            <li>
-                                <button>Création Vidéo</button>
-                                <section class="descriptionCours">
-                                    <ul>
-                                        <li>Préalable</li>
-                                        <li>Pondération</li>
-                                        <li>Nombre d'heures</li>
-                                    </ul>
-                                    <p>
-                                        Description du cours
-                                    </p>
-                                </section>
-                            </li>
-                            <li><button>Conception graphique et matricielle</button></li>
-                            <li><button>Mise en page web</button></li>
-                            <li><button>Animation et intéractivité en jeu</button></li>
-                        </ul>
-                    </div>
-                </section>
-    
-                <section id="session_2">
-                    <button><h2>Session 2</h2></button>
-                </section>
-    
-                <section id="session_3">
-                    <button><h2>Session 3</h2></button>
-                </section>
-    
-                <section id="session_4">
-                    <button><h2>Session 4</h2></button>
-                </section>
-    
-                <section id="session_5">
-                    <button><h2>Session 5</h2></button>
-                </section>
-    
-                <section id="session_6">
-                    <button><h2>Session 6</h2></button>
-                </section>
-            </div>
-        </section>
-        <!-- Fin de la section programme -->
+        </div>
+
+        <?php
+            endforeach;
+        ?>
+    </div>
+</section>
+
+        <!-- fin de la section programme -->
