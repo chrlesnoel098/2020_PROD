@@ -14,7 +14,7 @@
   border: solid 1px white;
   justify-content: center;
   border-radius: 50%;
-  animation: rotation 10s infinite linear, glowing 5s infinite alternate; 
+  animation: rotation 10s infinite linear;
 } 
 @keyframes rotation {
   from {
@@ -24,14 +24,7 @@
     transform: rotate(359deg);
   }
 }
-/*@keyframes glowing {
-  from{
-     box-shadow: 0 0 5vw #ffffff; 
-    }
-  to {
-     box-shadow: 0 0 10vw #d3d1c5; 
-    }
-}*/
+
 .site-title{
   display: flex;
   justify-content: center;
