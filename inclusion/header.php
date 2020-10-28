@@ -7,8 +7,6 @@
     <meta name="description" content="TIM - Techinque d'Intégration multimédia collège Maisonneuve">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,10 +16,10 @@
             <h1 class="site-title"><a url="#"></a></h1>
             <div id="logo-cercle"></div>
 		</div>
-    
+
 		<nav id="site-navigation" class="main-navigation">
-             
-            <div class="menu-menu-1-container">
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
+			<div class="menu-menu-1-container">
                 <ul id="primary-menu" class="menu nav-menu">
                     <li><a href="" aria-current="page">Accueil</a></li>
                     <li><a href="#SectionProgramme">Programme</a></li>
@@ -36,36 +34,8 @@
                 </ul>
             </div>		
         </nav>
-      
-
-		<!-- burger Menu -->
-		<div class="menu-bar-movil">
-			
-			<div class="burger-menu" id="burger_menu">
-            <i class="fas fa-bars" aria-expanded="false"></i>
-			</div>
-
-			<div class="slideMenu" id="slideMenu">
-				<div class="top-redes">
-					<a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-					<a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-					<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-				</div>
-
-				<nav class="menu-principal">
-					<a href="#" >Accueil</a>
-					<a href="#SectionProgramme">Programme</a>
-					<a href="#SectionProfesseur">Professeur</a>
-					<a href="#SectionProjet">Projet</a>
-                    <a href="#SectionStage">Stages</a>
-                    <a href="#SectionEvenement">Évènement</a>
-				</nav>
-			</div>
-		</div>
-      
-      
     </header>
     <!-- Fin header -->
 
-   
+
     <div class="site-main"> <!-- Début de la section Stage -->

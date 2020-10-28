@@ -3,6 +3,5 @@
     <footer>
         
     </footer>
-    <script src="js/menuMobile.js"></script>
 </body>
 </html>

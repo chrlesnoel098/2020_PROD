@@ -250,72 +250,8 @@ html {
   justify-content: center;
 }
 
-/*Menu navigation burger*/
-@media screen and (max-width: 37.5em) {
-  header .main-navigation {
-    display: none;
-  }
-  header .menu-bar-movil {
-    display: flex;
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    top: 20px;
-    left: 10px;
-    padding: 0 25px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 16px;
-  }
-  header .menu-bar-movil .burger-menu {
-    cursor: pointer;
-    font-size: 35px;
-    color: white;
-  }
-  header .menu-bar-movil .slideMenu {
-    position: fixed;
-    top: 60px;
-    left: -100%;
-    background: aqua;
-    text-align: center;
-    padding: 20px 40px;
-    width: 80%;
-    max-height: 250px;
-    transition: all 0.3s ease;
-  }
-  header .menu-bar-movil .slideMenu.active {
-    left: 0;
-  }
-  header .menu-bar-movil .slideMenu .top-redes {
-    margin-bottom: 10px;
-    width: 40%;
-    position: relative;
-    left: 0;
-    top: 50px;
-  }
-  header .menu-bar-movil .slideMenu .top-redes a {
-    display: flex;
-    flex-direction: column;
-    padding: 9px;
-    text-decoration: none;
-  }
-  header .menu-bar-movil .slideMenu .menu-principal {
-    width: 40%;
-    position: relative;
-    left: 150px;
-    top: -115px;
-  }
-  header .menu-bar-movil .slideMenu .menu-principal a {
-    display: block;
-    padding: 10px 0;
-    text-decoration: none;
-  }
-}
-
-/*grand asdf*/
 @media screen and (min-width: 37.5em) {
-  .menu-bar-movil {
+  .menu-toggle {
     display: none;
   }
   .main-navigation ul li {
@@ -329,7 +265,7 @@ html {
     font-size: 3vh;
   }
   .main-navigation ul li a:hover {
-    color: #08f7fe;
+    color: #08F7FE;
   }
   .main-navigation ul li a:active {
     font-size: 3.5vh;
@@ -345,7 +281,7 @@ html {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(1):hover {
     top: 8%;
@@ -356,7 +292,7 @@ html {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(2):hover {
     top: 33%;
@@ -367,7 +303,7 @@ html {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(3):hover {
     top: 63%;
@@ -378,7 +314,7 @@ html {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(4):hover {
     top: 88%;
@@ -388,7 +324,7 @@ html {
     top: 5%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(5):hover {
     top: 8%;
@@ -398,7 +334,7 @@ html {
     top: 30%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(6):hover {
     top: 33%;
@@ -408,11 +344,11 @@ html {
     top: 60%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.5s;
+    transition: .5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(7):hover {
-    background-color: #08f7fe;
+    background-color: #08F7FE;
     border-radius: 25%;
     transform: rotateY(180deg);
   }
@@ -421,11 +357,11 @@ html {
     top: 70%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.5s;
+    transition: .5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(8):hover {
-    background-color: #08f7fe;
+    background-color: #08F7FE;
     border-radius: 25%;
     transform: rotateY(180deg);
   }
@@ -434,11 +370,11 @@ html {
     top: 80%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.5s;
+    transition: .5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(9):hover {
-    background-color: #08f7fe;
+    background-color: #08F7FE;
     border-radius: 25%;
     transform: rotateY(180deg);
   }
@@ -447,11 +383,11 @@ html {
     top: 90%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.5s;
+    transition: .5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(10):hover {
-    background-color: #08f7fe;
+    background-color: #08F7FE;
     border-radius: 25%;
     transform: rotateY(180deg);
   }
