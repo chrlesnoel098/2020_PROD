@@ -29,10 +29,10 @@
                     <li><a href="#SectionProjet">Projet</a></li>
                     <li><a href="#SectionStage">Stages</a></li>
                     <li><a href="#SectionEvenement">Évènement</a></li>
-                    <li><a target="_blank" href="https://www.facebook.com/maisonneuvetim/"><img src="images/icone-facebook.png" alt=""></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/maisonneuvetim/"><img src="images/icone-instagram.png" alt=""></a></li>
-                    <li><a target="_blank" href="https://www.youtube.com/user/TIMaisonneuve"><img src="images/icone-youtube.png" alt=""></a></li>
-                    <li><a target="_blank" href="https://discord.com/invite/53vFvr9"><img src="images/icone-discord.png" alt=""></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/maisonneuvetim/"><img src="images/facebook_icone.png" alt=""></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/maisonneuvetim/"><img src="images/linkedin_icone.png" alt=""></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/user/TIMaisonneuve"><img src="images/youtube_icone.png" alt=""></a></li>
+                    <li><a target="_blank" href="https://discord.com/invite/53vFvr9"><img src="images/discord_icone.png" alt=""></a></li>
                 </ul>
             </div>		
         </nav>
