@@ -170,8 +170,6 @@ section#Programme #ToutesSessions div.session .cachee {
 .site-branding {
   display: flex;
   justify-content: center;
-  background-color: black;
-  background: url(http://api.thumbr.it/whitenoise-361x370.png?background=000000ff&noise=2b262b&density=37&opacity=48);
   position: relative;
 }
 
@@ -198,15 +196,14 @@ section#Programme #ToutesSessions div.session .cachee {
   }
 }
 
-@keyframes glowing {
-  from {
-    box-shadow: 0 0 5vw #ffffff;
-  }
+/*@keyframes glowing {
+  from{
+     box-shadow: 0 0 5vw #ffffff; 
+    }
   to {
-    box-shadow: 0 0 10vw #d3d1c5;
-  }
-}
-
+     box-shadow: 0 0 10vw #d3d1c5; 
+    }
+}*/
 .site-title {
   display: flex;
   justify-content: center;
