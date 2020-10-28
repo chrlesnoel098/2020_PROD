@@ -56,10 +56,11 @@
 
             <div class="slideMenu" id="slideMenu">
                 <div class="top-redes">
-                    <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                </div>
+                <a target="_blank" href="https://www.facebook.com/maisonneuvetim/"><img src="images/icone-facebook.png" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/maisonneuvetim/"><img src="images/icone-instagram.png" alt=""></a>   
+                <a target="_blank" href="https://www.youtube.com/user/TIMaisonneuve"><img src="images/icone-youtube.png" alt=""></a>
+                <a target="_blank" href="https://discord.com/invite/53vFvr9"><img src="images/icone-discord.png" alt=""></a>
+            </div>
 
                 <nav class="menu-principal">
                     <a href="#">Accueil</a>
