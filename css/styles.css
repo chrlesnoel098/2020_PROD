@@ -296,7 +296,7 @@ html {
     left: -100%;
     background: aqua;
     text-align: center;
-    padding: 20px 40px;
+    padding: 30px 40px;
     width: 80%;
     max-height: 250px;
     transition: all 0.3s ease;
@@ -308,25 +308,37 @@ html {
     margin-bottom: 10px;
     width: 40%;
     position: relative;
-    left: 0;
-    top: 50px;
+    left: 5px;
+    top: 20px;
   }
-  header .menu-bar-movil .slideMenu .top-redes a {
+  header .menu-bar-movil .slideMenu .top-redes img {
     display: flex;
     flex-direction: column;
     padding: 9px;
     text-decoration: none;
+    color: white;
+    width: 36px;
+    height: 36px;
+  }
+  header .menu-bar-movil .slideMenu .top-redes img:hover {
+    color: black;
   }
   header .menu-bar-movil .slideMenu .menu-principal {
     width: 40%;
     position: relative;
-    left: 150px;
-    top: -115px;
+    left: 120px;
+    top: -200px;
   }
   header .menu-bar-movil .slideMenu .menu-principal a {
     display: block;
     padding: 10px 0;
     text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+  }
+  header .menu-bar-movil .slideMenu .menu-principal a:hover {
+    color: black;
+    font-size: 3vh;
   }
 }
 
