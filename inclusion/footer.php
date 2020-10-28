@@ -3,6 +3,7 @@
     <footer>
         
     </footer>
+    <script src="js/ScrollAnim.js"></script>
     <script src="js/menuMobile.js"></script>
 </body>
 </html>

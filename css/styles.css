@@ -330,7 +330,112 @@ html {
   }
 }
 
-/*grand asdf*/
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 500vh;
+  background-color: black;
+  animation: body 1s linear;
+}
+
+@keyframes body {
+  22% {
+    background-color: black;
+  }
+  30% {
+    background-color: #CF0060;
+  }
+  to {
+    background-color: #FFA300;
+  }
+}
+
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+
+@keyframes progress {
+  to {
+    background-color: #14ffe2;
+    width: 100%;
+  }
+}
+
+.cube-wrap {
+  --size: 7vmin;
+  position: fixed;
+  height: 0;
+  perspective: 100vmin;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+  animation: cube 1s linear;
+}
+
+@keyframes cube {
+  to {
+    transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+  }
+}
+
+.side {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background-color: #eee;
+  backface-visibility: visible;
+  top: calc(var(--size) * -.5);
+  left: calc(var(--size) * -.5);
+}
+
+.top {
+  background-color: #fff;
+  transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+}
+
+.bottom {
+  background-color: #999;
+  transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+}
+
+.left {
+  background-color: #ccc;
+  transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+}
+
+.right {
+  background-color: #ddd;
+  transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+}
+
+.front {
+  background-color: #aaa;
+  transform: translateZ(calc(var(--size) * .5));
+}
+
+.back {
+  background-color: #bbb;
+  transform: translateZ(calc(var(--size) * -.5));
+}
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
 @media screen and (min-width: 37.5em) {
   .menu-bar-movil {
     display: none;
@@ -344,9 +449,11 @@ html {
     font-weight: 700;
     letter-spacing: 3px;
     font-size: 3vh;
+    text-decoration: none;
+    text-shadow: 2px 2px 10px #494949;
   }
   .main-navigation ul li a:hover {
-    color: #08f7fe;
+    color: #08F7FE;
   }
   .main-navigation ul li a:active {
     font-size: 3.5vh;
@@ -355,17 +462,19 @@ html {
   .main-navigation ul li img {
     width: 36px;
     height: 36px;
+    box-shadow: 2px 2px 10px #494949;
+    border-radius: 20%;
   }
   .main-navigation ul li:nth-child(1) {
-    left: 0;
-    top: 5%;
+    left: 0.5%;
+    top: 12%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(1):hover {
-    top: 8%;
+    top: 14%;
   }
   .main-navigation ul li:nth-child(2) {
     left: 0;
@@ -373,7 +482,7 @@ html {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(2):hover {
     top: 33%;
@@ -384,7 +493,7 @@ html {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(3):hover {
     top: 63%;
@@ -395,7 +504,7 @@ html {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(4):hover {
     top: 88%;
@@ -405,7 +514,7 @@ html {
     top: 5%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(5):hover {
     top: 8%;
@@ -415,7 +524,7 @@ html {
     top: 30%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.1s;
+    transition: .10s;
   }
   .main-navigation ul li:nth-child(6):hover {
     top: 33%;
@@ -425,11 +534,11 @@ html {
     top: 60%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.5s;
+    transition: .5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(7):hover {
-    background-color: #08f7fe;
+    background-color: #08F7Fe;
     border-radius: 25%;
     transform: rotateY(180deg);
   }
@@ -438,11 +547,11 @@ html {
     top: 70%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.5s;
+    transition: .5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(8):hover {
-    background-color: #08f7fe;
+    background-color: #F5D300;
     border-radius: 25%;
     transform: rotateY(180deg);
   }
@@ -451,11 +560,11 @@ html {
     top: 80%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.5s;
+    transition: .5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(9):hover {
-    background-color: #08f7fe;
+    background-color: #FE53BB;
     border-radius: 25%;
     transform: rotateY(180deg);
   }
@@ -464,11 +573,11 @@ html {
     top: 90%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    transition: 0.5s;
+    transition: .5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(10):hover {
-    background-color: #08f7fe;
+    background-color: #09FBD3;
     border-radius: 25%;
     transform: rotateY(180deg);
   }
