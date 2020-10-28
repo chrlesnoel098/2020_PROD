@@ -126,22 +126,23 @@ section#Programme {
             justify-content: space-evenly;
     
             div.session {
-
-                button {
+                flex-direction: column;
+                .boutonSession {
                     justify-content: center;
                     background-color: white;
                     border: none;
                     padding: 0;
-                    width: 100%;                
+                    margin: 0;
+                    width: 100%;
+                    order: 0;              
                     
                     h2 {
                         writing-mode: horizontal-tb;
+                        width: 80vw;
                         padding: 4vh 0;
                         margin: 0;
                     }
                 }
-
-
             }
         }
     }   
@@ -163,14 +164,15 @@ section#Programme {
             flex-basis: 100%;
             justify-content: space-evenly;
     
-            div {
-                
-                button {
+            div.session {
+                flex-direction: column;
+                .boutonSession {
                     justify-content: center;
                     background-color: white;
                     border: none;
                     padding: 0;
                     width: 100%;
+                    order: 0;
                     h2 {
                         writing-mode: horizontal-tb;
                         padding: 3vh 0;

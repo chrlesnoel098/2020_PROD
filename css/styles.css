@@ -115,15 +115,21 @@ section#Programme #ToutesSessions div.session .cachee {
     flex-basis: 100%;
     justify-content: space-evenly;
   }
-  section#Programme #ToutesSessions div.session button {
+  section#Programme #ToutesSessions div.session {
+    flex-direction: column;
+  }
+  section#Programme #ToutesSessions div.session .boutonSession {
     justify-content: center;
     background-color: white;
     border: none;
     padding: 0;
+    margin: 0;
     width: 100%;
+    order: 0;
   }
-  section#Programme #ToutesSessions div.session button h2 {
+  section#Programme #ToutesSessions div.session .boutonSession h2 {
     writing-mode: horizontal-tb;
+    width: 80vw;
     padding: 4vh 0;
     margin: 0;
   }
@@ -143,14 +149,18 @@ section#Programme #ToutesSessions div.session .cachee {
     flex-basis: 100%;
     justify-content: space-evenly;
   }
-  section#Programme #ToutesSessions div button {
+  section#Programme #ToutesSessions div.session {
+    flex-direction: column;
+  }
+  section#Programme #ToutesSessions div.session .boutonSession {
     justify-content: center;
     background-color: white;
     border: none;
     padding: 0;
     width: 100%;
+    order: 0;
   }
-  section#Programme #ToutesSessions div button h2 {
+  section#Programme #ToutesSessions div.session .boutonSession h2 {
     writing-mode: horizontal-tb;
     padding: 3vh 0;
     margin: 0;

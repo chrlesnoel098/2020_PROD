@@ -14,13 +14,13 @@
 // }
 
 // Cacher la description en cliquant sur les boutons
-let descriptionCachee = document.querySelector("button.boutonAfficheFenetre");
-let fenetre = document.querySelector("section#session_1");
+// let descriptionCachee = document.querySelector("button.boutonSession");
+// let fenetre = document.querySelector("section#session_1");
 
-fenetre.addEventListener("click", cacherDescription);
+// fenetre.addEventListener("click", cacherDescription);
 
 function cacherDescription() {
     console.log("Allo");
-    descriptionCachee.style.display = "none";
+    // descriptionCachee.style.display = "none";
 }
 
