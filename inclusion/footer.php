@@ -6,5 +6,7 @@
     <script src="js/ScrollAnim.js"></script>
     <script src="js/menuMobile.js"></script>
     <script src="js/scriptAccordion.js"></script>
+
 </body>
+</div> <!--fin de background-noise  -->    
 </html>
