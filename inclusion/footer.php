@@ -8,4 +8,5 @@
     <script src="js/scriptAccordion.js"></script>
     <script src="js/vignetteEtudiant.js"></script>
 </body>
+</div> <!--fin de background-noise  -->    
 </html>
