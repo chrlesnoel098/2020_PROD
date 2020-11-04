@@ -8,10 +8,9 @@ for (const elemBouton of boutonSessions) {
     });
 }
 
-function afficherLesCours() {
+function afficherLesCours(bouton) {
     console.log("Allo");
-    let fenetreDesCours = document.querySelector("div.fenetreCours");
-    fenetreDesCours.classList.toggle("cachee");
+    bouton.parentNode.querySelector("div").classList.toggle("cachee");
 }
 
 // Toggle l'affichage de la description d'un cours////////////////////////////////////////////////////////////////
