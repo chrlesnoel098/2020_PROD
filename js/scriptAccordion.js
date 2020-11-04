@@ -10,6 +10,7 @@ for (const elemBouton of boutonSessions) {
 
 function afficherLesCours(bouton) {
     console.log("Allo");
+    //document.getElementById("DescriptionGenerale").style.display("none");
     bouton.parentNode.querySelector("div").classList.toggle("cachee");
 }
 
