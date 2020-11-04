@@ -1,0 +1,88 @@
+// Section SectionEtudiant*********************************************************************************************
+section#Etudiant {
+    display: flex;
+    flex-wrap: wrap;
+    //min-height: 100vh;
+
+    h2#SectionEtudiant {
+        flex-basis: 100%;
+    }
+
+    .image-carousselfade {
+        display: none;
+    }
+
+
+
+    .clip-polygon {
+        border-radius: 61% 39% 27% 73% / 31% 46% 54% 69%;
+    }
+
+    /* caroussel vignette */
+    .vignette {
+        display: flex;
+        flex-basis: 80%;
+        margin-left: auto;
+
+        /* div text */
+        img {
+            width: 80%;
+        }
+
+        .text {  
+        }
+
+        /* Animation */
+        .fade {
+            animation: fadeIn ease 3s;
+        }
+
+        .swipe {
+            animation: swipe ease 3s;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes swipe {
+            from   { transform: translateX(-1000px); }
+          
+            to { transform: translateX(0); }
+        }
+    }
+}
+
+
+// ******************************************************************Tablette******************************************************************
+@media (min-width: 521px) and (max-width: 980px) {
+
+    section#SectionEtudiant {
+        background-color: orange;
+        height: fit-content;
+
+    }
+}
+
+
+
+
+// ******************************************************************Mobile******************************************************************
+@media (max-width: 520px) {
+    section#SectionEtudiant {
+        background-color: pink;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
