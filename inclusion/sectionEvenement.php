@@ -20,6 +20,7 @@
                         <td>Samedi</td>
                         <td>Dimanche</td>
                     </tr>
+                    <!-- https://tomsbigbox.com/generate-a-calendar-with-php/ -->
                     <?php
                         $aujourdhui = date("d"); // date d'aujourd'hui
                         $mois = date("m"); // mois actuel
