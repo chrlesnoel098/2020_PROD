@@ -1,27 +1,30 @@
         <!-- Début de la section Evenement -->
         <section id="Evenement">
-            <div>
-                <h1>Évènement</h1>
+            <div class="infoEvenement">
+                <h1 id="SectionEvenement">Évènement</h1>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas corrupti nisi incidunt, omnis quas laborum quia aspernatur. Neque unde laudantium odit, veniam molestiae ad reiciendis repellat facilis assumenda aperiam consectetur!
                     Quas voluptas, optio saepe tempora quaerat repellendus sapiente dolores commodi temporibus fugiat molestias, labore perferendis quis eos cum soluta voluptatum libero sunt. Inventore consequatur corrupti quo nostrum praesentium. Id, qui?
-                </p>
-                <button>Inscrivez-vous</button>
+                    <button>Inscrivez-vous</button>
+                </p>  
             </div>
             <div class="calendrier">
                 <table class="mois">
-                    <tr><th><?php echo date("F Y") ?></th></tr>
-                    <tr class="jourSemaine">
-                        <td>Lundi</td>
-                        <td>Mardi</td>
-                        <td>Mercredi</td>
-                        <td>Jeudi</td>
-                        <td>Vendredi</td>
-                        <td>Samedi</td>
-                        <td>Dimanche</td>
-                    </tr>
-                    <!-- https://tomsbigbox.com/generate-a-calendar-with-php/ -->
-                    <?php
+                    <tbody>
+                        <tr class="moisActuel">
+                            <th colspan="7"><?php echo date("F Y") ?></th>
+                        </tr>
+                        <tr class="jourSemaine">
+                            <td>Lundi</td>
+                            <td>Mardi</td>
+                            <td>Mercredi</td>
+                            <td>Jeudi</td>
+                            <td>Vendredi</td>
+                            <td>Samedi</td>
+                            <td>Dimanche</td>
+                        </tr>
+                        <!-- https://tomsbigbox.com/generate-a-calendar-with-php/ -->
+                        <?php
                         $aujourdhui = date("d"); // date d'aujourd'hui
                         $mois = date("m"); // mois actuel
                         $annee = date("Y"); // année actuelle
@@ -79,6 +82,7 @@
                         } 
 
                     ?>
+                    </tbody>
 
                 </table>
             </div>
