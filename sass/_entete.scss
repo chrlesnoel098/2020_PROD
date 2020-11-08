@@ -39,7 +39,7 @@
   justify-content: center;
   background-color: black;
   color: linear-gradient(90deg, rgba(113,207,148,1) 0%, rgba(228,237,14,1) 22%, rgba(238,184,19,1) 39%, rgba(220,163,50,1) 56%, rgba(193,131,98,1) 75%, rgba(0,212,255,1) 100%);
-  box-shadow: 1px -1px 8px 1px rgba(252,252,252,1);
+  box-shadow: 0px 0px 14px 0px rgb(248, 248, 248);
 } 
 .site-title>a{
 display: flex;
@@ -48,6 +48,7 @@ align-items: center;
 width: 25vw;
 height: 25vw;
 background-image: url(../images/LogoTIM.png);
+background-image:url(../images/logoTIM.svg);
 background-repeat: no-repeat;
 background-size: 100%;
 background-position: center;

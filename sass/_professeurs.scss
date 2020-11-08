@@ -1,3 +1,20 @@
+@media (max-width: 520px) {
+#mobile-carrousel-conteneur{
+  
+
+}
+.desktop-conteneur{
+  display: none;
+}
+
+}
+
+
+@media (min-width: 521px) and (max-width: 980px) {
+  #mobile-carrousel-conteneur{
+    display: none;
+  }
+}
 
 .prof-vignette{
 display: flex;

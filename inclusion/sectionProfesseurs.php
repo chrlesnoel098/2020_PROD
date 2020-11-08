@@ -2,6 +2,7 @@
 <?php
             // Lire le fichier JSON dans une chaîne de caractères
             $profsJSONString = file_get_contents("data/profs.json");
+            
 
             // Décoder la chaîne JSON dans une structure de données PHP
             $profsJSON = json_decode($profsJSONString, true);
@@ -10,19 +11,20 @@
             foreach ($profsJSON as $Professeurs => $unProf) :
             ?>
 <section id="Professeur">
-            <h1 id="SectionProfesseur">Professeurs</h1>
-        <div class="prof-vignette">
-            <img src="images/profs/camille.jpg" alt="Camille">
-            <h3 class="nom-prof">Camille Semaan</h3>
+        <h1 id="SectionProfesseur">Professeurs</h1>
+            <div id="desktop-conteneur">    
+                <div class="prof-vignette">
+                    <img src="<?=$unProf["photo"];?>" alt="prof">
+                        <h3 class="nom-prof">Camille Semaan</h3>
 
-            <p style="overflow-y: auto;">Ma vocation : communiquer connaissances et savoir-faire.<br>Ma devise : 'Comprendre et ne pas juger' (Georges Simenon)<br><br> On a tous notre temps</p>
-            <h4>email: csemaan@cmaisonneuve.qc.ca</h4>
-        </div> <!--fin prof-vignette -->
+                        <p style="overflow-y: auto;">Ma vocation : communiquer connaissances et savoir-faire.<br>Ma devise : 'Comprendre et ne pas juger' (Georges Simenon)<br><br> On a tous notre temps</p>
+                        <h4>email: csemaan@cmaisonneuve.qc.ca</h4>
+                </div> <!--fin prof-vignette -->
         
         
-        <div id="prof-tableau">   
-        <div class="prof">
-            <div class="prof-tableau">
+                <div id="prof-tableau">   
+                <div class="prof">
+                <div class="prof-tableau">
                 <ul class="prof-liste">
 
                     <!-- Chaque photo et nom dans un li -->
@@ -48,6 +50,6 @@
         <?php
             endforeach;
         ?>
-            
+    </div><!--fin de desktop-conteneur-->        
 </section>
         <!-- Fin de la section Professeur -->
