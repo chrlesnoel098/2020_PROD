@@ -1,6 +1,7 @@
                 <!-- Début de la section Etudiant -->
-                <section id="Etudiant">
-                    <h2 id="SectionEtudiant">Vie Etudiante</h1>
+                <!-- Début de la section Projet -->
+                <section id="Projet">
+                    <h1 id="SectionProjet">Vie étudiante & projets</h1>
 
                         <!-- caroussel vie etudiante -->
                         <div class="vignette">
@@ -43,9 +44,7 @@
                 </section>
                 <!-- Fin de la section Etudiant -->
 
-                <!-- Début de la section Projet -->
-                <section id="Projet">
-                    <h1 id="SectionProjet">Projet</h1>
+             
 
                     <ul class="descriptionProjet">
                         <h3>Jeu</h3>
