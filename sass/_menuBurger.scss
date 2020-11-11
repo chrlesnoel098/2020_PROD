@@ -1,21 +1,45 @@
 /*Menu de navigation burger*/
+/* Media queri para celulares */
 @media screen and (max-width: 37.5em) {
   header {
     .main-navigation {
       display: none;
     }
     .menu-bar-movil {
-      display: flex;
+      // MIO
       width: 100%;
-      position: fixed;
+      position: fixed; //Para mantenerlo fijo arriba, incluso al scrollear
+      z-index: 99; //para mantenerlo sobre los demas elementos
+      top: 0; //top de cero, que este pegado de la barra del navegador
+      //left: 10px;
+      padding: 15px 25px; //25px a los lados
+      display: flex; //para que se coloque un elemento al lado del otro
+      flex-direction: row;
+      justify-content: space-between; //espacio entre el logo, TIM y burger
+      align-items: center; //para que se alinen verticalmente
+      min-height: 30px; //altura maxima  ..94px
+      border-bottom: 1px solid gray;
+
+      //CREHANA
+      /* tester this one  
+      .menu-bar-movil {
+      width: 100%;
+      position: fixed; 
       z-index: 99;
-      top: 21px;
-      left: 10px;
+      top: 0; 
       padding: 0 25px;
+      display: flex; 
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
-      min-height: 16px;
+      align-items: center; 
+      min-height: 94px; ****************ALTURA DEL MENU
+      border-bottom: 1px solid gray;
+
+      .logo{
+        max-width: 50px;
+      }
+
+      Fin stilos crehana*/
 
       .burger-menu {
         cursor: pointer;
@@ -25,23 +49,23 @@
 
       .slideMenu {
         position: fixed;
-        top: 60px;
-        left: -100%; // hidden menu
+        top: 70px; //94px *******************ALTURA DEL MENU, OSEA PARA QUE APAREZCA JUSTO DEBAJO DE LOS 94PX
+        left: -100%; // hidden menu, PARA OCULTARLO
         background: aqua;
         text-align: center;
-        padding: 20px 40px;
+        // padding: 20px 40px;
         width: 80%;
         max-height: 250px;
-        -webkit-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease; //para que al momento de colocar el mouse arriba el cambio dle hover sea suave
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
 
         &.active {
-          left: 0; //show menu
+          left: 25px; //show menu, PARA MOSTRAR EL MENU QUE OCULTAMOS CON -100%
         }
 
         .top-redes {
-          margin-bottom: 10px;
+          margin-bottom: 10px; /*0, 10PX= 0.625REM*/
           width: 40%;
           position: relative;
           left: 0;
@@ -57,6 +81,7 @@
           img:hover {
             width: 36px;
             height: 36px;
+            /* color: fade(pink, 50%); */
           }
         }
 
@@ -66,7 +91,7 @@
           left: 120px;
           top: -200px;
           a {
-            display: block;
+            display: block; //PARA QUE SE COLOQUEN UN ELEMENTO ABAJO DEL OTRO
             padding: 10px 0;
             text-decoration: none;
           }
@@ -79,3 +104,14 @@
     }
   }
 }
+
+/* Media queri para tablette */
+/*@media screen and (max-width: 37.5em) 600px/16px
+{
+  USE THE DOCK SIDE DEL INSPECTOR PARA DETERMINAR MI PUNTO DE QUIEBRE
+}*/
+
+/*media query para mi celular
+Segun yo, para celular sera: (max-width: 31.25em) 500px/16px
+uno de los cambios principales a realizar: display del logo Tim y del texto TIM
+*/

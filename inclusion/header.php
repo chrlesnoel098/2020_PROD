@@ -49,6 +49,16 @@
 
         <!-- burger Menu -->
         <div class="menu-bar-movil">
+        <!--  
+        <a href="#" class="logo">
+            <img src="images/LogoTIM.png" alt="Logo du DEC Technique d'intégration multimédia">
+        </a>
+
+        
+        <div>
+            <p>TECHNIQUE D'INTÉGRATION MULTIMÉDIA</p>
+        </div>
+        -->
 
             <div class="burger-menu" id="burger_menu">
                 <i class="fas fa-bars" aria-expanded="false"></i>
