@@ -29,8 +29,7 @@ section#Etudiant {
             width: 80%;
         }
 
-        .text {  
-        }
+        .text {}
 
         /* Animation */
         .fade {
@@ -40,7 +39,7 @@ section#Etudiant {
         .swipe {
             animation: swipe ease 3s;
         }
-        
+
         @keyframes fadeIn {
             from {
                 opacity: .4
@@ -52,9 +51,13 @@ section#Etudiant {
         }
 
         @keyframes swipe {
-            from   { transform: translateX(-1000px); }
-          
-            to { transform: translateX(0); }
+            from {
+                transform: translateX(-1000px);
+            }
+
+            to {
+                transform: translateX(0);
+            }
         }
     }
 }

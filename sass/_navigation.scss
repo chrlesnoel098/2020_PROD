@@ -8,9 +8,9 @@ body {
 
 @keyframes body {
   from {
-    background: linear-gradient(180deg, rgba(109,109,109,1) 0%, rgba(0,0,0,1) 20%);
+    background: linear-gradient(180deg, rgba(109, 109, 109, 1) 0%, rgba(0, 0, 0, 1) 20%);
   }
- 
+
   30% {
     background-color: rgb(0, 0, 0);
   }
@@ -178,7 +178,7 @@ body {
       transition: .10s;
 
       &:hover {
-        top: 33%;
+        top: 31%;
       }
     }
 
@@ -191,7 +191,7 @@ body {
       transition: .10s;
 
       &:hover {
-        top: 63%;
+        top: 59%;
       }
     }
 
@@ -204,7 +204,7 @@ body {
       transition: .10s;
 
       &:hover {
-        top: 88%;
+        top: 86%;
       }
     }
 
@@ -216,7 +216,7 @@ body {
       transition: .10s;
 
       &:hover {
-        top: 8%;
+        top: 6%;
       }
     }
 
@@ -228,7 +228,7 @@ body {
       transition: .10s;
 
       &:hover {
-        top: 33%;
+        top: 31%;
       }
     }
 
@@ -241,9 +241,8 @@ body {
       z-index: 3;
 
       &:hover {
-        background-color: #08F7Fe;
-        border-radius: 25%;
-        transform: rotateY(180deg);
+      opacity: 0.2;
+      border-radius: 25%;
 
       }
     }
@@ -257,9 +256,8 @@ body {
       z-index: 3;
 
       &:hover {
-        background-color: #F5D300;
-        border-radius: 25%;
-        transform: rotateY(180deg);
+      opacity: 0.2;
+      border-radius: 25%;
       }
     }
 
@@ -272,9 +270,8 @@ body {
       z-index: 3;
 
       &:hover {
-        background-color: #FE53BB;
-        border-radius: 25%;
-        transform: rotateY(180deg);
+      opacity: 0.2;
+      border-radius: 25%;
       }
     }
 
@@ -287,9 +284,8 @@ body {
       z-index: 3;
 
       &:hover {
-        background-color: #09FBD3;
-        border-radius: 25%;
-        transform: rotateY(180deg);
+      opacity: 0.2;
+      border-radius: 25%;
       }
     }
   }
