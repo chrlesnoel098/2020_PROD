@@ -51,8 +51,8 @@
 
                     <!-- Chaque cours d'une session dans un LI -->
                     <?php
-                        // Traverser le tableau numérique "plats"
-                        foreach ($uneSession as $unCours) :
+                        // Traverser le tableau numérique "uneSession"
+                        foreach ($uneSession as $Cours => $unCours) :
                     ?>
                     <li>
                         <section class="descriptionCours">
@@ -63,7 +63,7 @@
                                 <li>Pondération : <?= $unCours["ponderation"]; ?></li>
                                 <li>Nombre d'heures : <?= $unCours["heure"]; ?></li>
                                 <li><p>
-                                Description
+                                    <?= $unCours["description"]; ?>
                                 </p></li>
                             </ul>
                         </section>
