@@ -6,5 +6,6 @@
     <script src="js/ScrollAnim.js"></script>
     <script src="js/menuMobile.js"></script>
     <script src="js/scriptAccordion.js"></script>
+    <script src="js/evenementInfo.js"></script>
 </body>
 </html>
