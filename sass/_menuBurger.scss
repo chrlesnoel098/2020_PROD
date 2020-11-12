@@ -45,11 +45,12 @@
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
-        top: 51px;
+        top: 52px;
         right: -100%; // hide menu
         background: aqua;
-        width: 100%;
-        height: 300px; //A corriger, il faut il prends la taille de l'écran au complet
+        width: 90%;
+
+        //height: ; //A corriger, il faut il prends la taille de l'écran au complet
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;

@@ -78,7 +78,7 @@
                     <a href="#SectionEvenement">Évènement</a>
                 </nav>
 
-                <div class="fermer">
+                <div class="fermer" id="fermer">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
