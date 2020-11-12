@@ -1,12 +1,12 @@
-var slideIndex = 0; //Declaration de l`index
+let slideIndex = 0; //Declaration de l`index
 showSlides(); // appeler la fonction
    
 function showSlides() 
 { 
-    var i; 
+    let i; 
   
     // div caroussel
-    var slides = document.getElementsByClassName("image-carousselfade");  
+    let slides = document.getElementsByClassName("image-carousselfade");  
       
     for (i = 0; i < slides.length; i++) { 
         // les images ne sont pas affichier a la base 

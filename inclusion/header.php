@@ -28,12 +28,12 @@
 
             <div class="menu-menu-1-container">
                 <ul id="primary-menu" class="menu nav-menu">
-                    <li><a href="" aria-current="page"><div class="progress"></div><div class="cube-wrap"><div class="cube"><div class="side top"></div><div class="side bottom"></div><div class="side front"></div><div class="side back"></div><div class="side left"></div><div class="side right"></div></div></div></a></li>
-                    <li><a href="#SectionProgramme">Programme</a></li>
-                    <li><a href="#SectionProfesseur">Professeur</a></li>
-                    <li><a href="#SectionProjet">Projet</a></li>
-                    <li><a href="#SectionStage">Stages</a></li>
-                    <li><a href="#SectionEvenement">Évènement</a></li>
+                    <li><a class="links" href="#" aria-current="page"><div class="progress"></div><div class="cube-wrap"><div class="cube"><div class="side top"></div><div class="side bottom"></div><div class="side front"></div><div class="side back"></div><div class="side left"></div><div class="side right"></div></div></div></a></li>
+                    <li><a class="links" href="#SectionProgramme">Programme</a></li>
+                    <li><a class="links" href="#SectionProfesseur">Professeur</a></li>
+                    <li><a class="links" href="#SectionProjet">Projet</a></li>
+                    <li><a class="links" href="#SectionStage">Stages</a></li>
+                    <li><a class="links" href="#SectionEvenement">Évènement</a></li>
                     <li><a target="_blank" href="https://www.facebook.com/maisonneuvetim/"><img
                                 src="images/icone-facebook.png" alt=""></a></li>
                     <li><a target="_blank" href="https://www.instagram.com/maisonneuvetim/"><img
