@@ -1,0 +1,148 @@
+// Section SectionEtudiant*********************************************************************************************
+section#Projet {
+    display: flex;
+    flex-wrap: wrap;
+    //min-height: 100vh;
+
+    h2#SectionProjet {
+        flex-basis: 100%;
+    }
+
+    .descriptionProjet {
+        list-style: none;
+        /* style temporaire */
+        padding: 10px;
+        background-color: rgba(111, 41, 97, .3);
+        border: 2px solid rgba(111, 41, 97, .5);
+    }
+
+    .descriptionProjet h3:hover{
+        color: rgba(131, 115, 115, 0.603);
+        cursor: pointer;
+    }
+
+    .descriptionProjet a p:hover {
+        color: darkgray;
+        cursor: pointer;
+    }
+
+
+    /* caroussel vignette */
+    .vignette {
+        width: auto;
+        height: auto;
+        display: flex;
+  
+
+        /* style temporaire */
+        border: 5px solid rgb(111, 41, 97);
+        border-radius: .5em;
+        padding: 10px;
+
+        .image-carousselfade {
+            display: none;
+        }
+
+
+        .info {
+            justify-content: space-between;
+            align-content: space-between;
+            /* style temporaire */
+            padding: 10px;
+            background-color: rgba(111, 41, 97, .3);
+            border: 2px solid rgba(111, 41, 97, .5);
+        }
+
+        .text {
+         
+            /* style temporaire */
+            padding: 10px;
+            background-color: rgba(111, 41, 97, .3);
+            border: 2px solid rgba(111, 41, 97, .5);
+        }
+
+        .image {
+
+            justify-content: space-between;
+            align-content: space-between;
+            /* style temporaire */
+            padding: 10px;
+            background-color: rgba(111, 41, 97, .3);
+            border: 2px solid rgba(111, 41, 97, .5);
+        }
+
+        /* div text */
+        img {
+            width: 55vw;
+            height: auto;
+            
+            /* style temporaire */
+            padding: 10px;
+            background-color: rgba(111, 41, 97, .3);
+            border: 2px solid rgba(111, 41, 97, .5);
+        }
+
+        .clip-polygon {
+            border-radius: 61% 39% 27% 73% / 31% 46% 54% 69%;
+        }
+
+      
+
+        /* Animation */
+        .fade {
+            animation: fadeIn ease 3s;
+        }
+
+        .swipe {
+            animation: swipe ease 3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes swipe {
+            from {
+                transform: translateX(-1000px);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+
+// ******************************************************************Tablette******************************************************************
+@media (min-width: 521px) and (max-width: 980px) {
+
+    section#SectionEtudiant {
+        background-color: orange;
+        height: fit-content;
+
+    }
+}
+
+
+
+
+// ******************************************************************Mobile******************************************************************
+@media (max-width: 520px) {
+    section#SectionEtudiant {
+        background-color: pink;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
