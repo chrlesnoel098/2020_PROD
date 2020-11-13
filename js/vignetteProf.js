@@ -1,28 +1,49 @@
-var slideIndex = 0; //Declaration de l`index
-showSlides(); // appeler la fonction
-   
-function showSlides() 
-{ 
-  
-    // div caroussel
-    var slides = document.getElementsByClassName("prof-vignette");  
-      
-    for (let i = 0; i < slides.length; i++) { 
-        // les images ne sont pas affichier a la base 
-        slides[i].style.display = "none";  
-    } 
-   
-     // incrementation de 1 
-    slideIndex++;  
-   
-     // longueur max
-    if (slideIndex > slides.length)  
-    { 
-        slideIndex = 1; 
-    } 
-   
-    slides[slideIndex - 1].style.display = "block"; 
 
-    // Change les images 2 secondes
-    setTimeout(showSlides, 8000);  
-} 
+let choixDuProf = null;
+
+const listeProf = document.querySelectorAll(".choix-prof");
+const listeProfafficher = document.querySelectorAll(".afficher-prof");
+
+//document.addEventListener('onClick', choixProf);      
+for (const leProf of listeProf) {
+    leProf.addEventListener("click", function(){
+       // console.log("ok");
+        afficherUnProf(this);
+    });
+}
+
+
+ function afficherUnProf(elmProf){
+    let idProf = elmProf.getAttribute("data-prof");
+    let detailProf = document.getElementById("prof" + idProf);
+    
+    //console.log("Allo");
+    // Fermer la vignette du professeur 
+for (const unProf of listeProfafficher) {
+
+        unProf.style.display = "flex";
+        
+    }
+
+for (const unProf of listeProfafficher) {
+    if (unProf.id != "prof"+idProf) {
+
+        console.log(elmProf.id, "elmprof");
+        console.log(unProf.id, "unprof");
+
+        unProf.style.display = "none";
+        elmProf.style.color = "gray";
+    }
+}
+    //Ouvrir une session fermée (qui vient d'être cliquée)
+    detailProf.style.display = "flex";
+    elmProf.style.color = "white";
+
+    
+    
+
+        
+    
+    // Fermer la même session ouverte (qui vient d'être cliquée)
+    choixDuProf=elmProf.querySelector("afficher-prof");
+ }

@@ -7,36 +7,44 @@
             // Décoder la chaîne JSON dans une structure de données PHP
             $profsJSON = json_decode($profsJSONString, true);
 
-            // Parcourir le tableau associatif coursJSON
-            foreach ($profsJSON as $Professeurs => $unProf) :
+
             ?>
+            
 <section id="Professeur">
         <h1 id="SectionProfesseur">Professeurs</h1>
             <div id="desktop-conteneur">    
-                <div class="prof-vignette">
-                    <img src="<?=$unProf["photo"];?>" alt="prof">
-                        <h3 class="nom-prof">Camille Semaan</h3>
-
-                        <p style="overflow-y: auto;">Ma vocation : communiquer connaissances et savoir-faire.<br>Ma devise : 'Comprendre et ne pas juger' (Georges Simenon)<br><br> On a tous notre temps</p>
-                        <h4>email: csemaan@cmaisonneuve.qc.ca</h4>
-                </div> <!--fin prof-vignette -->
-        
-        
-                <div id="prof-tableau">   
-                <div class="prof">
+            <?php  
+                // Parcourir le tableau associatif profJSON
+                foreach ($profsJSON as $Professeurs => $unProf) :
+              
+                foreach ($unProf as $profDescription) :?> 
+                <div class="afficher-prof" id="prof<?= $profDescription["valeur"];?>">
+                    <img src="images/profs/<?= $profDescription["photo"];?>" alt="<?= $profDescription["nom"];?>">
+                    <h2><?= $profDescription["nom"];?></h2> 
+                    <p><?= $profDescription["description"];?></p> 
+                    <h3><?= $profDescription["email"];?></h3> 
+                </div>
+            <?php
+            endforeach;
+            ?>
+               
+            <?php
+            endforeach;
+            ?>
+                
                 <div class="prof-tableau">
                 <ul class="prof-liste">
-
-                    <!-- Chaque photo et nom dans un li -->
-                    <?php
-                        // Traverser le tableau numérique "plats"
-                        foreach ($unProf as $profDescription) :
-                    ?>
+                <?php  
+                // Parcourir le tableau associatif coursJSON
+                foreach ($profsJSON as $Professeurs => $unProf) :
+              
+                foreach ($unProf as $profDescription) :?> 
+                    <!-- nom dans un li avec une value ajoutee -->
+                  
                     <li>
-                        
-                        <!--img src="<?= $profDescription["photo"];?>">-->
-                        <a><?= $profDescription["nom"]; ?></a>
-                            
+                       
+                        <a class="choix-prof" data-prof="<?= $profDescription["valeur"];?>"><?= $profDescription["nom"];?></a>
+                    
                     </li>
 
                     <?php
@@ -45,7 +53,7 @@
                     </div><!--fin tableau-professeur-->
                 </ul>
             </div>
-        </div>
+        
 
         <?php
             endforeach;
