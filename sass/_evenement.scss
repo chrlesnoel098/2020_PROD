@@ -1,5 +1,117 @@
-table.mois {
-    width: 45vw;
-    height: 40vh;
-    border: 5px solid black;
+section#Evenement {
+    display: flex;
+    justify-content: center;
+
+
+    div.information {
+        flex-basis: 45%;
+        margin: 0 1.5%;
+        order: 1;
+
+        h1 {
+            margin-bottom: 0.5em;
+        }
+
+        div.infoEvenement {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            border: 1px solid black;
+            min-height: 45vh;
+            margin-top: 5px;
+
+            .info {
+                padding: 1em;
+                
+                span {
+                    font-size: 0.7em;
+                }
+            }
+
+            a {
+                button {
+                width: 25em;
+                height: 2.5em;
+                border-radius: 50px;
+                border: none;
+                cursor: pointer;
+                }
+            }
+
+
+        }
+    }
+
+    div.calendrier {
+        flex-basis: 50%;
+
+        table.mois {
+            width: 100%;
+            height: 50vh;
+            border: 5px solid black;
+            background-color: black;
+
+            tbody {
+                background-color: white;
+
+                tr.moisActuel {
+                    height: 20%;
+                    font-size: 2em;
+                }
+
+                .autreMois {
+                    background-color: rgb(228, 228, 228);
+                }
+
+                tr.jourSemaine,
+                .semaine {
+                    text-align: center;
+                    border: 1px solid black;
+                        td {
+                            width: 14%;
+                        }
+                    .aujourdhui {
+                        background-color: rgb(202, 202, 202);
+                    }
+                }
+            }
+        }
+    }
+}
+// ******************************************************************Tablette******************************************************************
+@media (min-width: 521px) and (max-width: 980px) {
+    section#Evenement {
+        display: flex;
+        flex-direction: column;
+
+        
+        div.information {
+            flex-basis: 45%;
+            margin: 0 1.5%;
+            order: 0;
+
+            h1 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+// ******************************************************************Mobile******************************************************************
+@media (max-width: 520px) {
+    section#Evenement {
+        display: flex;
+        flex-direction: column;
+
+        div.information {
+            flex-basis: 45%;
+            margin: 0 1.5%;
+            order: 0;
+
+            h1 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }

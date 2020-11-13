@@ -1,27 +1,118 @@
         <!-- Début de la section Evenement -->
         <section id="Evenement">
-            <div>
-                <h1>Évènement</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas corrupti nisi incidunt, omnis quas laborum quia aspernatur. Neque unde laudantium odit, veniam molestiae ad reiciendis repellat facilis assumenda aperiam consectetur!
-                    Quas voluptas, optio saepe tempora quaerat repellendus sapiente dolores commodi temporibus fugiat molestias, labore perferendis quis eos cum soluta voluptatum libero sunt. Inventore consequatur corrupti quo nostrum praesentium. Id, qui?
-                </p>
-                <button>Inscrivez-vous</button>
+            <div class="information">
+                <h1 id="SectionEvenement">Évènement</h1>
+                <div class="infoEvenement">
+                    <div class="info">
+                        <h3 class="titreInfo">Particularités</h3>
+                        Comme étudiant en Techniques d’intégration multimédia, vous serez encouragé à participer à
+                        différents concours.
+                        <ul>
+                            <li>Olympiades québécoises de la formation professionnelle technique</li>
+                            <li>Olympiades canadiennes de la formation professionnelle et technique</li>
+                            <li>Concours d’affiches et autres</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h3 class="titreInfo">Des ateliers en sciences et technologie destinés aux filles</h3>
+                        Découvrez nos 3 vidéos qui visent à promouvoir auprès des filles des métiers traditionnellement
+                        masculins, car elles ont également leur place en technologie.
+                        <br>
+                        <br>
+                        <a
+                            href="https://citoyen.cmaisonneuve.qc.ca/section/soutien-scolaire/projets-soutien-scolaire/des-ateliers-en-sciences-et-technologie-destines-aux-filles/">
+                            Des ateliers en sciences et technologie destinés aux filles
+                        </a>
+                    </div>
+
+                    <div class="info">
+                        <h3 class="titreInfo">Perspectives d’emploi</h3>
+                        83,3 % des diplômés qui se destinaient au marché du travail ont trouvé un emploi lié à leur
+                        formation*
+                        <br><br>
+                        À la fin de vos études, vous travaillerez comme :
+                        <ul>
+                            <li>intégrateur ou programmeur multimédia,</li>
+                            <li>développeur Web,</li>
+                            <li>concepteurs de jeux interactifs,</li>
+                            <li>développeur d’applications mobiles,</li>
+                            <li>chargé de projet Web,</li>
+                            <li>animateur 2D/3D,</li>
+                            <li>designer/infographiste,</li>
+                            <li>stratège Web,</li>
+                            <li>webmestre.</li>
+                        </ul>
+                        <span>
+                            Source : Ministère de l’Éducation et de l’Enseignement supérieur. (2019). La Relance au collégial en
+                            formation technique. La situation d’emploi de titulaires d’un diplôme d’études collégiales (DEC) ou
+                            d’une attestation d’études collégiales (AEC). Enquête de 2018. Québec, Québec : Gouvernement du
+                            Québec.
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h3 class="titreInfo">Perspectives universitaires</h3>
+                        Vous pourrez poursuivre vos études dans ce domaine ou accéder à tous les programmes dont le
+                        préalable est un DEC.
+
+                        <ul>
+                            <li>DEC-BAC en création 3D et en création numérique à l’UQAT, campus de Montréal</li>
+                            <li>BAC en génie des technologies de l’information ou en génie logiciel à l’ÉTS </li>
+                            <li>BAC en communication (création médias – médias interactifs) à l’UQAM</li>
+                            <li>Plusieurs programmes sont accessibles à Polytechnique en faisant 5 cours préparatoires</li>
+                        </ul>
+
+                    </div>
+
+                    <?php
+                        // Lire le fichier JSON dans une chaîne de caractères
+                        $listeEvenementJSONString = file_get_contents("data/listeEvenement.json");
+
+                        // Décoder la chaîne JSON dans une structure de données PHP
+                        $EvenementJSON = json_decode($listeEvenementJSONString, true);
+
+                         foreach ($EvenementJSON as $evenement => $unEvenement) :
+                            foreach ($unEvenement as $infoEvenement) :
+                                setlocale(LC_TIME,"fr");
+                                $today = utf8_encode(strftime("%e %B"));
+
+                                //if($infoEvenement["date"] == $today) :
+                    
+                    ?>
+                    <div class="info">
+                        <h3 class="titreInfo"> <?= $infoEvenement["nom"]; ?> </h3>
+                        <?= $infoEvenement["message"]; ?>
+
+                    </div>
+
+                    <?php 
+                        endforeach;
+                        endforeach;
+                        
+                    ?>
+                    
+
+
+
+                    <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/#admission_programme" target="_blank"><button>Inscrivez-vous au TIM !</button></a>
+                </div>
             </div>
             <div class="calendrier">
                 <table class="mois">
-                    <tr><th><?php echo date("F Y") ?></th></tr>
-                    <tr class="jourSemaine">
-                        <td>Lundi</td>
-                        <td>Mardi</td>
-                        <td>Mercredi</td>
-                        <td>Jeudi</td>
-                        <td>Vendredi</td>
-                        <td>Samedi</td>
-                        <td>Dimanche</td>
-                    </tr>
-                    <!-- https://tomsbigbox.com/generate-a-calendar-with-php/ -->
-                    <?php
+                    <tbody>
+                        <tr class="moisActuel">
+                            <th colspan="7"><h2><?php setlocale(LC_TIME,"fr"); echo ucfirst(utf8_encode(strftime("%B %Y"))) ?></h2></th>
+                        </tr>
+                        <tr class="jourSemaine">
+                            <td>Lundi</td>
+                            <td>Mardi</td>
+                            <td>Mercredi</td>
+                            <td>Jeudi</td>
+                            <td>Vendredi</td>
+                            <td>Samedi</td>
+                            <td>Dimanche</td>
+                        </tr>
+                        <!-- https://tomsbigbox.com/generate-a-calendar-with-php/ -->
+                        <?php
                         $aujourdhui = date("d"); // date d'aujourd'hui
                         $mois = date("m"); // mois actuel
                         $annee = date("Y"); // année actuelle
@@ -35,6 +126,8 @@
 
                         $compteur = 1;
                         $compteurMois = 1;
+
+                        $class = '';
 
                         // Indique le nombre de row que nous avons besoin. 
                         //Si le premier jour tombe après un vendredi, nous avons 6 rows
@@ -55,30 +148,33 @@
 
                                 if (($compteur - $premierJour) < 0) {
                                     $date = (($moisPrecedent - $moisPrecedentJour) + $compteur);
+                                    $class = 'class="autreMois"';
                                 } 
 
                                 else if (($compteur - $premierJour) >= $nbJours) {
                                     $date = ($compteurMois);
                                     $compteurMois++;
+                                    $class = 'class="autreMois"';
 
                                 } 
                                 else {
-                                    $date = ($compteur - $premierJour + 1);
+                                    $date = ($compteur - $premierJour +1);
                                     if ($aujourdhui == $compteur - $premierJour + 1) {
+                                        $class= 'class="aujourdhui"';
                                     }
                                 }
 
 
-                                echo '<td '.
-                                '><a class="date">'.$date.
-                                '</a></td>';
+                                echo '<td '.$class.'><a class="date">'.$date.'</a></td>';
 
                                 $compteur++;
+                                $class = '';
                             }
                             echo '</tr>';
                         } 
 
                     ?>
+                    </tbody>
 
                 </table>
             </div>
