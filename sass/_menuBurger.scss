@@ -48,7 +48,8 @@
         top: 52px;
         right: -100%; // hide menu
         background: aqua;
-        width: 90%;
+        width: 100%;
+        height: 100vh;
 
         //height: ; //A corriger, il faut il prends la taille de l'écran au complet
         -webkit-transition: all 0.3s ease;
