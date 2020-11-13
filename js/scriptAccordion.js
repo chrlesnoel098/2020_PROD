@@ -1,3 +1,4 @@
+
 // Toggle l'affichage de tous les cours d'une session ////////////////////////////////////////////////////////////
 let sessionOuverte = null;
 
