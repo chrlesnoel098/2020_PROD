@@ -8,29 +8,85 @@ section#Projet {
         flex-basis: 100%;
     }
 
-    .image-carousselfade {
-        display: none;
+    .descriptionProjet {
+        list-style: none;
+        /* style temporaire */
+        padding: 10px;
+        background-color: rgba(111, 41, 97, .3);
+        border: 2px solid rgba(111, 41, 97, .5);
     }
 
-
-
-    .clip-polygon {
-        border-radius: 61% 39% 27% 73% / 31% 46% 54% 69%;
+    .descriptionProjet h3:hover{
+        color: rgba(131, 115, 115, 0.603);
+        cursor: pointer;
     }
+
+    .descriptionProjet a p:hover {
+        color: darkgray;
+        cursor: pointer;
+    }
+
 
     /* caroussel vignette */
     .vignette {
+        width: auto;
+        height: auto;
         display: flex;
-        flex-basis: 80%;
-        margin-left: auto;
+  
+
+        /* style temporaire */
+        border: 5px solid rgb(111, 41, 97);
+        border-radius: .5em;
+        padding: 10px;
+
+        .image-carousselfade {
+            display: none;
+        }
+
+
+        .info {
+            justify-content: space-between;
+            align-content: space-between;
+            /* style temporaire */
+            padding: 10px;
+            background-color: rgba(111, 41, 97, .3);
+            border: 2px solid rgba(111, 41, 97, .5);
+        }
+
+        .text {
+         
+            /* style temporaire */
+            padding: 10px;
+            background-color: rgba(111, 41, 97, .3);
+            border: 2px solid rgba(111, 41, 97, .5);
+        }
+
+        .image {
+
+            justify-content: space-between;
+            align-content: space-between;
+            /* style temporaire */
+            padding: 10px;
+            background-color: rgba(111, 41, 97, .3);
+            border: 2px solid rgba(111, 41, 97, .5);
+        }
 
         /* div text */
         img {
-            width: 53vw;
-     
+            width: 55vw;
+            height: auto;
+            
+            /* style temporaire */
+            padding: 10px;
+            background-color: rgba(111, 41, 97, .3);
+            border: 2px solid rgba(111, 41, 97, .5);
         }
 
-        .text {}
+        .clip-polygon {
+            border-radius: 61% 39% 27% 73% / 31% 46% 54% 69%;
+        }
+
+      
 
         /* Animation */
         .fade {
