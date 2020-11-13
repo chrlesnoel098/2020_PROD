@@ -1,7 +1,7 @@
         <!-- Début de la section Evenement -->
         <section id="Evenement">
             <div class="information">
-                <h1>Évènement</h1>
+                <h1 id="SectionEvenement">Évènement</h1>
                 <div class="infoEvenement">
                     <div class="info">
                         <h3 class="titreInfo">Particularités</h3>
@@ -63,8 +63,7 @@
 
                     </div>
 
-                    <?php 
-                        setlocale(LC_TIME,"fr"); $today = utf8_encode(strftime("%e %B"));
+                    <?php
                         // Lire le fichier JSON dans une chaîne de caractères
                         $listeEvenementJSONString = file_get_contents("data/listeEvenement.json");
 
@@ -72,23 +71,29 @@
                         $EvenementJSON = json_decode($listeEvenementJSONString, true);
 
                          foreach ($EvenementJSON as $evenement => $unEvenement) :
+                            foreach ($unEvenement as $infoEvenement) :
+                                setlocale(LC_TIME,"fr");
+                                $today = utf8_encode(strftime("%e %B"));
+
+                                //if($infoEvenement["date"] == $today) :
                     
                     ?>
-                    
                     <div class="info">
-                        <h3 class="titreInfo"> <?= $unEvenement["nom"]; ?> </h3>
-                        <?= $unEvenement["message"]; ?>
+                        <h3 class="titreInfo"> <?= $infoEvenement["nom"]; ?> </h3>
+                        <?= $infoEvenement["message"]; ?>
 
                     </div>
 
                     <?php 
                         endforeach;
+                        endforeach;
+                        
                     ?>
                     
 
 
 
-                    <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/#admission_programme" target="_blank"><button>Inscrivez-vous</button></a>
+                    <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/#admission_programme" target="_blank"><button>Inscrivez-vous au TIM !</button></a>
                 </div>
             </div>
             <div class="calendrier">
