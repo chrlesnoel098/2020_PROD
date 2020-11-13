@@ -16,7 +16,7 @@ function afficherLesCours() {
 
 // Toggle l'affichage de la description d'un cours////////////////////////////////////////////////////////////////
 let fenetreDescriptionCours = document.querySelectorAll(".descriptionCours h3");
-console.log(fenetreDescriptionCours);
+//console.log(fenetreDescriptionCours);
 
 for (const elemTitreCours of fenetreDescriptionCours) {
     elemTitreCours.addEventListener("click", function(){
