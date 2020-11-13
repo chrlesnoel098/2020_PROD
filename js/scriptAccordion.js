@@ -27,11 +27,8 @@ function afficherLesCours(bouton) {
         sessionOuverte.classList.add("cachee");
         sessionOuverte.classList.remove("visible");
     }
-    
         
     sessionOuverte = bouton.parentNode.querySelector("div");
-    //document.getElementById("DescriptionGenerale").style.display("none");
-    
 }
 
 // Toggle l'affichage de la description d'un cours////////////////////////////////////////////////////////////////
