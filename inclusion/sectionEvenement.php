@@ -63,7 +63,32 @@
 
                     </div>
 
-                    <button>Inscrivez-vous</button>
+                    <?php 
+                        setlocale(LC_TIME,"fr"); $today = utf8_encode(strftime("%e %B"));
+                        // Lire le fichier JSON dans une chaîne de caractères
+                        $listeEvenementJSONString = file_get_contents("data/listeEvenement.json");
+
+                        // Décoder la chaîne JSON dans une structure de données PHP
+                        $EvenementJSON = json_decode($listeEvenementJSONString, true);
+
+                         foreach ($EvenementJSON as $evenement => $unEvenement) :
+                    
+                    ?>
+                    
+                    <div class="info">
+                        <h3 class="titreInfo"> <?= $unEvenement["nom"]; ?> </h3>
+                        <?= $unEvenement["message"]; ?>
+
+                    </div>
+
+                    <?php 
+                        endforeach;
+                    ?>
+                    
+
+
+
+                    <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/#admission_programme" target="_blank"><button>Inscrivez-vous</button></a>
                 </div>
             </div>
             <div class="calendrier">
@@ -118,15 +143,17 @@
 
                                 if (($compteur - $premierJour) < 0) {
                                     $date = (($moisPrecedent - $moisPrecedentJour) + $compteur);
+                                    $class = 'class="autreMois"';
                                 } 
 
                                 else if (($compteur - $premierJour) >= $nbJours) {
                                     $date = ($compteurMois);
                                     $compteurMois++;
+                                    $class = 'class="autreMois"';
 
                                 } 
                                 else {
-                                    $date = ($compteur - $premierJour + 1);
+                                    $date = ($compteur - $premierJour +1);
                                     if ($aujourdhui == $compteur - $premierJour + 1) {
                                         $class= 'class="aujourdhui"';
                                     }

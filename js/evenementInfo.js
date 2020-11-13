@@ -10,5 +10,5 @@ function carouselInfo() {
   infoIndex++;
   if (infoIndex > infos.length) {infoIndex = 1}
   infos[infoIndex-1].style.display = "block";
-  setTimeout(carouselInfo, 30000); // Change image every 2 seconds
+  setTimeout(carouselInfo, 3000);
 }

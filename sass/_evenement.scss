@@ -17,7 +17,7 @@ section#Evenement {
             flex-wrap: wrap;
             justify-content: space-evenly;
             border: 1px solid black;
-            min-height: 40vh;
+            min-height: 45vh;
             margin-top: 5px;
 
             .info {
@@ -27,6 +27,17 @@ section#Evenement {
                     font-size: 0.7em;
                 }
             }
+
+            a {
+                button {
+                width: 30em;
+                height: 2.5em;
+                border-radius: 50px;
+                border: none;
+                cursor: pointer;
+                }
+            }
+
 
         }
     }
@@ -42,22 +53,26 @@ section#Evenement {
 
             tbody {
                 background-color: white;
-            }
 
-            tr.moisActuel {
-                height: 20%;
-                font-size: 2em;
-            }
-
-            tr.jourSemaine,
-            .semaine {
-                text-align: center;
-                border: 1px solid black;
-                td {
-                    width: 14%;
+                tr.moisActuel {
+                    height: 20%;
+                    font-size: 2em;
                 }
-                .aujourdhui {
-                    background-color: blanchedalmond;
+
+                .autreMois {
+                    background-color: rgb(228, 228, 228);
+                }
+
+                tr.jourSemaine,
+                .semaine {
+                    text-align: center;
+                    border: 1px solid black;
+                        td {
+                            width: 14%;
+                        }
+                    .aujourdhui {
+                        background-color: rgb(202, 202, 202);
+                    }
                 }
             }
         }
