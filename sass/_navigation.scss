@@ -8,17 +8,19 @@ body {
 
 @keyframes body {
   from {
-    background: linear-gradient(180deg, rgba(109,109,109,1) 0%, rgba(0,0,0,1) 20%);
+    background: linear-gradient(
+      180deg,
+      rgba(109, 109, 109, 1) 0%,
+      rgba(0, 0, 0, 1) 20%
+    );
   }
- 
+
   30% {
     background-color: rgb(0, 0, 0);
   }
 
-
   to {
-
-    background-color: #CF0060;
+    background-color: #cf0060;
   }
 }
 
@@ -64,40 +66,39 @@ body {
   height: var(--size);
   background-color: #eee;
   backface-visibility: visible;
-  top: calc(var(--size) * -.5);
-  left: calc(var(--size) * -.5);
+  top: calc(var(--size) * -0.5);
+  left: calc(var(--size) * -0.5);
 }
 
 .top {
   background-color: #fff;
-  transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+  transform: rotateX(90deg) translateZ(calc(var(--size) * 0.5));
 }
 
 .bottom {
   background-color: #999;
-  transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+  transform: rotateX(90deg) translateZ(calc(var(--size) * -0.5));
 }
 
 .left {
   background-color: #ccc;
-  transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+  transform: rotateY(90deg) translateZ(calc(var(--size) * 0.5));
 }
 
 .right {
   background-color: #ddd;
-  transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+  transform: rotateY(90deg) translateZ(calc(var(--size) * -0.5));
 }
 
 .front {
   background-color: #aaa;
-  transform: translateZ(calc(var(--size) * .5));
+  transform: translateZ(calc(var(--size) * 0.5));
 }
 
 .back {
   background-color: #bbb;
-  transform: translateZ(calc(var(--size) * -.5));
+  transform: translateZ(calc(var(--size) * -0.5));
 }
-
 
 :root * {
   /* Pause the animation */
@@ -109,17 +110,12 @@ body {
   animation-fill-mode: both;
 }
 
-
 @media screen and (min-width: 37.5em) {
-
   .menu-bar-movil {
     display: none;
   }
 
-
-
   .main-navigation ul {
-
     li {
       display: flex;
       position: fixed;
@@ -133,12 +129,10 @@ body {
         font-size: 3vh;
         text-decoration: none;
         text-shadow: 2px 2px 10px rgb(73, 73, 73);
-
       }
 
       a:hover {
-        color: #B0F5FF;
-
+        color: #b0f5ff;
       }
 
       a:active {
@@ -152,7 +146,6 @@ body {
         height: 36px;
         box-shadow: 2px 2px 10px rgb(73, 73, 73);
         border-radius: 20%;
-
       }
     }
 
@@ -162,7 +155,7 @@ body {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       transform: rotate(180deg);
-      transition: .10s;
+      transition: 0.1s;
 
       &:hover {
         top: 14%;
@@ -175,7 +168,7 @@ body {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       transform: rotate(180deg);
-      transition: .10s;
+      transition: 0.1s;
 
       &:hover {
         top: 33%;
@@ -188,7 +181,7 @@ body {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       transform: rotate(180deg);
-      transition: .10s;
+      transition: 0.1s;
 
       &:hover {
         top: 63%;
@@ -201,7 +194,7 @@ body {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       transform: rotate(180deg);
-      transition: .10s;
+      transition: 0.1s;
 
       &:hover {
         top: 88%;
@@ -213,7 +206,7 @@ body {
       top: 5%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
-      transition: .10s;
+      transition: 0.1s;
 
       &:hover {
         top: 8%;
@@ -225,7 +218,7 @@ body {
       top: 30%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
-      transition: .10s;
+      transition: 0.1s;
 
       &:hover {
         top: 33%;
@@ -237,14 +230,13 @@ body {
       top: 67%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
-      transition: .5s;
+      transition: 0.5s;
       z-index: 3;
 
       &:hover {
-        background-color: #08F7Fe;
+        background-color: #08f7fe;
         border-radius: 25%;
         transform: rotateY(180deg);
-
       }
     }
 
@@ -253,11 +245,11 @@ body {
       top: 73%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
-      transition: .5s;
+      transition: 0.5s;
       z-index: 3;
 
       &:hover {
-        background-color: #F5D300;
+        background-color: #f5d300;
         border-radius: 25%;
         transform: rotateY(180deg);
       }
@@ -268,11 +260,11 @@ body {
       top: 79%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
-      transition: .5s;
+      transition: 0.5s;
       z-index: 3;
 
       &:hover {
-        background-color: #FE53BB;
+        background-color: #fe53bb;
         border-radius: 25%;
         transform: rotateY(180deg);
       }
@@ -283,11 +275,11 @@ body {
       top: 85%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
-      transition: .5s;
+      transition: 0.5s;
       z-index: 3;
 
       &:hover {
-        background-color: #09FBD3;
+        background-color: #09fbd3;
         border-radius: 25%;
         transform: rotateY(180deg);
       }

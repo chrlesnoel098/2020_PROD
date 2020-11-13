@@ -1,4 +1,4 @@
-        var propLightbox = {
+       /* var propLightbox = {
             BurgerContainer: document.getElementById('slideMenu'),
             
         }
@@ -15,3 +15,5 @@
         }
 
         metLightbox.inicio();
+
+        */
