@@ -26,11 +26,11 @@
         </ul>
 
     </div>
-    <div>
+    <!-- <div class="listeBoutons">
         <button>Voir les cours de création</button>
         <button>Voir les cours de programmation</button>
         <button>Voir tous cours</button>
-    </div>
+    </div> -->
     <div id="ToutesSessions">
         <?php
             // Lire le fichier JSON dans une chaîne de caractères
@@ -46,24 +46,24 @@
             <button class="boutonSession">
                 <h2><?= $session; ?></h2>
             </button>
-            <div class="fenetreCours">
+            <div class="fenetreCours cachee">
                 <ul class="listeCours">
 
                     <!-- Chaque cours d'une session dans un LI -->
                     <?php
-                        // Traverser le tableau numérique "plats"
-                        foreach ($uneSession as $unCours) :
+                        // Traverser le tableau numérique "uneSession"
+                        foreach ($uneSession as $Cours => $unCours) :
                     ?>
                     <li>
                         <section class="descriptionCours">
                             <h3><?= $unCours["nom"]; ?></h3>
-                            <ul>
+                            <ul class="cachee">
                                 <li>Sigle : <?= $unCours["sigle"]; ?></li>
                                 <li>Préalable : <?= $unCours["prealable"]; ?></li>
                                 <li>Pondération : <?= $unCours["ponderation"]; ?></li>
                                 <li>Nombre d'heures : <?= $unCours["heure"]; ?></li>
                                 <li><p>
-                                Description
+                                    <?= $unCours["description"]; ?>
                                 </p></li>
                             </ul>
                         </section>
