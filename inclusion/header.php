@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
-
+<div id="background-noise">
 <body>
     <!-- Début header -->
     <header id="masthead" class="site-header">

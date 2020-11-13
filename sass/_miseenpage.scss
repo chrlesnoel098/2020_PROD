@@ -10,6 +10,11 @@ html {
   padding: 0 2vw;
 }
 
+#background-noise{
+background-image: url(../images/noise.png);
+background-repeat: repeat;
+}
+
 // *************************************************************Accueil*****************************************************************
 .site-branding {
   display: flex;
