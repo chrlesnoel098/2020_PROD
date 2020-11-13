@@ -13,7 +13,7 @@
         "nom": "Caroline Martin",
         "photo": "Caroline.jpg",
         "description": "",
-        "email": "csemaan@cmaisonneuve.qc.ca",
+        "email": "cmartin@cmaisonneuve.qc.ca",
         "valeur": "1" 
     },
     {
@@ -26,8 +26,8 @@
     {
         "nom": "Dominic Girard",
         "photo": "Dom.jpg",
-        "description": "",
-        "email":"dpellerin@cmaisonneuve.qc.ca",
+        "description": "Je suis un passionné de création! Que ce soit pour un site Web, un jeu vidéo, ou un environnement physique interactif; la conception et le design c'est vraiment ce qui m'allume!<br>J'ai étudié à l'Université Simon Fraser à Vancouver en Colombie-Britannique où j'ai obtenu un Baccalauréat en Arts Interactifs (BSc). J'ai aussi obtenu plusieurs prix et reconnaissances dont une prestigieuse bourse collective du Conseil des Arts du Maurier pour la production d'une installation interactive qui a fait le tour de festivals d'arts numériques au Canada.<br>En 2003, j'ai commencé à enseigner, un peu par hasard, mais c'est vite devenu une passion pour moi. Aujourd'hui, j'adore mon boulot et je suis fier de faire partie de l'équipe du département de multimédia du Collège de Maisonneuve et de partager au quotidien ma passion pour la création interactive.<br>J'ai étudié à l'Université Simon Fraser à Vancouver en Colombie-Britannique où j'ai obtenu un Baccalauréat en Arts Interactifs (BSc). J'ai aussi obtenu plusieurs prix et reconnaissances dont une prestigieuse bourse collective du Conseil des Arts du Maurier pour la production d'une installation interactive qui a fait le tour de festivals d'arts numériques au Canada.En 2003, j'ai commencé à enseigner, un peu par hasard, mais c'est vite devenu une passion pour moi. Aujourd'hui, j'adore mon boulot et je suis fier de faire partie de l'équipe du département de multimédia du Collège de Maisonneuve et de partager au quotidien ma passion pour la création interactive.<br>Bien évidemment, c'est dans les cours de design du programme TIM que vous allez me croiser principalement, mais vous trouverez aussi à l'occasion dans certains cours d'infographie et de programmation Web.<br>Mes champs d'intérêt principaux sont : la conception et l'ergonomie des interfaces interactives ainsi que la création d'environnements",
+        "email":"dgirard@cmaisonneuve.qc.ca",
         "valeur": "3" 
     },
     {
@@ -54,7 +54,7 @@
     {
         "nom": "Manon Bertrand",
         "photo": "Manon.jpg",
-        "description": "",
+        "description": "Je me rappelle d'être tombée dans la potion magique lorsque j'étais petite. Ensuite, j'ai visité tous les pays avec Tintin. Et, ça n'a plus cessé. De Giacometti à Es Devlin (scénographe) j'ai parcouru le monde des images, des mots et de la musique. Ce monde est ma passion parce que :« Avec l'amour, l'amitié et la fraternité d'action, l'art est le plus court chemin d'un homme à un autre.» -Claude Roy", 
         "email":"dpellerin@cmaisonneuve.qc.ca",
         "valeur": "7"
     },
@@ -82,10 +82,17 @@
     {
         "nom": "Vincent Leblanc",
         "photo": "vincent.jpg",
-        "description": "Formé à l’ÉTS avec une spécialisation en ordinateurs et automatismes, j'ai ensuite obtenu ma maîtrise en Sciences de la communication à l’Université de Montréal, où mon mémoire portait sur les interfaces personne-machine.J'ai travaillé plusieurs années dans le secteur privé pour le compte de différentes entreprises, principalement à titre de programmeur, d'intégrateur ou de concepteur d'interfaces.J’enseigne au Collège de Maisonneuve depuis l’automne 2001 et j'ai eu la chance d'y donner un vaste assortiment de cours, à tel point que je n'arrive plus à me rappeler leur nombre!          Ces dernières années, j'ai donné plus fréquemment des cours de programmation Web (HTML, CSS, Javascript) et d'image numérique (Photoshop).",
+        "description": "Formé à l’ÉTS avec une spécialisation en ordinateurs et automatismes, j'ai ensuite obtenu ma maîtrise en Sciences de la communication à l’Université de Montréal, où mon mémoire portait sur les interfaces personne-machine.J'ai travaillé plusieurs années dans le secteur privé pour le compte de différentes entreprises, principalement à titre de programmeur, d'intégrateur ou de concepteur d'interfaces.J’enseigne au Collège de Maisonneuve depuis l’automne 2001 et j'ai eu la chance d'y donner un vaste assortiment de cours, à tel point que je n'arrive plus à me rappeler leur nombre!Ces dernières années, j'ai donné plus fréquemment des cours de programmation Web (HTML, CSS, Javascript) et d'image numérique (Photoshop).",
         "email":"vleblanc@cmaisonneuve.qc.ca",
         "valeur": "11"
-    }    
+    },
+    {
+        "nom": "Amhed Boudjani",
+        "photo": "ahmed.jpg",
+        "description": "Domaines d’intérêt:<ul><li>Animation Web depuis la « préhistoire » (Flash des années 2000) à aujourd’hui</li><li>ActionScript 2.0 et 3.0 (orienté objet)</li><li>Animations pour le Web avec JavaScript</li><li>Animations avec jQuery</li><li>Animations avec HTML5</li><li>Animations avec CSS3</li><li>Moteurs de jeux : Unity 2D/3D avec C# (et anciennement JavaScript)</li><li>Physique dans les jeux vidéo : chutes, forces, collisions</li><li>Système de particules de Unity</li><li>Intelligence Artificielle (« AI ») : « Machine Learning » et «Reinforcement Learning »(PPO)</li><li>Intelligence artificielle dans Unity (ML-agents)</li><li>Science et science-fiction (Arthur C. Clark est mon auteur préféré)</li><li>Blog : http://science-et-science-fiction.blogspot.com/ (en français)</li><li>Blog : http://ahmed-boudjani-blog-english.blogspot.com/  (en anglais)</li></ul>", 
+       "email":"aboudjani@cmaisonneuve.qc.ca",
+        "valeur": "12"
+    }       
 ]
 }
 
