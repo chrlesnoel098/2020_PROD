@@ -10,6 +10,6 @@
     <script src="js/lightbox.js"></script>
     <script src="js/vignetteEtudiant.js"></script>
     <script src="js/vignetteProf.js"></script>
+    </div> <!--fin de background-noise  -->   
 </body>
-</div> <!--fin de background-noise  -->    
 </html>

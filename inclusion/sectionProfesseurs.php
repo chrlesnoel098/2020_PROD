@@ -18,11 +18,13 @@
                 foreach ($profsJSON as $Professeurs => $unProf) :
               
                 foreach ($unProf as $profDescription) :?> 
-                <div class="afficher-prof" id="prof<?= $profDescription["valeur"];?>">
+                <div class="afficher-prof choix-prof" id="prof<?= $profDescription["valeur"];?>">
                     <img src="images/profs/<?= $profDescription["photo"];?>" alt="<?= $profDescription["nom"];?>">
+                    <div id="prof-presentation">
                     <h2><?= $profDescription["nom"];?></h2> 
-                    <p><?= $profDescription["description"];?></p> 
+                    <p style="overflow: auto;"><?= $profDescription["description"];?></p> 
                     <h3><?= $profDescription["email"];?></h3> 
+                    </div><!--fin presentation-->
                 </div>
             <?php
             endforeach;
@@ -32,7 +34,6 @@
             endforeach;
             ?>
                 
-                <div class="prof-tableau">
                 <ul class="prof-liste">
                 <?php  
                 // Parcourir le tableau associatif coursJSON
@@ -50,7 +51,6 @@
                     <?php
                         endforeach;
                     ?>
-                    </div><!--fin tableau-professeur-->
                 </ul>
             </div>
         
