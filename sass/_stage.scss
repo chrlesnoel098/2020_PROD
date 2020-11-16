@@ -15,24 +15,26 @@
 
   //Experiences styles
   .stage_container {
+    //boite blanche arriere plan, contiene 2 negros
     width: 100%;
-    display: flex; //porque tiengo dos bloques negros uno x experincia
-    flex-direction: column;
-    // flex-wrap: wrap;
+    display: flex;
+    /*  flex-direction: row;
+    flex-wrap: wrap; */
 
     .stage-info {
+      //2 bloques negros
       width: 100%;
       display: flex;
       background-color: black;
-      margin-bottom: 15px;
 
       .stagier {
-        p {
-          font-size: 12px;
-          text-align: center;
-          // line-height: 5px;
-        }
-        img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+
+        .stage-photo {
           width: 80px;
           height: 80px;
           border-radius: 50%;
@@ -42,6 +44,8 @@
 
       .stage-temoignage {
         background-color: green;
+
+        width: 100%;
       }
     }
   }

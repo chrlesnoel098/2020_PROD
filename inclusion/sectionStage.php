@@ -12,14 +12,18 @@
 
       
             <div class="stage_container">
-                <!-- primer temoigna -->
-                <div class="stage-info"><!-- bloque negro -->
+                <div class="stage-info"><!-- bloque NEGROS -->
 
-
+                    <!-- primer bloque -->
                     <div class="stagier">
-                        <img class="stage-photo" src="images/profs/camille.jpg" alt="photo du stagier">
-                        <p>Nombre étudiant</p>
-                        <p>Type de stage</p>
+                        <div class="stage-photo">
+                            <img class="stage-photo" src="images/profs/camille.jpg" alt="photo du stagier">
+                        </div>
+                        
+                        <div class="textos">
+                            <p>Nombre étudiant</p>
+                            <p>Type de stage</p>
+                        </div>
                     <div>
                     
                     
@@ -27,10 +31,10 @@
                         <h3>Témoigne</h3>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
                     </div>  
-
-
                 </div>
             </div>
+            
+           
 
 
         </section>

@@ -798,22 +798,25 @@ section#Projet .vignette .swipe {
 .stage .stage_container {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  /*  flex-direction: row;
+    flex-wrap: wrap; */
 }
 
 .stage .stage_container .stage-info {
   width: 100%;
   display: flex;
   background-color: black;
-  margin-bottom: 15px;
 }
 
-.stage .stage_container .stage-info .stagier p {
-  font-size: 12px;
-  text-align: center;
+.stage .stage_container .stage-info .stagier {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
 }
 
-.stage .stage_container .stage-info .stagier img {
+.stage .stage_container .stage-info .stagier .stage-photo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -821,6 +824,7 @@ section#Projet .vignette .swipe {
 
 .stage .stage_container .stage-info .stage-temoignage {
   background-color: green;
+  width: 100%;
 }
 
 /*.container-Experiences {
