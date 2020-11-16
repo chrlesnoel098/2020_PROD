@@ -1,23 +1,71 @@
-.container-Experiences {
+.stage {
+  width: 100%;
+  margin-top: 25px; //margin separa una section de autra
+  display: flex; //porque tengo 2 grandes DIV (carrousel + experiences)
+  //flex-direction: row;
+  flex-wrap: wrap;
+
+  //Carrousel styles
+  .Carrousel_container {
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+
+  //Experiences styles
+  .stage_container {
+    width: 100%;
+    display: flex; //porque tiengo dos bloques negros uno x experincia
+    flex-direction: column;
+    // flex-wrap: wrap;
+
+    .stage-info {
+      width: 100%;
+      display: flex;
+      background-color: black;
+      margin-bottom: 15px;
+
+      .stagier {
+        p {
+          font-size: 12px;
+          text-align: center;
+          // line-height: 5px;
+        }
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          //border-color: 3px solid blue;
+        }
+      }
+
+      .stage-temoignage {
+        background-color: green;
+      }
+    }
+  }
+}
+
+/*.container-Experiences {
   background-color: yellow;
   width: 100%;
   display: flex;
 
-  .info-NOIR {
+  .info {
     background-color: black;
     display: flex;
-    flex-direction: row;
+    //flex-direction: row;
     // flex-wrap: wrap;
     //justify-content: space-between;
     //align-items: center;
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
+    width: 90%;
+    margin: 25px;
   }
 
   .info-stagier {
     //width: 50%;
-    /* padding: 25px auto; */
+    //padding: 25px auto;
     background-color: blue;
 
     img {
@@ -37,3 +85,4 @@
     background-color: green;
   }
 }
+*/

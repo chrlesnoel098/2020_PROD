@@ -1,24 +1,34 @@
         <!-- Début de la section Stage -->
         <section class="stage" id="Stage">
-            <h1 id="SectionStage">Stages</h1>
-         <!--    <div class="containerCarrousel">
-                <div class="fleches"></div>
-                <div class="slide1"></div>
-                <div class="slide2"></div>
-                <div class="slide3"></div>
-                <div class="points"></div>
-            </div> -->
+           <!-- <h1 id="SectionStage">Stages</h1> -->
+          <div class="Carrousel_container">
+                <p>stylos para el carrousel</p>
+                <div class="fleches">hola</div>
+                <div class="slide1">hola</div>
+                <div class="slide2">hola</div>
+                <div class="slide3">hola</div>
+                <div class="points">hola</div>
+            </div> 
 
       
-            <div class="container-Experiences">
-                <div class="info-NOIR"><!-- bloque negro -->
-                    <div class="info-stagier">
-                        <img class="photo" src="images/profs/camille.jpg" alt="photo du stagier">
+            <div class="stage_container">
+                <!-- primer temoigna -->
+                <div class="stage-info"><!-- bloque negro -->
+
+
+                    <div class="stagier">
+                        <img class="stage-photo" src="images/profs/camille.jpg" alt="photo du stagier">
+                        <p>Nombre étudiant</p>
+                        <p>Type de stage</p>
                     <div>
-                    <div class="temoignage">
+                    
+                    
+                    <div class="stage-temoignage">
                         <h3>Témoigne</h3>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
                     </div>  
+
+
                 </div>
             </div>
 
