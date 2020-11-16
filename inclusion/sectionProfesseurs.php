@@ -52,12 +52,12 @@
                         endforeach;
                     ?>
                 </ul>
-            </div>
+            </div><!-- Fin de desktop-conteneur -->
         
 
         <?php
             endforeach;
         ?>
-    </div><!--fin de desktop-conteneur-->        
+     
 </section>
         <!-- Fin de la section Professeur -->
