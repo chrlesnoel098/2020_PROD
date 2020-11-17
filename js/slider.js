@@ -1,17 +1,17 @@
-(function(){
 
-  //  alert('hola');
-    var propSlider = {
+
+  //  alert('hi');
+    /* var propSlider = {
         slider: document.getElementById('SliderCarrousel'),
         primerSlide: null
     }
 
-    var metSlider = {
+    var methodeSlider = {
         inicio: function () {
-            setInterval(metSlider.moverSlide, 3000);
+            setInterval(methodeSlider.move, 3000);
         },
 
-        moverSlide: function () {
+        move: function () {
             propSlider.slider.style.transition = 'all 1s ease';
             propSlider.slider.style.marginLeft = '-100%';
 
@@ -24,9 +24,9 @@
         }
     }
 
-    metSlider.inicio();
+    methodeSlider.inicio();
+ */
 
-}())
        
     
    

@@ -788,144 +788,176 @@ section#Projet .vignette .swipe {
   }
 }
 
-/******************************************************Format bureau*/
-.stage {
-  margin: 25px 0;
-}
-
-.stage .stagecontent {
-  width: 100%;
-  /*  display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: cente; */
-  /**************************/
-}
-
-.stage .stagecontent .CarrouselContent {
-  overflow: hidden;
-}
-
-.stage .stagecontent .CarrouselContent .SliderCarrousel {
-  width: 300%;
-  display: flex;
-}
-
-.stage .stagecontent .CarrouselContent .SliderCarrousel .slide {
-  width: 100%;
-  min-height: 400px;
-  background-size: cover;
-  background-position: center;
-}
-
-.stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo1 {
-  background-image: url("../images/logos/logo_fontNoir.jpg");
-}
-
-.stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo2 {
-  background-image: url("../images/logos/logo_fontRose.jpg");
-}
-
-.stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo3 {
-  background-image: url("../images/logos/logos_fondBlue.jpg");
-}
-
-.stage .stagecontent .stagierContent {
-  width: 70%;
-  background-color: black;
-  margin: 25px auto;
-  padding: 50px 0;
-}
-
-.stage .stagecontent .stagierContent .stagier-info {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.stage .stagecontent .stagierContent .stagier-info .stagier {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.stage .stagecontent .stagierContent .stagier-info .stagier .stagierPhoto {
-  width: 150px;
-  height: 150px;
-  border: 2px solid white;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.stage .stagecontent .stagierContent .stagier-info .stage-temoignage {
-  width: 90%;
-  background-color: white;
-  margin: 20px auto;
-  padding: 25px;
-}
-
-.stage .stagecontent .stagierContent .stagier-info .stage-temoignage h3 {
-  color: black;
-  margin-bottom: 10px;
-}
-
-.stage .stagecontent .stagierContent .stagier-info .stage-temoignage p {
-  color: black;
-}
-
-/* .stage {
-  width: 100%;
-  margin-top: 25px; //margin separa una section de autra
-  display: flex; //porque tengo 2 grandes DIV (carrousel + experiences)
-  //flex-direction: row;
-  flex-wrap: wrap;
-
-  //Carrousel styles
-  .Carrousel_container {
-    background-color: blue;
+@media (max-width: 520px) {
+  .stage {
+    margin: 30px 0;
+  }
+  .stage .stagecontent {
     width: 100%;
-    height: 50%;
+  }
+  .stage .stagecontent .CarrouselContent {
+    overflow: hidden;
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel {
+    width: 300%;
+    display: flex;
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide {
+    width: 100%;
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo1 {
+    background-image: url("../images/logos/logo_fontNoir.jpg");
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo2 {
+    background-image: url("../images/logos/logo_fontRose.jpg");
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo3 {
+    background-image: url("../images/logos/logos_fondBlue.jpg");
+  }
+  .stage .stagecontent .stagierContent {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .stage .stagecontent .stagierContent .liste {
+    display: none;
+  }
+  .stage .stagecontent .stagierContent .stagier-info {
+    width: 90%;
+    background-color: black;
+    margin: 10px auto;
+    padding: 30px 10px 5px;
+  }
+  .stage .stagecontent .stagierContent .stagier-info .stagier {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .stage .stagecontent .stagierContent .stagier-info .stagier .stagierPhoto {
+    width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .stage .stagecontent .stagierContent .stagier-info .stage-temoignage {
+    width: 90%;
+    background-color: white;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .stage .stagecontent .stagierContent .stagier-info .stage-temoignage h3 {
+    color: black;
     margin-bottom: 10px;
   }
+  .stage .stagecontent .stagierContent .stagier-info .stage-temoignage p {
+    color: black;
+  }
+  /* .stage {
+    margin: 25px 0;
 
-  //Experiences styles
-  .stage_container {
-    //boite blanche arriere plan, contiene 2 negros
-    width: 100%;
-    display: flex;
-    //flex-direction: row;
-    //flex-wrap: wrap;
-
-    .stage-info {
-      //2 bloques negros
+    .stagecontent {
       width: 100%;
-      display: flex;
-      background-color: black;
 
-      .stagier {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 25px;
+      .CarrouselContent {
+        //  width: 100%;
+        overflow: hidden; //oculta  todo lo que rebasa de los 100%
+        // padding: 0 auto;
+        .SliderCarrousel {
+          width: 300%;
+          display: flex; //para que las fotos se coloque al lado del otro
+          .slide {
+            width: 100%;
+            min-height: 400px;
+            background-size: cover;
+            background-position: center;
 
-        .stage-photo {
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          //border-color: 3px solid blue;
+            &.photo1 {
+              background-image: url("../images/logos/logo_fontNoir.jpg");
+            }
+            &.photo2 {
+              background-image: url("../images/logos/logo_fontRose.jpg");
+            }
+            &.photo3 {
+              background-image: url("../images/logos/logos_fondBlue.jpg");
+            }
+          }
         }
       }
 
-      .stage-temoignage {
-        background-color: green;
-
+      //EXPECIENCES STAGE
+      .stagierContent {
         width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-direction: row;
+
+        .stagier-info {
+          width: 50%;
+          background-color: black;
+          margin: 0 10px;
+          padding: 30px 10px 5px;
+
+          .stagier {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .stagierPhoto {
+              width: 110px;
+              height: 110px;
+              border: 2px solid white;
+              border-radius: 50%;
+              margin-bottom: 20px;
+            }
+          }
+          .stage-temoignage {
+            width: 90%;
+            background-color: white;
+            margin: 20px auto;
+            padding: 10px;
+            h3 {
+              color: black;
+              margin-bottom: 10px;
+            }
+            p {
+              color: black;
+            }
+          }
+        }
       }
     }
+  } */
+}
+
+@media (max-width: 980px) {
+  /*  .liste {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .DeuxExperiences {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } */
+}
+
+/**************************************Format bureau*/
+@media (min-width: 981px) {
+  .stage .stagecontent .stagier-info {
+    background-color: blue;
   }
 }
- */
+
 section#Evenement {
   display: flex;
   justify-content: center;
