@@ -5,7 +5,7 @@
     {
         "nom": "Camille Semaan",
         "photo": "camille.jpg",
-        "description": "Ma vocation : communiquer connaissances et savoir-faire.<br>Ma devise : \"Comprendre et ne pas juger\" (Georges Simenon)<br><br> On a tous notre temps",
+        "description": "Ma vocation : communiquer connaissances et savoir-faire.<br><br>Ma devise : \"Comprendre et ne pas juger\" (Georges Simenon)<br><br> On a tous notre temps",
         "email": "csemaan@cmaisonneuve.qc.ca",
         "valeur": "0" 
     },
@@ -13,21 +13,21 @@
         "nom": "Caroline Martin",
         "photo": "Caroline.jpg",
         "description": "",
-        "email": "csemaan@cmaisonneuve.qc.ca",
+        "email": "cmartin@cmaisonneuve.qc.ca",
         "valeur": "1" 
     },
     {
         "nom": "Denis Pellerin",
         "photo": "Denis.jpg",
-        "description": "Après des études collégiales en arts, lettres et communications où il reçoit trois mentions d'excellence pour ses réalisations audiovisuelles, Denis poursuit ses études en production cinématographique à l'université Concordia où on lui décerne le «Fine Arts Dean's Award 1989». Déjà sur les plateaux de tournage en tant qu'assistant de production pendant ses études, il poursuit sa route comme éclairagiste, monteur puis rapidement comme scénariste et réalisateur. En plus de réaliser maints projets de films, publicités, vidéoclips musicaux et vidéos corporatives, Denis produit également plusieurs courts-métrages personnels dont «Danse macabre», une fiction en 16 mm présentée au Festival des films du monde de Montréal, «Clin d'oeil», une fiction en 35 mm présentée au Rendez-vous du cinéma québécois ainsi qu'un documentaire vidéo intitulé «Sur la piste d'Alexis le trotteur» présenté également dans ce dernier festival. Afin d'affiner ses connaissances sur la direction d'acteurs, il participe également en tant que comédien à plusieurs téléromans, publicités, vidéoclips, courts et longs métrages. Maintenant enseignant au TIM depuis 10 ans, Denis poursuit sa passion du récit et de l'image en affinant constamment ses connaissances dans la conception graphique en général et plus particulièrement en création d'image composite, intégrant l'imagerie 2D, 3D et vidéo sur écran vert. Dans ses temps libres, rien de mieux pour lui que d'ouvrir son cahier d'esquisses et explorer le dessin anatomique et de perspective, ou alors de saisir sa fidèle guitare et de plonger dans la musique Flamenco. Homme de communications, mais aussi d'images, de sons et de récits, Denis se fera un plaisir de vous amener toujours plus loin dans vos projets étudiants.",
+        "description": "Après des études collégiales en arts, lettres et communications où il reçoit trois mentions d'excellence pour ses réalisations audiovisuelles, Denis poursuit ses études en production cinématographique à l'université Concordia où on lui décerne le «Fine Arts Dean's Award 1989».<br> Déjà sur les plateaux de tournage en tant qu'assistant de production pendant ses études, il poursuit sa route comme éclairagiste, monteur puis rapidement comme scénariste et réalisateur. En plus de réaliser maints projets de films, publicités, vidéoclips musicaux et vidéos corporatives, Denis produit également plusieurs courts-métrages personnels dont «Danse macabre», une fiction en 16 mm présentée au Festival des films du monde de Montréal, «Clin d'oeil», une fiction en 35 mm présentée au Rendez-vous du cinéma québécois ainsi qu'un documentaire vidéo intitulé «Sur la piste d'Alexis le trotteur» présenté également dans ce dernier festival.<br> Afin d'affiner ses connaissances sur la direction d'acteurs, il participe également en tant que comédien à plusieurs téléromans, publicités, vidéoclips, courts et longs métrages.<br> Maintenant enseignant au TIM depuis 10 ans, Denis poursuit sa passion du récit et de l'image en affinant constamment ses connaissances dans la conception graphique en général et plus particulièrement en création d'image composite, intégrant l'imagerie 2D, 3D et vidéo sur écran vert.<br> Dans ses temps libres, rien de mieux pour lui que d'ouvrir son cahier d'esquisses et explorer le dessin anatomique et de perspective, ou alors de saisir sa fidèle guitare et de plonger dans la musique Flamenco.<br> Homme de communications, mais aussi d'images, de sons et de récits, Denis se fera un plaisir de vous amener toujours plus loin dans vos projets étudiants.",
         "email":"dpellerin@cmaisonneuve.qc.ca",
         "valeur": "2" 
     },
     {
         "nom": "Dominic Girard",
         "photo": "Dom.jpg",
-        "description": "",
-        "email":"dpellerin@cmaisonneuve.qc.ca",
+        "description": "Je suis un passionné de création! Que ce soit pour un site Web, un jeu vidéo, ou un environnement physique interactif; la conception et le design c'est vraiment ce qui m'allume!<br>J'ai étudié à l'Université Simon Fraser à Vancouver en Colombie-Britannique où j'ai obtenu un Baccalauréat en Arts Interactifs (BSc). J'ai aussi obtenu plusieurs prix et reconnaissances dont une prestigieuse bourse collective du Conseil des Arts du Maurier pour la production d'une installation interactive qui a fait le tour de festivals d'arts numériques au Canada.<br>En 2003, j'ai commencé à enseigner, un peu par hasard, mais c'est vite devenu une passion pour moi. Aujourd'hui, j'adore mon boulot et je suis fier de faire partie de l'équipe du département de multimédia du Collège de Maisonneuve et de partager au quotidien ma passion pour la création interactive.<br>J'ai étudié à l'Université Simon Fraser à Vancouver en Colombie-Britannique où j'ai obtenu un Baccalauréat en Arts Interactifs (BSc). J'ai aussi obtenu plusieurs prix et reconnaissances dont une prestigieuse bourse collective du Conseil des Arts du Maurier pour la production d'une installation interactive qui a fait le tour de festivals d'arts numériques au Canada.En 2003, j'ai commencé à enseigner, un peu par hasard, mais c'est vite devenu une passion pour moi. Aujourd'hui, j'adore mon boulot et je suis fier de faire partie de l'équipe du département de multimédia du Collège de Maisonneuve et de partager au quotidien ma passion pour la création interactive.<br>Bien évidemment, c'est dans les cours de design du programme TIM que vous allez me croiser principalement, mais vous trouverez aussi à l'occasion dans certains cours d'infographie et de programmation Web.<br>Mes champs d'intérêt principaux sont : la conception et l'ergonomie des interfaces interactives ainsi que la création d'environnements",
+        "email":"dgirard@cmaisonneuve.qc.ca",
         "valeur": "3" 
     },
     {
@@ -40,7 +40,7 @@
     {
         "nom": "Gregory Bony",
         "photo": "Greg.jpg",
-        "description": "Ma passion pour la retouche d’image et l’animation 2D et 3D a commencé très tôt, un peu après le biberon mais bien avant mes études dans ce domaine. Ma formation en France (Bac Arts Appliqués et BTS en Expression Visuelle) m’a permis de développer ma créativité et d’approfondir les techniques traditionnelles (arts plastiques, dessin anatomique, histoire de l’art, perspective, composition …). J’ai complété par la suite un Bac en Design Graphique à l’UQAM qui m’a permis entre autre de réaliser quelques courts métrages. Art, multimédia, jeu, film…. Je goûte à toutes sortes de projets personnels comme professionnels et vous êtes les premiers à profiter de ces expériences à travers mes cours. Le lien entre les arts plastiques et la création numérique me semble important. La création a commencé bien avant l’invention de l’ordinateur. La qualité de nos réalisations ne réside pas tant dans l’outil que dans l’être humain qui l’utilise. Malgré tout, nous sommes chanceux : quel outil au potentiel incroyable !!! Et c’est cet univers magique que nous allons explorer ensemble à l’aide de logiciels comme Maya, After effects ou Photoshop. Une recette dans laquelle je trouve mon équilibre: Une bonne dose de sport (aïkido, taï chi, escalade, basketball, badminton, vélo …), un soupçon de musique (djembé …), une pincée d’Art (dessin, peinture, calligraphie, photographie …), le tout saupoudré d’amour et de voyage !",
+        "description": "Ma passion pour la retouche d’image et l’animation 2D et 3D a commencé très tôt, un peu après le biberon mais bien avant mes études dans ce domaine. Ma formation en France (Bac Arts Appliqués et BTS en Expression Visuelle) m’a permis de développer ma créativité et d’approfondir les techniques traditionnelles (arts plastiques, dessin anatomique, histoire de l’art, perspective, composition …).<br><br> J’ai complété par la suite un Bac en Design Graphique à l’UQAM qui m’a permis entre autre de réaliser quelques courts métrages. Art, multimédia, jeu, film…. Je goûte à toutes sortes de projets personnels comme professionnels et vous êtes les premiers à profiter de ces expériences à travers mes cours.<br> Le lien entre les arts plastiques et la création numérique me semble important. La création a commencé bien avant l’invention de l’ordinateur. La qualité de nos réalisations ne réside pas tant dans l’outil que dans l’être humain qui l’utilise.<br><br> Malgré tout, nous sommes chanceux : quel outil au potentiel incroyable !!! Et c’est cet univers magique que nous allons explorer ensemble à l’aide de logiciels comme Maya, After effects ou Photoshop.<br><br> Une recette dans laquelle je trouve mon équilibre: Une bonne dose de sport (aïkido, taï chi, escalade, basketball, badminton, vélo …), un soupçon de musique (djembé …), une pincée d’Art (dessin, peinture, calligraphie, photographie …), le tout saupoudré d’amour et de voyage !",
         "email":"gbony@cmaisonneuve.qc.ca",
         "valeur": "5"
     },
@@ -54,14 +54,14 @@
     {
         "nom": "Manon Bertrand",
         "photo": "Manon.jpg",
-        "description": "",
-        "email":"dpellerin@cmaisonneuve.qc.ca",
+        "description": "Je me rappelle d'être tombée dans la potion magique lorsque j'étais petite. Ensuite, j'ai visité tous les pays avec Tintin. Et, ça n'a plus cessé. De Giacometti à Es Devlin (scénographe) j'ai parcouru le monde des images, des mots et de la musique. Ce monde est ma passion parce que :« Avec l'amour, l'amitié et la fraternité d'action, l'art est le plus court chemin d'un homme à un autre.» -Claude Roy", 
+        "email":"mbertrand@cmaisonneuve.qc.ca",
         "valeur": "7"
     },
     {
         "nom": "Martin St-Pierre",
         "photo": "Martin.jpg",
-        "description": "J’évolue dans le domaine professionnel depuis 1988, année où j’ai fait mes débuts dans l’univers cinématographique canadien.Récipiendaire de nombreuses bourses et subventions (Conseil des Arts du Canada, Conseil des Arts du Québec, Sodec, Téléfilm Canada, etc.), j’ai réalisé et produit une gamme de films, dont celui de Rick Raxlen, The Strange Blues of Cowboy Red, un long métrage qui fut lancé au Festival des films du Monde de Montréal en 1995. Parallèlement au cinéma, j’ai développé une aptitude au design graphique et Web, et cela, dès 1994 avec, en autres, la construction du site de la défunte société Odyssée Internet. Trois ans plus tard, j’ai fondé ma compagnie, SWING DESIGN, qui encore à ce jour, a pignon sur rue et se spécialise en concepts d’animations Flash. C’est grâce à cette expertise que j’enseigne le multimédia au Collège de Maisonneuve depuis 1997. Je termine actuellement une maîtrise en communication, profil média à l’UQAM.",
+        "description": "J’évolue dans le domaine professionnel depuis 1988, année où j’ai fait mes débuts dans l’univers cinématographique canadien.)<br><br>Récipiendaire de nombreuses bourses et subventions (Conseil des Arts du Canada, Conseil des Arts du Québec, Sodec, Téléfilm Canada, etc.), j’ai réalisé et produit une gamme de films, dont celui de Rick Raxlen, The Strange Blues of Cowboy Red, un long métrage qui fut lancé au Festival des films du Monde de Montréal en 1995.<br> <br>Parallèlement au cinéma, j’ai développé une aptitude au design graphique et Web, et cela, dès 1994 avec, en autres, la construction du site de la défunte société Odyssée Internet.<br> Trois ans plus tard, j’ai fondé ma compagnie, SWING DESIGN, qui encore à ce jour, a pignon sur rue et se spécialise en concepts d’animations Flash. C’est grâce à cette expertise que j’enseigne le multimédia au Collège de Maisonneuve depuis 1997. Je termine actuellement une maîtrise en communication, profil média à l’UQAM.",
         "email":"mstpierre@cmaisonneuve.qc.ca",
         "valeur": "8"
     },
@@ -82,10 +82,17 @@
     {
         "nom": "Vincent Leblanc",
         "photo": "vincent.jpg",
-        "description": "Formé à l’ÉTS avec une spécialisation en ordinateurs et automatismes, j'ai ensuite obtenu ma maîtrise en Sciences de la communication à l’Université de Montréal, où mon mémoire portait sur les interfaces personne-machine.J'ai travaillé plusieurs années dans le secteur privé pour le compte de différentes entreprises, principalement à titre de programmeur, d'intégrateur ou de concepteur d'interfaces.J’enseigne au Collège de Maisonneuve depuis l’automne 2001 et j'ai eu la chance d'y donner un vaste assortiment de cours, à tel point que je n'arrive plus à me rappeler leur nombre!          Ces dernières années, j'ai donné plus fréquemment des cours de programmation Web (HTML, CSS, Javascript) et d'image numérique (Photoshop).",
+        "description": "Formé à l’ÉTS avec une spécialisation en ordinateurs et automatismes, j'ai ensuite obtenu ma maîtrise en Sciences de la communication à l’Université de Montréal, où mon mémoire portait sur les interfaces personne-machine.<br><br>J'ai travaillé plusieurs années dans le secteur privé pour le compte de différentes entreprises, principalement à titre de programmeur, d'intégrateur ou de concepteur d'interfaces.<br><br>J’enseigne au Collège de Maisonneuve depuis l’automne 2001 et j'ai eu la chance d'y donner un vaste assortiment de cours, à tel point que je n'arrive plus à me rappeler leur nombre!<br>Ces dernières années, j'ai donné plus fréquemment des cours de programmation Web (HTML, CSS, Javascript) et d'image numérique (Photoshop).",
         "email":"vleblanc@cmaisonneuve.qc.ca",
         "valeur": "11"
-    }    
+    },
+    {
+        "nom": "Amhed Boudjani",
+        "photo": "ahmed.jpg",
+        "description": "Domaines d’intérêt:<br>-Animation Web depuis la « préhistoire » (Flash des années 2000) à aujourd’hui<br>-ActionScript 2.0 et 3.0 (orienté objet)<br>-Animations pour le Web avec JavaScript)<br>-Animations avec jQuery)<br>-Animations avec HTML5)<br>-Animations avec CSS3)<br>-Moteurs de jeux : Unity 2D/3D avec C# (et anciennement JavaScript))<br>-Physique dans les jeux vidéo : chutes, forces, collisions)<br>-Système de particules de Unity)<br>-vIntelligence Artificielle (« AI ») : « Machine Learning » et «Reinforcement Learning »(PPO))<br>-Intelligence artificielle dans Unity (ML-agents))<br>-Science et science-fiction (Arthur C. Clark est mon auteur préféré))<br>-Blog : http://science-et-science-fiction.blogspot.com/ (en français))<br>-Blog : http://ahmed-boudjani-blog-english.blogspot.com/  (en anglais)", 
+       "email":"aboudjani@cmaisonneuve.qc.ca",
+        "valeur": "12"
+    }       
 ]
 }
 

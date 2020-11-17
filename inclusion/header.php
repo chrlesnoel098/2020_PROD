@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
-<div id="background-noise">
 <body>
+<div id="background-noise">
     <!-- Début header -->
     <header id="masthead" class="site-header">
         <div class="site-branding">

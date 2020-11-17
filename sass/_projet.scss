@@ -1,7 +1,6 @@
 // Section SectionEtudiant*********************************************************************************************
 section#Projet {
-    display: flex;
-    flex-wrap: wrap;
+
     //min-height: 100vh;
 
     h2#SectionProjet {
@@ -28,58 +27,60 @@ section#Projet {
 
 
     /* caroussel vignette */
-    .vignette {
+    .vignette-Projet {
         width: auto;
         height: auto;
-        display: flex;
+
+       
   
 
-        /* style temporaire */
-        border: 5px solid rgb(111, 41, 97);
-        border-radius: .5em;
-        padding: 10px;
-
+        // /* style temporaire */
+        // border: 5px solid rgb(111, 41, 97);
+        // border-radius: .5em;
+        // padding: 10px;
+    }
         .image-carousselfade {
+            flex-direction: row;
             display: none;
+       
         }
 
 
-        .info {
-            justify-content: space-between;
-            align-content: space-between;
-            /* style temporaire */
-            padding: 10px;
-            background-color: rgba(111, 41, 97, .3);
-            border: 2px solid rgba(111, 41, 97, .5);
+        .info-Vignette {
+           order: 1;
+           align-self: flex-end;
+            // /* style temporaire */
+            // padding: 10px;
+            // background-color: rgba(111, 41, 97, .3);
+            // border: 2px solid rgba(111, 41, 97, .5);
         }
 
         .text {
          
-            /* style temporaire */
-            padding: 10px;
-            background-color: rgba(111, 41, 97, .3);
-            border: 2px solid rgba(111, 41, 97, .5);
+            // /* style temporaire */
+            // padding: 10px;
+            // background-color: rgba(111, 41, 97, .3);
+            // border: 2px solid rgba(111, 41, 97, .5);
         }
 
-        .image {
-
-            justify-content: space-between;
-            align-content: space-between;
-            /* style temporaire */
-            padding: 10px;
-            background-color: rgba(111, 41, 97, .3);
-            border: 2px solid rgba(111, 41, 97, .5);
+        .image-Projet {
+            order: 2;
+            flex-grow: 4;
+            // /* style temporaire */
+            // padding: 10px;
+            // background-color: rgba(111, 41, 97, .3);
+            // border: 2px solid rgba(111, 41, 97, .5);
         }
 
         /* div text */
         img {
-            width: 55vw;
+            width: 60vw;
             height: auto;
             
-            /* style temporaire */
-            padding: 10px;
-            background-color: rgba(111, 41, 97, .3);
-            border: 2px solid rgba(111, 41, 97, .5);
+            // /* style temporaire */
+            // padding: 10px;
+            // background-color: rgba(111, 41, 97, .3);
+            // border: 2px solid rgba(111, 41, 97, .5);
         }
 
         .clip-polygon {
@@ -117,7 +118,7 @@ section#Projet {
             }
         }
     }
-}
+
 
 
 // ******************************************************************Tablette******************************************************************
