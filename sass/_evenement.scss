@@ -22,6 +22,12 @@ section#Evenement {
 
             .info {
                 padding: 1em;
+                flex-basis: 100%;
+
+                li {
+                    color: inherit;
+                    text-shadow: none;
+                }
                 
                 span {
                     font-size: 0.7em;
@@ -30,6 +36,7 @@ section#Evenement {
 
             a {
                 button {
+                    flex-basis: 100%;
                 width: 25em;
                 height: 2.5em;
                 border-radius: 50px;
@@ -57,23 +64,38 @@ section#Evenement {
                 tr.moisActuel {
                     height: 20%;
                     font-size: 2em;
+
+                    h2 {
+                        color: black;
+                    }
                 }
 
                 .autreMois {
                     background-color: rgb(228, 228, 228);
                 }
 
-                tr.jourSemaine,
-                .semaine {
-                    text-align: center;
-                    border: 1px solid black;
-                        td {
-                            width: 14%;
-                        }
-                    .aujourdhui {
-                        background-color: rgb(202, 202, 202);
+                tr.jourSemaine {
+                    td {
+                        font-weight: bolder;
                     }
                 }
+
+                tr.jourSemaine,
+                    .semaine {
+                        text-align: center;
+
+                        td {
+                            width: 14%;
+
+                            a {
+                                color: black;
+                            }
+                        }
+
+                        .aujourdhui {
+                            background-color: rgb(202, 202, 202);
+                        }
+                    }
             }
         }
     }

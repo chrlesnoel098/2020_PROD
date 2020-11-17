@@ -58,6 +58,6 @@
         <?php
             endforeach;
         ?>
-    </div><!--fin de desktop-conteneur-->        
+        <!-- *********Div de trop*********** -->
 </section>
         <!-- Fin de la section Professeur -->

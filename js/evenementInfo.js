@@ -1,14 +1,21 @@
-var infoIndex = 0;
+var infoIndex = 5;
 carouselInfo();
 
 function carouselInfo() {
   var i;
-  var infos = document.getElementsByClassName("info");
+  var infos = document.querySelectorAll(".info");
+
   for (i = 0; i < infos.length; i++) {
     infos[i].style.display = "none";
   }
+  if (infoIndex > infos.length) {
+    infoIndex = 5
+  }
   infoIndex++;
-  if (infoIndex > infos.length) {infoIndex = 1}
+  console.log(infoIndex);
+
+
+
   infos[infoIndex-1].style.display = "block";
   setTimeout(carouselInfo, 3000);
 }
