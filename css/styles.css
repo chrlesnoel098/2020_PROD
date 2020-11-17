@@ -244,6 +244,13 @@ section#Programme #ToutesSessions div.session .visible {
   background-position: center;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  /* webkit=para navegadores antiguos y moz para los actuales*/
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
@@ -782,90 +789,118 @@ section#Projet .vignette .swipe {
 }
 
 .stage {
+  margin: 25px 0;
+}
+
+.stage .stagecontent {
   width: 100%;
-  margin-top: 25px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: cente;
 }
 
-.stage .Carrousel_container {
-  background-color: blue;
+.stage .stagecontent .CarrouselContent {
   width: 100%;
-  height: 50%;
-  margin-bottom: 10px;
+  background-color: gray;
 }
 
-.stage .stage_container {
-  width: 100%;
-  display: flex;
-  /*  flex-direction: row;
-    flex-wrap: wrap; */
-}
-
-.stage .stage_container .stage-info {
-  width: 100%;
-  display: flex;
+.stage .stagecontent .stagierContent {
+  width: 70%;
   background-color: black;
+  margin: 25px auto;
+  padding: 50px 0;
 }
 
-.stage .stage_container .stage-info .stagier {
-  width: 100%;
+.stage .stagecontent .stagierContent .stagier-info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.stage .stagecontent .stagierContent .stagier-info .stagier {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.stage .stagecontent .stagierContent .stagier-info .stagier .stagierPhoto {
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.stage .stagecontent .stagierContent .stagier-info .stage-temoignage {
+  width: 90%;
+  background-color: white;
+  margin: 20px auto;
   padding: 25px;
 }
 
-.stage .stage_container .stage-info .stagier .stage-photo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.stage .stagecontent .stagierContent .stagier-info .stage-temoignage h3 {
+  color: black;
+  margin-bottom: 10px;
 }
 
-.stage .stage_container .stage-info .stage-temoignage {
-  background-color: green;
-  width: 100%;
+.stage .stagecontent .stagierContent .stagier-info .stage-temoignage p {
+  color: black;
 }
 
-/*.container-Experiences {
-  background-color: yellow;
+/* .stage {
   width: 100%;
-  display: flex;
+  margin-top: 25px; //margin separa una section de autra
+  display: flex; //porque tengo 2 grandes DIV (carrousel + experiences)
+  //flex-direction: row;
+  flex-wrap: wrap;
 
-  .info {
-    background-color: black;
+  //Carrousel styles
+  .Carrousel_container {
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+
+  //Experiences styles
+  .stage_container {
+    //boite blanche arriere plan, contiene 2 negros
+    width: 100%;
     display: flex;
     //flex-direction: row;
-    // flex-wrap: wrap;
-    //justify-content: space-between;
-    //align-items: center;
-    width: 90%;
-    margin: 25px;
-  }
+    //flex-wrap: wrap;
 
-  .info-stagier {
-    //width: 50%;
-    //padding: 25px auto;
-    background-color: blue;
+    .stage-info {
+      //2 bloques negros
+      width: 100%;
+      display: flex;
+      background-color: black;
 
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
+      .stagier {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+
+        .stage-photo {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          //border-color: 3px solid blue;
+        }
+      }
+
+      .stage-temoignage {
+        background-color: green;
+
+        width: 100%;
+      }
     }
   }
-
-  .temoignage {
-    position: relative;
-    right: 10px;
-    background-color: green;
-  }
 }
-*/
+ */
 section#Evenement {
   display: flex;
   justify-content: center;

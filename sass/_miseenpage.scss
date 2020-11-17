@@ -1,4 +1,12 @@
 // *************************************************************Général*****************************************************************
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* webkit=para navegadores antiguos y moz para los actuales*/
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;

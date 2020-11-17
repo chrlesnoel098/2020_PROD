@@ -1,4 +1,65 @@
 .stage {
+  margin: 25px 0;
+
+  .stagecontent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: cente;
+
+    .CarrouselContent {
+      width: 100%;
+      background-color: gray;
+      .carrouselPhotos {
+        //background-color: pink;
+      }
+    }
+
+    .stagierContent {
+      width: 70%; //100%
+      background-color: black;
+      margin: 25px auto;
+      padding: 50px 0;
+
+      .stagier-info {
+        width: 80%;
+        margin: 0 auto;
+
+        .stagier {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: center;
+
+          .stagierPhoto {
+            width: 150px;
+            height: 150px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin-bottom: 20px;
+          }
+        }
+
+        .stage-temoignage {
+          width: 90%;
+          background-color: white;
+          margin: 20px auto;
+          padding: 25px;
+          h3 {
+            color: black;
+            margin-bottom: 10px;
+          }
+          p {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* .stage {
   width: 100%;
   margin-top: 25px; //margin separa una section de autra
   display: flex; //porque tengo 2 grandes DIV (carrousel + experiences)
@@ -18,8 +79,8 @@
     //boite blanche arriere plan, contiene 2 negros
     width: 100%;
     display: flex;
-    /*  flex-direction: row;
-    flex-wrap: wrap; */
+    //flex-direction: row;
+    //flex-wrap: wrap;
 
     .stage-info {
       //2 bloques negros
@@ -50,43 +111,4 @@
     }
   }
 }
-
-/*.container-Experiences {
-  background-color: yellow;
-  width: 100%;
-  display: flex;
-
-  .info {
-    background-color: black;
-    display: flex;
-    //flex-direction: row;
-    // flex-wrap: wrap;
-    //justify-content: space-between;
-    //align-items: center;
-    width: 90%;
-    margin: 25px;
-  }
-
-  .info-stagier {
-    //width: 50%;
-    //padding: 25px auto;
-    background-color: blue;
-
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-    }
-  }
-
-  .temoignage {
-    position: relative;
-    right: 10px;
-    background-color: green;
-  }
-}
-*/
+ */
