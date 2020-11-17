@@ -11,6 +11,8 @@
 
     .CarrouselContent {
       width: 100%;
+      overflow: hidden; //oculta  todo lo que rebasa de los 100%
+      // padding: 0 auto;
       .SliderCarrousel {
         width: 300%;
         display: flex; //para que las fotos se coloque al lado del otro
