@@ -58,6 +58,5 @@
         <?php
             endforeach;
         ?>
-     
 </section>
         <!-- Fin de la section Professeur -->

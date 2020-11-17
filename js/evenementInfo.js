@@ -1,14 +1,21 @@
-var infoIndex = 0;
+let infoIndex = 0;
 carouselInfo();
 
 function carouselInfo() {
-  var i;
-  var infos = document.getElementsByClassName("info");
-  for (i = 0; i < infos.length; i++) {
-    infos[i].style.display = "none";
+  let infos = document.querySelectorAll(".infoCarousel");
+
+
+  for (var unInfo of infos) {
+    unInfo.style.display = "none";
   }
-  infoIndex++;
-  if (infoIndex > infos.length) {infoIndex = 1}
-  infos[infoIndex-1].style.display = "block";
-  setTimeout(carouselInfo, 3000);
+  
+  if (infoIndex <= infos.length) {
+      infos[infoIndex].style.display = "block";
+      infoIndex++;
+  }
+
+  if(infoIndex >= infos.length) {
+    infoIndex = 0;
+  }
+  setTimeout(carouselInfo, 30000);
 }
