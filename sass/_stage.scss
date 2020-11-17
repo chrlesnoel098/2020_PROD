@@ -7,11 +7,12 @@
       width: 100%;
 
       .CarrouselContent {
-        overflow: hidden; //oculta  todo lo que rebasa de los 100%
+        overflow: hidden; //cache le contenu de surplus
 
         .SliderCarrousel {
           width: 300%;
-          display: flex; //para que las fotos se coloque al lado del otro
+          display: flex;
+
           .slide {
             width: 100%;
             min-height: 150px;
@@ -81,82 +82,6 @@
       }
     }
   }
-  /* .stage {
-    margin: 25px 0;
-
-    .stagecontent {
-      width: 100%;
-
-      .CarrouselContent {
-        //  width: 100%;
-        overflow: hidden; //oculta  todo lo que rebasa de los 100%
-        // padding: 0 auto;
-        .SliderCarrousel {
-          width: 300%;
-          display: flex; //para que las fotos se coloque al lado del otro
-          .slide {
-            width: 100%;
-            min-height: 400px;
-            background-size: cover;
-            background-position: center;
-
-            &.photo1 {
-              background-image: url("../images/logos/logo_fontNoir.jpg");
-            }
-            &.photo2 {
-              background-image: url("../images/logos/logo_fontRose.jpg");
-            }
-            &.photo3 {
-              background-image: url("../images/logos/logos_fondBlue.jpg");
-            }
-          }
-        }
-      }
-
-      //EXPECIENCES STAGE
-      .stagierContent {
-        width: 100%;
-        margin: 25px 0;
-        display: flex;
-        flex-direction: row;
-
-        .stagier-info {
-          width: 50%;
-          background-color: black;
-          margin: 0 10px;
-          padding: 30px 10px 5px;
-
-          .stagier {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-
-            .stagierPhoto {
-              width: 110px;
-              height: 110px;
-              border: 2px solid white;
-              border-radius: 50%;
-              margin-bottom: 20px;
-            }
-          }
-          .stage-temoignage {
-            width: 90%;
-            background-color: white;
-            margin: 20px auto;
-            padding: 10px;
-            h3 {
-              color: black;
-              margin-bottom: 10px;
-            }
-            p {
-              color: black;
-            }
-          }
-        }
-      }
-    }
-  } */
 }
 
 /**************************************Format bureau*/
@@ -189,7 +114,33 @@
           height: 110px;
           border: 2px solid white;
           border-radius: 50%;
-          margin-bottom: 20px;
+          margin: 20px;
+        }
+      }
+    }
+  }
+  .CarrouselContent {
+    overflow: hidden; //cache le contenu de surplus
+
+    .SliderCarrousel {
+      width: 300%;
+      display: flex;
+
+      .slide {
+        width: 100%;
+        min-height: 400px;
+        background-size: cover;
+        background-position: center;
+        margin: 25px;
+
+        &.photo1 {
+          background-image: url("../images/logos/logo_fontNoir.jpg");
+        }
+        &.photo2 {
+          background-image: url("../images/logos/logo_fontRose.jpg");
+        }
+        &.photo3 {
+          background-image: url("../images/logos/logos_fondBlue.jpg");
         }
       }
     }
