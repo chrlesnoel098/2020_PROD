@@ -276,8 +276,8 @@ button.boutonSession h2 {
 
 .site-main {
   max-width: 1920px;
-  margin: 0 4vw;
-  padding: 0 2vw;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 #background-noise {
@@ -776,6 +776,12 @@ section#Evenement div.information div.infoEvenement {
 
 section#Evenement div.information div.infoEvenement .info {
   padding: 1em;
+  flex-basis: 100%;
+}
+
+section#Evenement div.information div.infoEvenement .info li {
+  color: inherit;
+  text-shadow: none;
 }
 
 section#Evenement div.information div.infoEvenement .info span {
@@ -783,6 +789,7 @@ section#Evenement div.information div.infoEvenement .info span {
 }
 
 section#Evenement div.information div.infoEvenement a button {
+  flex-basis: 100%;
   width: 25em;
   height: 2.5em;
   border-radius: 50px;
@@ -810,19 +817,31 @@ section#Evenement div.calendrier table.mois tbody tr.moisActuel {
   font-size: 2em;
 }
 
+section#Evenement div.calendrier table.mois tbody tr.moisActuel h2 {
+  color: black;
+}
+
 section#Evenement div.calendrier table.mois tbody .autreMois {
   background-color: #e4e4e4;
+}
+
+section#Evenement div.calendrier table.mois tbody tr.jourSemaine td {
+  font-weight: bolder;
 }
 
 section#Evenement div.calendrier table.mois tbody tr.jourSemaine,
 section#Evenement div.calendrier table.mois tbody .semaine {
   text-align: center;
-  border: 1px solid black;
 }
 
 section#Evenement div.calendrier table.mois tbody tr.jourSemaine td,
 section#Evenement div.calendrier table.mois tbody .semaine td {
   width: 14%;
+}
+
+section#Evenement div.calendrier table.mois tbody tr.jourSemaine td a,
+section#Evenement div.calendrier table.mois tbody .semaine td a {
+  color: black;
 }
 
 section#Evenement div.calendrier table.mois tbody tr.jourSemaine .aujourdhui,
