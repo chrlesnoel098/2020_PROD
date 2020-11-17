@@ -4,13 +4,13 @@
 
             
                 <div class="CarrouselContent">
-                    <div class="carrouselPhotos">
-                        <p>stylos para el carrousel</p>
-                        <div class="fleches">hola</div>
-                        <div class="slide1">hola</div>
-                        <div class="slide2">hola</div>
-                        <div class="slide3">hola</div>
-                        <div class="points">hola</div>
+                    <div class="SliderCarrousel">
+                      <!--   <p>stylos para el carrousel</p> -->
+                       <!--  <div class="fleches">hola</div> -->
+                        <div class="slide photo1"></div>
+                        <div class="slide photo2"></div>
+                        <div class="slide photo3"></div>
+                       <!--  <div class="points">hola</div> -->
                     </div>
                 </div> 
 

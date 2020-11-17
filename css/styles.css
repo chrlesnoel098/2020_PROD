@@ -788,21 +788,46 @@ section#Projet .vignette .swipe {
   }
 }
 
+/******************************************************Format bureau*/
 .stage {
   margin: 25px 0;
 }
 
 .stage .stagecontent {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: cente;
+  /*  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: cente; */
+  /**************************/
 }
 
 .stage .stagecontent .CarrouselContent {
   width: 100%;
-  background-color: gray;
+}
+
+.stage .stagecontent .CarrouselContent .SliderCarrousel {
+  width: 300%;
+  display: flex;
+}
+
+.stage .stagecontent .CarrouselContent .SliderCarrousel .slide {
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.stage .stagecontent .CarrouselContent .SliderCarrousel .slide .photo1 {
+  background-image: url(images/logos/logo_fontNoir.jpg);
+}
+
+.stage .stagecontent .CarrouselContent .SliderCarrousel .slide .photo2 {
+  background-image: url(images/logos/logo_fontRose.jpg);
+}
+
+.stage .stagecontent .CarrouselContent .SliderCarrousel .slide .photo3 {
+  background-image: url(images/logos/logos_fondBlue.jpg);
 }
 
 .stage .stagecontent .stagierContent {

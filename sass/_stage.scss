@@ -1,21 +1,39 @@
+/******************************************************Format bureau*/
 .stage {
   margin: 25px 0;
 
   .stagecontent {
     width: 100%;
-    display: flex;
+    /*  display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: cente;
+    align-items: cente; */
 
     .CarrouselContent {
       width: 100%;
-      background-color: gray;
-      .carrouselPhotos {
-        //background-color: pink;
+      .SliderCarrousel {
+        width: 300%;
+        display: flex; //para que las fotos se coloque al lado del otro
+        .slide {
+          width: 100%;
+          min-height: 400px;
+          background-size: cover;
+          background-position: center;
+
+          .photo1 {
+            background-image: url(images/logos/logo_fontNoir.jpg);
+          }
+          .photo2 {
+            background-image: url(images/logos/logo_fontRose.jpg);
+          }
+          .photo3 {
+            background-image: url(images/logos/logos_fondBlue.jpg);
+          }
+        }
       }
     }
 
+    /**************************/
     .stagierContent {
       width: 70%; //100%
       background-color: black;
@@ -59,6 +77,13 @@
   }
 }
 
+// ******************************************************************Tablette******************************************************************
+@media (min-width: 521px) and (max-width: 980px) {
+}
+
+// ******************************************************************Mobile******************************************************************
+@media (max-width: 520px) {
+}
 /* .stage {
   width: 100%;
   margin-top: 25px; //margin separa una section de autra
