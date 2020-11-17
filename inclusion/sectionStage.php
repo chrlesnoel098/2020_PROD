@@ -21,32 +21,30 @@
                 </ul>
             </div>
                 
-            <div class="DeuxExperiences">
-                <div class="stagier-info">
-                    <div class="stagier">
-                        <img class="stagierPhoto" src="" alt="photo du stagier">
-                        <p>Nombre étudiant</p>
-                        <p>Type de stage</p>
-                    </div>
-                    <div class="stage-temoignage">
-                        <h3>Témoigne</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                    </div>  
+            <div class="stagier-info">
+                <div class="stagier">
+                    <img class="stagierPhoto" src="" alt="photo du stagier">
+                    <p>Nombre étudiant</p>
+                    <p>Type de stage</p>
                 </div>
-                <!-- deuxième expérience -->
-                <div class="stagier-info">
-                    <div class="stagier">
-                        <img class="stagierPhoto" src="" alt="photo du stagier">
-                        <p>Nombre étudiant</p>
-                        <p>Type de stage</p>
-                    </div>
-                    <div class="stage-temoignage">
-                        <h3>Témoigne</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                    </div>
-                </div> 
+                <div class="stage-temoignage">
+                    <h3>Témoigne</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>  
             </div>
+            <!-- deuxième expérience -->
+            <div class="stagier-info">
+                <div class="stagier">
+                    <img class="stagierPhoto" src="" alt="photo du stagier">
+                    <p>Nombre étudiant</p>
+                    <p>Type de stage</p>
+                </div>
+
+                <div class="stage-temoignage">
+                    <h3>Témoigne</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+            </div> 
         </div>
     </div>
 </section>
