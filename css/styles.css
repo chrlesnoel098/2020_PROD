@@ -818,16 +818,16 @@ section#Projet .vignette .swipe {
   background-position: center;
 }
 
-.stage .stagecontent .CarrouselContent .SliderCarrousel .slide .photo1 {
-  background-image: url(images/logos/logo_fontNoir.jpg);
+.stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo1 {
+  background-image: url("../images/logos/logo_fontNoir.jpg");
 }
 
-.stage .stagecontent .CarrouselContent .SliderCarrousel .slide .photo2 {
-  background-image: url(images/logos/logo_fontRose.jpg);
+.stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo2 {
+  background-image: url("../images/logos/logo_fontRose.jpg");
 }
 
-.stage .stagecontent .CarrouselContent .SliderCarrousel .slide .photo3 {
-  background-image: url(images/logos/logos_fondBlue.jpg);
+.stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo3 {
+  background-image: url("../images/logos/logos_fondBlue.jpg");
 }
 
 .stage .stagecontent .stagierContent {

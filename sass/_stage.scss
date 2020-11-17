@@ -20,14 +20,14 @@
           background-size: cover;
           background-position: center;
 
-          .photo1 {
-            background-image: url(images/logos/logo_fontNoir.jpg);
+          &.photo1 {
+            background-image: url("../images/logos/logo_fontNoir.jpg");
           }
-          .photo2 {
-            background-image: url(images/logos/logo_fontRose.jpg);
+          &.photo2 {
+            background-image: url("../images/logos/logo_fontRose.jpg");
           }
-          .photo3 {
-            background-image: url(images/logos/logos_fondBlue.jpg);
+          &.photo3 {
+            background-image: url("../images/logos/logos_fondBlue.jpg");
           }
         }
       }
