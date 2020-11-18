@@ -771,8 +771,39 @@ section#Projet .swipe {
   .stage {
     margin: 30px 0;
   }
+  .stage h4 {
+    display: none;
+  }
   .stage .stagecontent {
     width: 100%;
+    /**/
+    /**/
+    /**/
+  }
+  .stage .stagecontent .liste {
+    display: none;
+  }
+  .stage .stagecontent .petitmot {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+  .stage .stagecontent .petitmot p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    text-shadow: none;
+    text-transform: uppercase;
+  }
+  .stage .stagecontent .petitmot hr {
+    width: 50%;
+    color: gray;
+    margin: 0 auto 5px;
+  }
+  .stage .stagecontent .petitmot :nth-child(3) {
+    font-weight: 300;
   }
   .stage .stagecontent .CarrouselContent {
     overflow: hidden;
@@ -837,24 +868,75 @@ section#Projet .swipe {
   }
   .stage .stagecontent .stagierContent .stagier-info .stage-temoignage p {
     color: black;
+    text-shadow: none;
   }
 }
 
 /**************************************Format bureau*/
-@media (min-width: 700px) {
+@media (min-width: 701px) {
+  .liste {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 5px gray;
+  }
+  .liste:hover {
+    background-color: black;
+  }
+  .liste ul {
+    list-style: none;
+  }
+  .liste li {
+    padding: 10px 0;
+  }
+  .liste a {
+    color: gray;
+    text-shadow: none;
+  }
+  .liste a:hover {
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px black;
+    text-decoration: underline;
+  }
+  .petitmot {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 30px 0 40px;
+  }
+  .petitmot p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    text-shadow: none;
+    text-transform: uppercase;
+  }
+  .petitmot hr {
+    width: 50%;
+    color: gray;
+    margin: 0 auto 5px;
+  }
+  .petitmot :nth-child(3) {
+    font-weight: 300;
+  }
   .stagierContent {
     width: 100%;
     margin: 5px 0;
     display: flex;
     flex-direction: row;
   }
-  .stagierContent .liste {
-    display: none;
-  }
   .stagierContent .stagier-info {
     width: 50%;
     background-color: black;
-    margin: 0 10px;
+    margin: 0 15px;
     padding: 30px 10px 5px;
   }
   .stagierContent .stagier-info .stagier {
@@ -870,6 +952,19 @@ section#Projet .swipe {
     border-radius: 50%;
     margin: 20px;
   }
+  .stagierContent .stagier-info .stage-temoignage {
+    width: 90%;
+    background-color: white;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .stagierContent .stagier-info .stage-temoignage h3 {
+    color: black;
+    margin-bottom: 10px;
+  }
+  .stagierContent .stagier-info .stage-temoignage p {
+    color: black;
+  }
   .CarrouselContent {
     overflow: hidden;
   }
@@ -879,10 +974,10 @@ section#Projet .swipe {
   }
   .CarrouselContent .SliderCarrousel .slide {
     width: 100%;
-    min-height: 400px;
+    min-height: 300px;
     background-size: cover;
     background-position: center;
-    margin: 25px;
+    margin: 25px 10px;
   }
   .CarrouselContent .SliderCarrousel .slide.photo1 {
     background-image: url("../images/logos/logo_fontNoir.jpg");
