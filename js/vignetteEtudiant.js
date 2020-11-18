@@ -1,29 +1,29 @@
-let etSlideIndex = 0; //Declaration de l`index
-etShowSlides(); // appeler la fonction
+let slidesIndex = 0; //Declaration de l`index
+showSlides(); // appeler la fonction
    
-function etShowSlides() 
+function showSlides() 
 { 
-    let a; 
+    let i; 
   
     // div caroussel
-    let etSlides = document.getElementsByClassName("image-carousselfade");  
+    let slides = document.getElementsByClassName("image-carousselfade");  
       
-    for (a = 0; a < etSlides.length; a++) { 
+    for (i = 0; i < slides.length; i++) { 
         // les images ne sont pas affichier a la base 
-        etSlides[i].style.display = "none";  
+        slides[i].style.display = "none";  
     } 
    
      // incrementation de 1 
-    etSlideIndex++;  
+    slidesIndex++;  
    
      // longueur max
-    if (etSlideIndex > etSlides.length)  
+    if (slidesIndex > slides.length)  
     { 
-        etSlideIndex = 1; 
+        slidesIndex = 1; 
     } 
    
-    etSlides[etSlideIndex - 1].style.display = "block"; 
+    slides[slidesIndex - 1].style.display = "flex"; 
 
     // Change les images 2 secondes
-    setTimeout(etShowSlides, 8000);  
+    setTimeout(showSlides, 8000);  
 } 
