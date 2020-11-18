@@ -1,4 +1,4 @@
-let slideIndex = 0; //Declaration de l`index
+let slidesIndex = 0; //Declaration de l`index
 showSlides(); // appeler la fonction
    
 function showSlides() 
@@ -14,15 +14,15 @@ function showSlides()
     } 
    
      // incrementation de 1 
-    slideIndex++;  
+    slidesIndex++;  
    
      // longueur max
-    if (slideIndex > slides.length)  
+    if (slidesIndex > slides.length)  
     { 
-        slideIndex = 1; 
+        slidesIndex = 1; 
     } 
    
-    slides[slideIndex - 1].style.display = "flex"; 
+    slides[slidesIndex - 1].style.display = "flex"; 
 
     // Change les images 2 secondes
     setTimeout(showSlides, 8000);  
