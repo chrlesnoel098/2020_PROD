@@ -819,13 +819,13 @@ section#Projet .swipe {
     background-position: center;
   }
   .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo1 {
-    background-image: url("../images/logos/logo_fontNoir.jpg");
+    background-image: url("../images/Stagiers/stages1.jpg");
   }
   .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo2 {
-    background-image: url("../images/logos/logo_fontRose.jpg");
+    background-image: url("../images/Stagiers/stages2.jpg");
   }
   .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo3 {
-    background-image: url("../images/logos/logos_fondBlue.jpg");
+    background-image: url("../images/Stagiers/stages3.jpg");
   }
   .stage .stagecontent .stagierContent {
     width: 100%;
@@ -980,13 +980,13 @@ section#Projet .swipe {
     margin: 25px 10px;
   }
   .CarrouselContent .SliderCarrousel .slide.photo1 {
-    background-image: url("../images/logos/logo_fontNoir.jpg");
+    background-image: url("../images/Stagiers/stages1.jpg");
   }
   .CarrouselContent .SliderCarrousel .slide.photo2 {
-    background-image: url("../images/logos/logo_fontRose.jpg");
+    background-image: url("../images/Stagiers/stages2.jpg");
   }
   .CarrouselContent .SliderCarrousel .slide.photo3 {
-    background-image: url("../images/logos/logos_fondBlue.jpg");
+    background-image: url("../images/Stagiers/stages3.jpg");
   }
 }
 
