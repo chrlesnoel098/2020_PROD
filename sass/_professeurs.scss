@@ -310,6 +310,7 @@
     margin-bottom: 1vh;
     margin-top: 1vh;
     color: white;
+    width: 68vw;
   }
 }
 
@@ -329,9 +330,7 @@
   height: auto;
   align-self: center;
   border-radius: 20px;
-  //border: rgb(91, 91, 155) 4px solid;
-  margin: 2% 2% 0 0;
-  //box-shadow: 2px 2px 2px 2px #35aee6, 2px 2px 2px 2px #80C7FF
+  margin: 2% 2% 0 0 !important;
   border: 5px solid white;
   box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
 }
@@ -345,17 +344,17 @@
 text-align: left;
 align-self: center;
 width: 64vw;
-height: 20vh;
+height: 30vh;
 //background-color: rgba(47, 47, 49, 0.226);
 padding: 2vw;
 box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
 border-radius: 10px;
 border: 5px solid white;
 
-background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
+//background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
 
 // background-image: url(../images/background_test1.gif);
-// background-repeat: repeat;
+// // background-repeat: repeat;
 }
 
 .afficher-prof p::-webkit-scrollbar {
@@ -372,13 +371,15 @@ background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
   box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
   border: 5px solid white;
   border-radius: 20px;
-  
+  margin-top: 2vh;
   height: 30vh;
-  
-  background: linear-gradient(to bottom,#FE53BB 0%, #f5d300 100%);
+  padding:  0 1vw;
 
-  // background-image: url(../images/background_test1.gif);
-  // background-repeat: repeat;
+  
+  //background: linear-gradient(to bottom,#FE53BB 0%, #f5d300 100%);
+
+  //background-image: url(../images/background_test1.gif);
+  //background-repeat: repeat;
 }
 
 
