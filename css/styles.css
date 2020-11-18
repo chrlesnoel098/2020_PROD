@@ -288,8 +288,8 @@ section {
 .site-main {
   max-width: 1920px;
   margin: 0 auto;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 #background-noise {
@@ -303,13 +303,6 @@ section {
   height: 100vh;
   align-items: center;
   justify-content: center;
-}
-
-@media (max-width: 1910px) {
-  .site-main {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
 }
 
 @media screen and (max-width: 979px) {
