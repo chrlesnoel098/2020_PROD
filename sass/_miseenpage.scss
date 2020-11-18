@@ -37,10 +37,12 @@ button.boutonSession h2 {
   color: rgb(39, 39, 39);
 }
 
+section{
+  margin-bottom: 8%;
+}
 .site-main {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 auto;
 }
 
 #background-noise {
@@ -57,6 +59,13 @@ button.boutonSession h2 {
   justify-content: center;
 }
 
+@media (max-width: 1910px) {
+  .site-main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+}
 // *************************************************************Programme*****************************************************************
 
 // *************************************************************Équipe*****************************************************************

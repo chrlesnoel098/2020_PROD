@@ -244,6 +244,13 @@ section#Programme #ToutesSessions div.session .visible {
   background-position: center;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  /* webkit=para navegadores antiguos y moz para los actuales*/
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
@@ -274,10 +281,13 @@ button.boutonSession h2 {
   color: #272727;
 }
 
+section {
+  margin-bottom: 8%;
+}
+
 .site-main {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 auto;
 }
 
 #background-noise {
@@ -293,7 +303,14 @@ button.boutonSession h2 {
   justify-content: center;
 }
 
-@media screen and (max-width: 37.5em) {
+@media (max-width: 1910px) {
+  .site-main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 979px) {
   header .main-navigation {
     display: none;
   }
@@ -747,6 +764,134 @@ section#Projet .swipe {
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  .stage {
+    margin: 30px 0;
+  }
+  .stage .stagecontent {
+    width: 100%;
+  }
+  .stage .stagecontent .CarrouselContent {
+    overflow: hidden;
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel {
+    width: 300%;
+    display: flex;
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide {
+    width: 100%;
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo1 {
+    background-image: url("../images/logos/logo_fontNoir.jpg");
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo2 {
+    background-image: url("../images/logos/logo_fontRose.jpg");
+  }
+  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo3 {
+    background-image: url("../images/logos/logos_fondBlue.jpg");
+  }
+  .stage .stagecontent .stagierContent {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .stage .stagecontent .stagierContent .liste {
+    display: none;
+  }
+  .stage .stagecontent .stagierContent .stagier-info {
+    width: 90%;
+    background-color: black;
+    margin: 10px auto;
+    padding: 30px 10px 5px;
+  }
+  .stage .stagecontent .stagierContent .stagier-info .stagier {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .stage .stagecontent .stagierContent .stagier-info .stagier .stagierPhoto {
+    width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .stage .stagecontent .stagierContent .stagier-info .stage-temoignage {
+    width: 90%;
+    background-color: white;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .stage .stagecontent .stagierContent .stagier-info .stage-temoignage h3 {
+    color: black;
+    margin-bottom: 10px;
+  }
+  .stage .stagecontent .stagierContent .stagier-info .stage-temoignage p {
+    color: black;
+  }
+}
+
+/**************************************Format bureau*/
+@media (min-width: 700px) {
+  .stagierContent {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .stagierContent .liste {
+    display: none;
+  }
+  .stagierContent .stagier-info {
+    width: 50%;
+    background-color: black;
+    margin: 0 10px;
+    padding: 30px 10px 5px;
+  }
+  .stagierContent .stagier-info .stagier {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .stagierContent .stagier-info .stagier .stagierPhoto {
+    width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 20px;
+  }
+  .CarrouselContent {
+    overflow: hidden;
+  }
+  .CarrouselContent .SliderCarrousel {
+    width: 300%;
+    display: flex;
+  }
+  .CarrouselContent .SliderCarrousel .slide {
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin: 25px;
+  }
+  .CarrouselContent .SliderCarrousel .slide.photo1 {
+    background-image: url("../images/logos/logo_fontNoir.jpg");
+  }
+  .CarrouselContent .SliderCarrousel .slide.photo2 {
+    background-image: url("../images/logos/logo_fontRose.jpg");
+  }
+  .CarrouselContent .SliderCarrousel .slide.photo3 {
+    background-image: url("../images/logos/logos_fondBlue.jpg");
   }
 }
 
