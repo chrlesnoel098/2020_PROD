@@ -45,7 +45,7 @@
     
     </div>
                  
-
+    </section>
                     <!-- Début de la section programme -->
 <section id="Programme">
     <div id="ToutesSessions">
@@ -99,5 +99,4 @@
 
         <!-- fin de la section programme -->
                     
-                    <!-- Fin de la section Etudiant -->
-                </section>
+           

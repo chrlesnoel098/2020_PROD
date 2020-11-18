@@ -43,6 +43,8 @@ section{
 .site-main {
   max-width: 1920px;
   margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #background-noise {
@@ -59,13 +61,13 @@ section{
   justify-content: center;
 }
 
-@media (max-width: 1910px) {
-  .site-main {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+// @media (max-width: 1910px) {
+//   .site-main {
+//     padding-left: 5%;
+//     padding-right: 5%;
+//   }
   
-}
+// }
 // *************************************************************Programme*****************************************************************
 
 // *************************************************************Équipe*****************************************************************

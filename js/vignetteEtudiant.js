@@ -22,7 +22,7 @@ function showSlides()
         slideIndex = 1; 
     } 
    
-    slides[slideIndex - 1].style.display = "flex"; 
+    slides[slideIndex - 1].style.display = "block"; 
 
     // Change les images 2 secondes
     setTimeout(showSlides, 8000);  
