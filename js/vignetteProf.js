@@ -26,24 +26,19 @@ for (const unProf of listeProfafficher) {
     }
 
 for (const unProf of listeProfafficher) {
-    if (unProf.id != "prof"+idProf) {
+    if (unProf.id != "prof"+idProf && unProf.id != "") {
 
         console.log(elmProf.id, "elmprof");
         console.log(unProf.id, "unprof");
 
         unProf.style.display = "none";
-        elmProf.style.color = "gray";
+        elmProf.style.color = "darkgray";
     }
 }
-    //Ouvrir une session fermée (qui vient d'être cliquée)
+    //afficher un prof qui vient d'être cliqué
     detailProf.style.display = "flex";
     elmProf.style.color = "white";
-
-    
-    
-
-        
-    
+  
     // Fermer la même session ouverte (qui vient d'être cliquée)
     choixDuProf=elmProf.querySelector("afficher-prof");
  }

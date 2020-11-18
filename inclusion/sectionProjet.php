@@ -4,7 +4,7 @@
                     <h1 id="SectionProjet">Vie étudiante & projets</h1>
 
                     <!-- caroussel vie etudiante -->
-                    <div class="vignette">
+                    <div class="vignette-Projet">
                         <?php
                         // Lire le fichier JSON dans une chaîne de caractères
                         $listeImagesJSONString = file_get_contents("data/imageVignette.json");
@@ -22,15 +22,15 @@
                             ?>
                                 <!-- Modele image et texte -->
                                 <div class="image-carousselfade">
-                                <div class="image">
+                                <div class="image-Projet">
                                         <img src="images/testImageBd/<?= $uneVignette["image"]; ?>" alt="" class="clip-polygon fade">
                                         </div>
-                                    <div class="info">
+                                    <div class="info-Vignette">
                                         <h2><?= $evenement; ?></h2>
                                         <div class="text swipe">
                                             <h3><?= $uneVignette["evenement"]; ?></h3>
                                             <p><?= $uneVignette["description"]; ?></p>
-                                        </div>
+                                        </div> 
                                     </div>
                                 </div>
                                 <!-- fin modele -->
@@ -43,27 +43,61 @@
                         endforeach;
                         ?>
     
-   
-                    <div class="descriptionProjet">
-                        <h3>Jeu</h3>
-
-                        <li><a target="_blank" href="http://tokebak.fmd1.koumbit.org/?fbclid=IwAR0VcrurIdDvtYJxtt0eEKyv9zz0xmrh3CBfIxxObGOyY7HIzrRqTwsH96Q">
-                                <p>Hiver 2020 --> Premier prix à l’Intercollégial de création de jeux vidéo du Collège
-                                    de Valleyfield</p>
-                            </a></li>
-
-                        <li><a target="_blank" href="https://jeu.tim.cmaisonneuve.qc.ca/galerie_unity/2019-2020.html">
-                                <p>Bibliothèque de jeu</p>
-                            </a></li>
+    </div>
                  
 
-              
-                        <h3>3D</h3>
+                    <!-- Début de la section programme -->
+<section id="Programme">
+    <div id="ToutesSessions">
+        <?php
+            // Lire le fichier JSON dans une chaîne de caractères
+            $listeProjetsJSONString = file_get_contents("data/listeProjets.json");
 
-                        <li><a target="_blank" href="https://www.youtube.com/user/TIMcreation3D">
-                                <p>Création 3D des étudiants en mdivtimédia du collège de maisonneuve</p>
-                            </a></li>
-                    </div>
-                    </div>
+            // Décoder la chaîne JSON dans une structure de données PHP
+            $projetJSON = json_decode($listeProjetsJSONString, true);
+
+            // Parcourir le tableau associatif projetJSON
+            foreach ($projetJSON as $Categories => $uneCategorie) :
+            ?>
+        <div class="session">
+            <button class="boutonSession">
+                <h2><?= $Categories; ?></h2>
+            </button>
+            <div class="fenetreCours cachee">
+                <ul class="listeCours">
+
+                    <!-- Chaque cours d'une session dans un LI -->
+                    <?php
+                        // Traverser le tableau numérique "uneSession"
+                        foreach ($uneCategorie as $Projets => $unProjet) :
+                    ?>
+                    <li>
+                        <section class="descriptionCours">
+                            <h3><?= $unProjet["sousCategorie"]; ?></h3>
+                            <ul class="cachee">
+                                <li>lien :<a target="_blank" href="<?= $unProjet["lien"]; ?>">
+                                <p> <?= $unProjet["description"]; ?></p>
+                            </a> </li>
+                               
+                            </ul>
+                        </section>
+                    </li>
+
+                    <?php
+                        endforeach;
+                    ?>
+
+                </ul>
+            </div>
+        </div>
+
+        <?php
+            endforeach;
+        ?>
+    </div>
+</section>
+
+        <!-- fin de la section programme -->
+                    
                     <!-- Fin de la section Etudiant -->
                 </section>

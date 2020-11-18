@@ -3,7 +3,7 @@
             <div class="information">
                 <h1 id="SectionEvenement">Évènement</h1>
                 <div class="infoEvenement">
-                    <div class="info">
+                    <div class="info infoCarousel">
                         <h3 class="titreInfo">Particularités</h3>
                         Comme étudiant en Techniques d’intégration multimédia, vous serez encouragé à participer à
                         différents concours.
@@ -13,7 +13,7 @@
                             <li>Concours d’affiches et autres</li>
                         </ul>
                     </div>
-                    <div class="info">
+                    <div class="info infoCarousel">
                         <h3 class="titreInfo">Des ateliers en sciences et technologie destinés aux filles</h3>
                         Découvrez nos 3 vidéos qui visent à promouvoir auprès des filles des métiers traditionnellement
                         masculins, car elles ont également leur place en technologie.
@@ -25,7 +25,7 @@
                         </a>
                     </div>
 
-                    <div class="info">
+                    <div class="info infoCarousel">
                         <h3 class="titreInfo">Perspectives d’emploi</h3>
                         83,3 % des diplômés qui se destinaient au marché du travail ont trouvé un emploi lié à leur
                         formation*
@@ -49,15 +49,15 @@
                             Québec.
                         </span>
                     </div>
-                    <div class="info">
+                    <div class="info infoCarousel">
                         <h3 class="titreInfo">Perspectives universitaires</h3>
                         Vous pourrez poursuivre vos études dans ce domaine ou accéder à tous les programmes dont le
                         préalable est un DEC.
 
                         <ul>
-                            <li>DEC-BAC en création 3D et en création numérique à l’UQAT, campus de Montréal</li>
-                            <li>BAC en génie des technologies de l’information ou en génie logiciel à l’ÉTS </li>
-                            <li>BAC en communication (création médias – médias interactifs) à l’UQAM</li>
+                            <li>DEC-BAC en <a href="https://www.uqat.ca/etudes/creation-et-nouveaux-medias/baccalaureat-en-creation-numerique-profils-informatique-cinema-creation-3d-technologie-web/" target="_blank">création 3D et en création numérique</a> à l’UQAT, campus de Montréal</li>
+                            <li>BAC en <a href="http://www.etsmtl.ca/Etudes/Premier-cycle/Baccalaureat-genie-des-TI" target="_blank">génie des technologies</a> de l’information ou en <a href="http://www.etsmtl.ca/Etudes/Premier-cycle/Baccalaureat-genie-logiciel" target="_blank">génie logiciel à l’ÉTS</a> </li>
+                            <li>BAC en communication <a href="https://etudier.uqam.ca/programme?code=6504&version=20183" target="_blank">(création médias – médias interactifs)</a> à l’UQAM</li>
                             <li>Plusieurs programmes sont accessibles à Polytechnique en faisant 5 cours préparatoires</li>
                         </ul>
 
@@ -75,19 +75,19 @@
                                 setlocale(LC_TIME,"fr");
                                 $today = utf8_encode(strftime("%e %B"));
 
-                                //if($infoEvenement["date"] == $today) :
+                                if($infoEvenement["date"] == $today) :
                     
                     ?>
-                    <div class="info">
+                    <div class="info infoCarousel">
                         <h3 class="titreInfo"> <?= $infoEvenement["nom"]; ?> </h3>
                         <?= $infoEvenement["message"]; ?>
 
                     </div>
 
-                    <?php 
+                    <?php
+                        endif; 
                         endforeach;
                         endforeach;
-                        
                     ?>
                     
 

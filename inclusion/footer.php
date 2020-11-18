@@ -11,8 +11,7 @@
     <script src="js/vignetteEtudiant.js"></script>
     <script src="js/vignetteProf.js"></script>
     <script src="js/slider.js"></script>
+    </div> <!--fin de background-noise  -->   
 
-   
 </body>
-</div> <!--fin de background-noise  -->    
 </html>
