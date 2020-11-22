@@ -2,16 +2,20 @@
 <section class="stage" id="Stage">
     <h1 id="SectionStage">Stages</h1>
     <div class="stagecontent">
-        <div class="CarrouselContent">
+
+        <!-- LAST CARROUSEL 
+         <div class="CarrouselContent">
             <div class="SliderCarrousel">
                 <div class="slide photo1"></div>
                 <div class="slide photo2"></div>
                 <div class="slide photo3"></div>
             </div>
-        </div> 
+        </div>
+        -->
 
-        <!-- Expériences de stagiers -->
-        <h4 class="nomEntreprise">Liste de partenaires </h4>
+       
+        <!-- PARTAINERS
+            <h4 class="nomEntreprise">Liste de partenaires </h4>
         <div class="liste">
             <ul class="items">
                 <li><a class="links" href="https://sidlee.com/en">SidLee</a></li>
@@ -41,9 +45,10 @@
                 <li><a class="links" href="http://www.appwapp.com/en/">appwap</a></li>
                 <li><a class="links" href="https://www.aptitudex.com/">aptitude x</a></li>
             </ul>
-
         </div>
+        -->
 
+       <!--
         <div class="petitmot">
             <p>Stages au milieu de travail</p>
             <hr>
@@ -62,7 +67,7 @@
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
                 </div>  
             </div>
-            <!-- deuxième expérience -->
+           
             <div class="stagier-info">
                 <div class="stagier">
                     <img class="stagierPhoto" src="images/Stagiers/avatar2.JPG" alt="photo du stagier">
@@ -76,6 +81,7 @@
                 </div>
             </div> 
         </div>
+        -->
     </div>
 </section>
 <!-- Fin de la section Stage -->
