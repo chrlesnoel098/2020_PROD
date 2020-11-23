@@ -1,3 +1,199 @@
+/************ALL ************/
+
+* {
+  box-sizing: border-box;
+}
+
+//carousel container
+.stageCarrousel-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+
+  //cache les images par default
+  .mySlides {
+    display: none;
+    img {
+      width: 100%;
+      height: 350px;
+    } //text du captions
+    .text {
+      color: black;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  //buttons avant et après
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  // Position "button suivant"  à droit
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+// petits circles
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading ANIMATION *************************/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//para el resto de elementos de la section stage
+.petitmot {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin: 30px 0 40px;
+  p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    text-shadow: none;
+    text-transform: uppercase;
+  }
+  hr {
+    width: 50%;
+    color: gray;
+    margin: 0 auto 5px;
+  }
+  :nth-child(3) {
+    font-weight: 300;
+  }
+}
+
+.stagierContent {
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  //flex-wrap: wrap;
+
+  .stagier-info {
+    width: 50%;
+    background-color: black;
+    margin: 0 15px;
+    padding: 30px 10px 5px;
+
+    .stagier {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .stagierPhoto {
+        width: 110px;
+        height: 110px;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin: 20px;
+      }
+    }
+    .stage-temoignage {
+      width: 90%;
+      background-color: white;
+      margin: 20px auto;
+      padding: 10px;
+      h3 {
+        color: black;
+        margin-bottom: 10px;
+      }
+      p {
+        color: black;
+      }
+    }
+  }
+}
+
+/********************************FORMAT TABLETTE ET MOBILE*******/
+
+@media (max-width: 790px) {
+  .stageCarrousel-container {
+    .mySlides {
+      img {
+        height: 200px;
+      }
+    }
+  }
+
+  .stagierContent {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .stagier-info {
+      width: 80%;
+      margin: 10px auto;
+      padding: 30px 10px 5px;
+    }
+  }
+}
+
+//ANCIENS STYLES
 // ******************************Mobile et tablette*************************
 /* @media (max-width: 700px) {
   .stage {
