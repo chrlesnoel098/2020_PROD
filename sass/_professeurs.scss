@@ -16,7 +16,6 @@
   
   .choix-prof{
     align-self: center;
-    color: rgb(5, 5, 5);
     align-content: center;
     flex-direction:column;
   }
@@ -61,8 +60,8 @@
   align-self: center;
   //border-radius: 20px;
   margin: 2% 2% 0 0;
-  border: 5px solid white;
-  box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
+  background:black;
+ 
   
   
   }
@@ -79,13 +78,10 @@
   align-self: center;
   width: 60vw;
   height: 15vh;
-  //background-color: rgba(47, 47, 49, 0.226);
-  padding: 2vh 2vw;
+   padding: 2vh 2vw;
   margin-top: 2vh;
-  box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
-  //border-radius: 10px;
-  border: 5px solid white;
-  //background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
+  background:black;
+ 
   }
   
   .afficher-prof p::-webkit-scrollbar {
@@ -104,9 +100,9 @@
     margin: 0 !important;
     padding: 2vh 2vw; 
     box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
-    border: 5px solid white;
-    //border-radius: 20px;
-    //background: linear-gradient(to bottom,#FE53BB 0%, #f5d300 100%);
+    background: rgb(7,15,10);
+    background: linear-gradient(183deg, rgba(7,15,10,0.09987745098039214) 0%, rgba  (8,9,9,0.6825105042016807) 100%);
+
     width: 70vw;
   }
   
@@ -158,7 +154,7 @@
   
   .choix-prof{
     align-self: center;
-    color: rgb(5, 5, 5);
+
     align-content: center;
     flex-direction:column;
   }
@@ -170,12 +166,12 @@
     
     h2{
       align-self: center;
-      margin-bottom: .1vh;
+      margin-bottom: 1vh;
       color: white;
     }
     h3{
       align-self: center;
-      margin-top: .1vh;
+      margin-top: 1vh;
       color: white;
     }
     p{
@@ -198,33 +194,30 @@
   
   
   .afficher-prof img{
-  width: 25vw;
+  width: 20vw;
   height: auto;
   align-self: center;
-  //border-radius: 20px;
-  margin: 2% 2% 0 0;
-  border: 5px solid white;
-  box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
+  
   
   
   }
   .afficher-prof h2{
     align-self: center;
+    margin-top: 2vh;
   }
   .afficher-prof h3{
     align-self: center;
+    margin: 2vh 0;
   }
   .afficher-prof p{
   text-align: left;
   align-self: center;
   width: 60vw;
   height: 15vh;
-  //background-color: rgba(47, 47, 49, 0.226);
+  //margin-top: 2vh !important;
   padding: 2vh 2vw;
-  box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
-  //border-radius: 10px;
-  border: 5px solid white;
-  background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
+  background:black;
+ 
   }
   
   .afficher-prof p::-webkit-scrollbar {
@@ -238,14 +231,13 @@
     list-style: none;
     align-self: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-items: stretch;
     margin: 0 !important;
     padding: 2vh 2vw; 
-    box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
-    border: 5px solid white;
-    //border-radius: 20px;
-    background: linear-gradient(to bottom,#FE53BB 0%, #f5d300 100%);
+    background:black;
+ 
     width: 70vw;
   }
   
@@ -261,6 +253,7 @@
     width: auto;
     height: auto;
     padding: 1%;
+    justify-self: center;
   }
   
   .prof-liste a{
@@ -270,6 +263,7 @@
     margin-top: 2vh;
     text-shadow: 1px 1px #fff8f856;
     font-size: 1rem;
+    justify-self: center;
   }
     
   .prof-liste a:hover{
@@ -294,7 +288,6 @@
 }
 .choix-prof{
 
-  color: rgb(5, 5, 5);
   align-content: center;
   flex-direction:row;
 }
@@ -335,13 +328,12 @@
 
 
 .afficher-prof img{
-  width: 15vw;
+  width: 12vw;
   height: auto;
   align-self: center;
-  //border-radius: 20px;
-  margin: 0 0 !important;
-  border: 5px solid white;
-  box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
+
+  margin: 0 2 !important;
+
 }
 .afficher-prof h2{
   align-self: center;
@@ -352,21 +344,13 @@
   margin-left: 2vw;
 }
 .afficher-prof p{
-text-align: left;
-align-self: center;
-width: 64vw;
-height: 30vh;
-padding: 2vw;
-margin-left: 2vw;
-
-
-//***********************background rainbow******************************
-//background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
-
-
-//***********************background noise********************************
-//background-image: url(../images/background_test1.gif);
-// // background-repeat: repeat;
+  text-align: left;
+  align-self: center;
+  width: 64vw;
+  height: 20vh;
+  padding: 2vw;
+  background:black;
+ 
 }
 
 .afficher-prof p::-webkit-scrollbar {
@@ -380,25 +364,12 @@ margin-left: 2vw;
   list-style: none;
   align-items: center;
   flex-wrap: wrap;
-  box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
-  border: 5px solid white;
-  //border-radius: 20px;
+  //box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
   margin-top: 2vh;
   height: 30vh;
-  padding:  0 1vw;
-  background: rgb(7,15,10);
-  background: linear-gradient(183deg, rgba(7,15,10,0.09987745098039214) 0%, rgba(8,9,9,0.6825105042016807) 100%);
+  padding:  1vh 1vw;
+  background:black;
 
-
-  //***********************background rainbow****************************** 
-  //background: linear-gradient(to bottom,#FE53BB 0%, #f5d300 100%);
-
-
-
-
-  //***********************background noise*******************************
-  //background-image: url(../images/background_test1.gif);
-  //background-repeat: repeat;
 }
 
 
