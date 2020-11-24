@@ -39,15 +39,15 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
 
 .bgBlue{
   opacity: 0;
-  transform: translateY(0px);
-  animation: fade 1s forwards!important;
+  transform: translateY(-50px);
+  animation: sectionTransitionFade 2s forwards!important;
 }
 
 
-@keyframes fade {
+@keyframes sectionTransitionFade {
 to{
   opacity: 1;
-  transform: translateY(-50px);
+  transform: translateY(0px);
 }
 }
 
