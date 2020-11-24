@@ -62,9 +62,7 @@
                                 <li>Préalable : <?= $unCours["prealable"]; ?></li>
                                 <li>Pondération : <?= $unCours["ponderation"]; ?></li>
                                 <li>Nombre d'heures : <?= $unCours["heure"]; ?></li>
-                                <li><p>
-                                    <?= $unCours["description"]; ?>
-                                </p></li>
+                                <li>Description : <?= $unCours["description"]; ?></li>
                             </ul>
                         </section>
                     </li>

@@ -6,13 +6,11 @@ let boutonSessions = document.querySelectorAll(".boutonSession");
 
 for (const elemBouton of boutonSessions) {
     elemBouton.addEventListener("click", function(){
-        console.log("ok")
         afficherLesCours(this)
     });
 }
 
 function afficherLesCours(bouton) {
-    console.log("Allo");
     // Fermer la session ouverte
     if(sessionOuverte && sessionOuverte != bouton.parentNode.querySelector("div")) {
         sessionOuverte.classList.add("cachee");
@@ -33,16 +31,34 @@ function afficherLesCours(bouton) {
 }
 
 // Toggle l'affichage de la description d'un cours////////////////////////////////////////////////////////////////
+let coursOuvert = null;
 let fenetreDescriptionCours = document.querySelectorAll(".descriptionCours h3");
-console.log(fenetreDescriptionCours);
 
 for (const elemTitreCours of fenetreDescriptionCours) {
     elemTitreCours.addEventListener("click", function(){
-        console.log("ok")
         afficherUnCours(this)
     });
 }
 
+
+
 function afficherUnCours(elem) {
-    elem.parentNode.querySelector("ul").classList.toggle("cachee");
+
+    // Fermer le cours ouvert
+    if(coursOuvert && coursOuvert != elem.parentNode.querySelector("ul")) {
+        coursOuvert.classList.add("cachee");
+        coursOuvert.classList.remove("coursVisible");
+    }
+    
+    // Ouvrir cours fermée (qui vient d'être cliquée)
+    elem.parentNode.querySelector("ul").classList.add("coursVisible");
+    elem.parentNode.querySelector("ul").classList.remove("cachee");
+
+    // Fermer le même cours   (qui vient d'être cliquée)
+    if(coursOuvert == elem.parentNode.querySelector("ul")) {
+        coursOuvert.classList.add("cachee");
+        coursOuvert.classList.remove("coursVisible");
+    }
+        
+    coursOuvert = elem.parentNode.querySelector("ul");
 }

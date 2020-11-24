@@ -29,8 +29,9 @@ section#Programme {
     #ToutesSessions {
         display: flex;
         flex-direction: row;
-        flex-basis: 100%;
+        width: 100%;
         justify-content: space-evenly;
+
 
         .listeBoutons {
             display: flex;
@@ -46,28 +47,33 @@ section#Programme {
             .boutonSession {
                 display: flex;
                 flex-wrap: nowrap;
-                flex-basis: 20%;
+                justify-content: center;
+                width: 5em;
                 min-height: 70vh;
                 background-color: white;
-                border-radius: 20px;
-                //background: url(/images/disintegration.png) no-repeat;
+                //background: url(../images/disintegration.png);
+                background-position: center;
                 padding: 0;
-                margin-left: auto;
-                margin-right: auto;
+                margin: 0 0.3em;
                 border: none;
+                
+                .boutonSession:hover {
+                    background-color: red;
+                }
                 
                 h2 {
                     writing-mode: vertical-rl;
                     text-orientation: mixed;
-                    align-self: flex-end;
+                    align-self: center;
                     margin: 0 20px 0 0;
-                    padding-bottom: 20px;
+                    //padding-bottom: 20px;
                     margin: 0;
                 }
             }
             // Formatage de la DIV contenant tous les cours**********************************************
             .fenetreCours {
                 padding: 0 1em;
+                background-color: rgba($color: white, $alpha: 0.2);
 
                 // Formatage de la liste de cours**********************************************
                 .listeCours {
@@ -84,12 +90,21 @@ section#Programme {
                         .descriptionCours {
                             width: 60vw;
                             height: fit-content;
+                            line-height: 1.6;
+
+                            h3:hover {
+                                color: black;
+                            }
 
                             ul {
                                 list-style: none;
                                 margin: 0;
                                 padding: 0;
                                 overflow: hidden;
+
+                                li {
+                                    padding-bottom: 0.5em;
+                                }
                             }
                         }
                     }
@@ -100,6 +115,9 @@ section#Programme {
             }
             .visible {
                 display: flex;
+            }
+            .coursVisible {
+                display: block;
             }
         }           
     }
