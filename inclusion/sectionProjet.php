@@ -22,15 +22,15 @@
                             ?>
                                 <!-- Modele image et texte -->
                                 <div class="image-carousselfade">
-                                <div class="image-Projet">
+                                    <div class="image-Projet">
                                         <img src="images/testImageBd/<?= $uneVignette["image"]; ?>" alt="" class="clip-polygon fade">
-                                        </div>
+                                    </div>
                                     <div class="info-Vignette">
                                         <h2><?= $evenement; ?></h2>
                                         <div class="text swipe">
                                             <h3><?= $uneVignette["evenement"]; ?></h3>
                                             <p><?= $uneVignette["description"]; ?></p>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- fin modele -->
@@ -42,61 +42,49 @@
                         <?php
                         endforeach;
                         ?>
-    
-    </div>
-                 
-    </section>
-                    <!-- Début de la section programme -->
-<section id="Programme">
-    <div id="ToutesSessions">
-        <?php
-            // Lire le fichier JSON dans une chaîne de caractères
-            $listeProjetsJSONString = file_get_contents("data/listeProjets.json");
 
-            // Décoder la chaîne JSON dans une structure de données PHP
-            $projetJSON = json_decode($listeProjetsJSONString, true);
+                    </div>
 
-            // Parcourir le tableau associatif projetJSON
-            foreach ($projetJSON as $Categories => $uneCategorie) :
-            ?>
-        <div class="session">
-            <button class="boutonSession">
-                <h2><?= $Categories; ?></h2>
-            </button>
-            <div class="fenetreCours cachee">
-                <ul class="listeCours">
-
-                    <!-- Chaque cours d'une session dans un LI -->
-                    <?php
-                        // Traverser le tableau numérique "uneSession"
-                        foreach ($uneCategorie as $Projets => $unProjet) :
-                    ?>
-                    <li>
-                        <section class="descriptionCours">
-                            <h3><?= $unProjet["sousCategorie"]; ?></h3>
-                            <ul class="cachee">
-                                <li>lien :<a target="_blank" href="<?= $unProjet["lien"]; ?>">
-                                <p> <?= $unProjet["description"]; ?></p>
-                            </a> </li>
-                               
-                            </ul>
-                        </section>
-                    </li>
-
-                    <?php
-                        endforeach;
-                    ?>
-
-                </ul>
-            </div>
-        </div>
-
-        <?php
-            endforeach;
-        ?>
-    </div>
-</section>
-
-        <!-- fin de la section programme -->
-                    
            
+                <div id="projetAccordeon">
+                    <!-- <h3 id="SectionProjet">Projets</h3> -->
+                    <?php
+                    // Lire le fichier JSON dans une chaîne de caractères
+                    $listeProjetsJSONString = file_get_contents("data/listeProjets.json");
+
+                    // Décoder la chaîne JSON dans une structure de données PHP
+                    $projetJSON = json_decode($listeProjetsJSONString, true);
+
+                    // Parcourir le tableau associatif projetJSON
+                    foreach ($projetJSON as $Categories => $uneCategorie) :
+                    ?>
+                        <ul>
+                            <!-- Chaque cours d'une session dans un LI -->
+                            <?php
+                            // Traverser le tableau numérique "uneSession"
+                            foreach ($uneCategorie as $Projets => $unProjet) :
+                            ?>
+                                <li>
+                                    <div class="section-title">
+                                    <h2><?= $unProjet["sousCategorie"]; ?></h2>
+                                    
+                                    </div>
+                                    <div class="section-content">
+                                  
+                                        <a target="_blank" href="<?= $unProjet["lien"]; ?>">
+                                            <h3> <?= $unProjet["description"]; ?></h3>
+                                        </a>
+                                    </div>
+                                    <?php
+                            endforeach;
+                            ?>
+                                </li>
+                          
+                        <?php
+                    endforeach;
+                        ?>
+                        <ul>
+                </div>
+                
+                </section>
+                <!-- fin de la section programme -->

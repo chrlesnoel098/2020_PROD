@@ -16,7 +16,7 @@ body {
   }
 
   10% {
-    background-color: rgb(105, 42, 187);
+    background-color: rgb(42, 160, 180);
     //background-color: rgb(125, 80, 170);
     //background-color: rgb(125, 80, 170);
   }
@@ -24,14 +24,33 @@ body {
 
   70% {
     // background-color: rgb(125, 80, 170);
-    //background-color: rgb(125, 80, 170);
+    // background-color: rgb(170, 154, 80);
     //background-color: rgb(125, 80, 170);
   }
 
   to {
-    background-color: #cf0060;
+    background-color: #912045;
   }
 }
+
+section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
+  opacity: 0;
+}
+
+.bgBlue{
+  opacity: 0;
+  transform: translateY(0px);
+  animation: fade 1s forwards!important;
+}
+
+
+@keyframes fade {
+to{
+  opacity: 1;
+  transform: translateY(-50px);
+}
+}
+
 
 .progress {
   height: 3px;
@@ -182,6 +201,7 @@ body {
       text-orientation: mixed;
       transform: rotate(180deg);
       transition: 0.1s;
+     
 
       &:hover {
         top: 29%;
@@ -191,28 +211,28 @@ body {
     // lien professeur
     li:nth-child(3) {
       left: 1%;
-      top: 58%;
+      top: 55%;
       writing-mode: vertical-rl;
       text-orientation: mixed;
       transform: rotate(180deg);
       transition: 0.1s;
 
       &:hover {
-        top: 59%;
+        top: 56%;
       }
     }
 
     // lien Étudiant
     li:nth-child(4) {
       left: 1%;
-      top: 84%;
+      top: 82%;
       writing-mode: vertical-rl;
       text-orientation: mixed;
       transform: rotate(180deg);
       transition: 0.1s;
 
       &:hover {
-        top: 85%;
+        top: 83%;
       }
     }
 
@@ -232,13 +252,13 @@ body {
     // lien Évènement
     li:nth-child(6) {
       right: 1%;
-      top: 30%;
+      top: 25%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
       transition: 0.1s;
 
       &:hover {
-        top: 31%;
+        top: 26%;
       }
     }
 

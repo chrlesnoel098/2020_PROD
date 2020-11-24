@@ -17,16 +17,24 @@ const throttle = (func, limit) => {
 }
 
 // ce qui fait fonctionner tes references
+
 const links = document.querySelectorAll('.links'); // la class a cibler pour ajouter active apres.
-const sections = document.querySelectorAll('h1'); // la position qui s`index.
+const h1s = document.querySelectorAll('h1'); // la position qui s`index.
+const sections = document.querySelectorAll('header>h1, section#Programme, section#Professeur, section#Projet, section#Stage, section#Evenement'); // la position qui s`index.
 
 function changeLinkState() {
-  let index = sections.length;
+  let indexLink = h1s.length;
+  let indexSection = sections.length;
 
-  while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+  while (--indexLink && window.scrollY + 50 < h1s[indexLink].offsetTop) {}
 
   links.forEach((link) => link.classList.remove('liensActif')); // remove .active
-  links[index].classList.add('liensActif'); // ajout .active
+  links[indexLink].classList.add('liensActif'); // ajout .active
+
+  while (--indexSection && window.scrollY + 50 < sections[indexSection].offsetTop) {}
+
+  sections.forEach((section) => section.classList.remove('bgBlue')); // remove .active
+  sections[indexSection].classList.add('bgBlue'); // ajout .active
 
 
 }

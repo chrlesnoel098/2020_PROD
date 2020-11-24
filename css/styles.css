@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Feuille de style*/
 section#Programme {
   display: flex;
@@ -282,14 +283,19 @@ button.boutonSession h2 {
 }
 
 section {
-  margin-bottom: 8%;
+  padding-top: 15%;
+}
+
+section#Evenement {
+  padding-top: 25%;
+  padding-bottom: 15%;
 }
 
 .site-main {
   max-width: 1920px;
   margin: 0 auto;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
 }
 
 #background-noise {
@@ -303,6 +309,26 @@ section {
   height: 100vh;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 521px) and (max-width: 980px) {
+  section {
+    padding-top: 45%;
+  }
+  section#Evenement {
+    padding-top: 45%;
+    padding-bottom: 15%;
+  }
+}
+
+@media (max-width: 520px) {
+  section {
+    padding-top: 65%;
+  }
+  section#Evenement {
+    padding-top: 65%;
+    padding-bottom: 15%;
+  }
 }
 
 @media screen and (max-width: 979px) {
@@ -420,12 +446,29 @@ body {
     background-color: linear-gradient(180deg, #6d6d6d 5%, black 10%);
   }
   10% {
-    background-color: #692abb;
+    background-color: #2aa0b4;
   }
   70% {
   }
   to {
-    background-color: #cf0060;
+    background-color: #912045;
+  }
+}
+
+section #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme {
+  opacity: 0;
+}
+
+.bgBlue {
+  opacity: 0;
+  transform: translateY(0px);
+  animation: fade 1s forwards !important;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    transform: translateY(-50px);
   }
 }
 
@@ -569,25 +612,25 @@ body {
   }
   .main-navigation ul li:nth-child(3) {
     left: 1%;
-    top: 58%;
+    top: 55%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
     transition: 0.1s;
   }
   .main-navigation ul li:nth-child(3):hover {
-    top: 59%;
+    top: 56%;
   }
   .main-navigation ul li:nth-child(4) {
     left: 1%;
-    top: 84%;
+    top: 82%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
     transition: 0.1s;
   }
   .main-navigation ul li:nth-child(4):hover {
-    top: 85%;
+    top: 83%;
   }
   .main-navigation ul li:nth-child(5) {
     right: 1%;
@@ -601,13 +644,13 @@ body {
   }
   .main-navigation ul li:nth-child(6) {
     right: 1%;
-    top: 30%;
+    top: 25%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
     transition: 0.1s;
   }
   .main-navigation ul li:nth-child(6):hover {
-    top: 31%;
+    top: 26%;
   }
   .main-navigation ul li:nth-child(7) {
     right: 1%;
@@ -1438,5 +1481,83 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   .prof-liste a:hover {
     color: white;
   }
+}
+
+/* test d'accordéon */
+div#projetAccordeon {
+  padding-top: 15%;
+  box-sizing: border-box;
+}
+
+div#projetAccordeon ul {
+  display: flex;
+  min-height: 50vh;
+  max-height: 50vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+div#projetAccordeon li {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  padding: 20px;
+  background: #000000;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+div#projetAccordeon li:hover {
+  background: #1a1a1a;
+}
+
+div#projetAccordeon li.projetActive {
+  flex: 5;
+  background: #ffffff;
+  cursor: default;
+}
+
+div#projetAccordeon li.projetActive h3 {
+  color: black;
+}
+
+div#projetAccordeon li.projetActive h2 {
+  color: #000000;
+}
+
+div#projetAccordeon li.projetActive .section-content {
+  flex: 4;
+  display: flex;
+  transform: scaleX(1);
+  color: #000000;
+}
+
+div#projetAccordeon li .section-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+div#projetAccordeon li .section-title h2 {
+  margin: 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
+div#projetAccordeon li .section-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: none;
+  transition: all .25s .1s ease-out;
 }
 /*# sourceMappingURL=styles.css.map */
