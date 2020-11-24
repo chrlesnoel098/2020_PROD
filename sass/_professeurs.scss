@@ -59,7 +59,7 @@
   width: 25vw;
   height: auto;
   align-self: center;
-  border-radius: 20px;
+  //border-radius: 20px;
   margin: 2% 2% 0 0;
   border: 5px solid white;
   box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -68,9 +68,11 @@
   }
   .afficher-prof h2{
     align-self: center;
+    margin: 2vh 1vw;
   }
   .afficher-prof h3{
     align-self: center;
+    margin: 2vh 1vw;
   }
   .afficher-prof p{
   text-align: left;
@@ -79,10 +81,11 @@
   height: 15vh;
   //background-color: rgba(47, 47, 49, 0.226);
   padding: 2vh 2vw;
+  margin-top: 2vh;
   box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
-  border-radius: 10px;
+  //border-radius: 10px;
   border: 5px solid white;
-  background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
+  //background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
   }
   
   .afficher-prof p::-webkit-scrollbar {
@@ -102,8 +105,8 @@
     padding: 2vh 2vw; 
     box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
     border: 5px solid white;
-    border-radius: 20px;
-    background: linear-gradient(to bottom,#FE53BB 0%, #f5d300 100%);
+    //border-radius: 20px;
+    //background: linear-gradient(to bottom,#FE53BB 0%, #f5d300 100%);
     width: 70vw;
   }
   
@@ -136,7 +139,7 @@
 
   
 }
-  
+  //////-------------------Tablette-------------------------///////////
 
 @media (min-width: 521px) and (max-width: 980px) {
   #desktop-conteneur{
@@ -198,7 +201,7 @@
   width: 25vw;
   height: auto;
   align-self: center;
-  border-radius: 20px;
+  //border-radius: 20px;
   margin: 2% 2% 0 0;
   border: 5px solid white;
   box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -219,7 +222,7 @@
   //background-color: rgba(47, 47, 49, 0.226);
   padding: 2vh 2vw;
   box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
-  border-radius: 10px;
+  //border-radius: 10px;
   border: 5px solid white;
   background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
   }
@@ -241,7 +244,7 @@
     padding: 2vh 2vw; 
     box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
     border: 5px solid white;
-    border-radius: 20px;
+    //border-radius: 20px;
     background: linear-gradient(to bottom,#FE53BB 0%, #f5d300 100%);
     width: 70vw;
   }
@@ -273,6 +276,12 @@
   color: white;
   }
 }
+
+
+
+///////----------------------desktop--------------------------------///////////
+
+
 @media (min-width: 981px){
 #desktop-conteneur{
 
@@ -329,31 +338,34 @@
   width: 15vw;
   height: auto;
   align-self: center;
-  border-radius: 20px;
-  margin: 2% 2% 0 0 !important;
+  //border-radius: 20px;
+  margin: 0 0 !important;
   border: 5px solid white;
   box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 .afficher-prof h2{
   align-self: center;
+  margin-left: 2vw;
 }
 .afficher-prof h3{
   align-self: center;
+  margin-left: 2vw;
 }
 .afficher-prof p{
 text-align: left;
 align-self: center;
 width: 64vw;
 height: 30vh;
-//background-color: rgba(47, 47, 49, 0.226);
 padding: 2vw;
-box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
-border-radius: 10px;
-border: 5px solid white;
+margin-left: 2vw;
 
+
+//***********************background rainbow******************************
 //background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
 
-// background-image: url(../images/background_test1.gif);
+
+//***********************background noise********************************
+//background-image: url(../images/background_test1.gif);
 // // background-repeat: repeat;
 }
 
@@ -370,14 +382,21 @@ border: 5px solid white;
   flex-wrap: wrap;
   box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
   border: 5px solid white;
-  border-radius: 20px;
+  //border-radius: 20px;
   margin-top: 2vh;
   height: 30vh;
   padding:  0 1vw;
+  background: rgb(7,15,10);
+  background: linear-gradient(183deg, rgba(7,15,10,0.09987745098039214) 0%, rgba(8,9,9,0.6825105042016807) 100%);
 
-  
+
+  //***********************background rainbow****************************** 
   //background: linear-gradient(to bottom,#FE53BB 0%, #f5d300 100%);
 
+
+
+
+  //***********************background noise*******************************
   //background-image: url(../images/background_test1.gif);
   //background-repeat: repeat;
 }
