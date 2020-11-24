@@ -43,10 +43,6 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
   animation: sectionTransitionFade 2s forwards!important;
 }
 
-#Professeur.bgBlue{
-  transform: translateY(-80px);
-  animation: sectionTransitionX 2s forwards!important;
-}
 
 #Stage.bgBlue{
   transform: translateX(80px);
@@ -61,7 +57,7 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
 @keyframes sectionTransitionFade {
 to{
   opacity: 1;
-  transform: translateY(-80px);
+  transform: translateY(-50px);
 }
 }
 
