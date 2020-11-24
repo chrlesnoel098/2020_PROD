@@ -9,7 +9,7 @@ section#Programme h1#SectionProgramme {
 }
 
 section#Programme #DescriptionGenerale {
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 section#Programme #DescriptionGenerale ul.listeEtapeProduction {
@@ -44,9 +44,9 @@ section#Programme #ToutesSessions div.session .boutonSession {
   display: flex;
   flex-wrap: nowrap;
   flex-basis: 20%;
-  order: 1;
   min-height: 70vh;
   background-color: white;
+  border-radius: 20px;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
@@ -63,10 +63,7 @@ section#Programme #ToutesSessions div.session .boutonSession h2 {
 }
 
 section#Programme #ToutesSessions div.session .fenetreCours {
-  display: flex;
-  flex-basis: 60%;
-  order: 0;
-  padding-left: 1em;
+  padding: 0 1em;
 }
 
 section#Programme #ToutesSessions div.session .fenetreCours .listeCours {
@@ -75,12 +72,6 @@ section#Programme #ToutesSessions div.session .fenetreCours .listeCours {
   justify-content: space-evenly;
   align-items: flex-start;
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-section#Programme #ToutesSessions div.session .fenetreCours .listeCours li {
-  margin: 0;
   padding: 0;
 }
 
@@ -106,7 +97,6 @@ section#Programme #ToutesSessions div.session .visible {
 
 @media (min-width: 521px) and (max-width: 980px) {
   section#Programme {
-    background-color: orange;
     height: fit-content;
   }
   section#Programme #DescriptionGenerale {
@@ -128,7 +118,7 @@ section#Programme #ToutesSessions div.session .visible {
     min-height: auto;
     border: none;
     padding: 0;
-    margin: 0;
+    margin: 1em 0;
     width: 100%;
     order: 0;
   }
@@ -142,7 +132,6 @@ section#Programme #ToutesSessions div.session .visible {
 
 @media (max-width: 520px) {
   section#Programme {
-    background-color: pink;
     height: fit-content;
   }
   section#Programme #DescriptionGenerale {
@@ -162,6 +151,7 @@ section#Programme #ToutesSessions div.session .visible {
     background-color: white;
     min-height: auto;
     border: none;
+    margin: 1em 0;
     padding: 0;
     width: 100%;
     order: 0;
@@ -762,112 +752,307 @@ section#Projet .swipe {
   }
 }
 
-@media (max-width: 700px) {
-  .stage {
-    margin: 30px 0;
+/************ALL ************/
+* {
+  box-sizing: border-box;
+}
+
+.stageCarrousel-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  /* On hover, add a black background color with a little bit see-through */
+}
+
+.stageCarrousel-container .mySlides {
+  display: none;
+}
+
+.stageCarrousel-container .mySlides img {
+  width: 100%;
+  height: 350px;
+}
+
+.stageCarrousel-container .mySlides .text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.stageCarrousel-container .prev,
+.stageCarrousel-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.stageCarrousel-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.stageCarrousel-container .prev:hover,
+.stageCarrousel-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading ANIMATION *************************/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  .stage h4 {
-    display: none;
+  to {
+    opacity: 1;
   }
-  .stage .stagecontent {
-    width: 100%;
-    /**/
-    /**/
-    /**/
+}
+
+.petitmot {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin: 30px 0 40px;
+}
+
+.petitmot p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 800;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+.petitmot hr {
+  width: 50%;
+  color: gray;
+  margin: 0 auto 5px;
+}
+
+.petitmot :nth-child(3) {
+  font-weight: 300;
+}
+
+.stagierContent {
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.stagierContent .stagier-info {
+  width: 50%;
+  background-color: black;
+  margin: 0 15px;
+  padding: 30px 10px 5px;
+}
+
+.stagierContent .stagier-info .stagier {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.stagierContent .stagier-info .stagier .stagierPhoto {
+  width: 110px;
+  height: 110px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.stagierContent .stagier-info .stage-temoignage {
+  width: 90%;
+  background-color: white;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.stagierContent .stagier-info .stage-temoignage h3 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.stagierContent .stagier-info .stage-temoignage p {
+  color: black;
+}
+
+/********************************FORMAT TABLETTE ET MOBILE*******/
+@media (max-width: 790px) {
+  .stageCarrousel-container .mySlides img {
+    height: 200px;
   }
-  .stage .stagecontent .liste {
-    display: none;
-  }
-  .stage .stagecontent .petitmot {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    margin: 40px 0 20px;
-  }
-  .stage .stagecontent .petitmot p {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 5px;
-    font-weight: 800;
-    text-shadow: none;
-    text-transform: uppercase;
-  }
-  .stage .stagecontent .petitmot hr {
-    width: 50%;
-    color: gray;
-    margin: 0 auto 5px;
-  }
-  .stage .stagecontent .petitmot :nth-child(3) {
-    font-weight: 300;
-  }
-  .stage .stagecontent .CarrouselContent {
-    overflow: hidden;
-  }
-  .stage .stagecontent .CarrouselContent .SliderCarrousel {
-    width: 300%;
-    display: flex;
-  }
-  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide {
-    width: 100%;
-    min-height: 150px;
-    background-size: cover;
-    background-position: center;
-  }
-  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo1 {
-    background-image: url("../images/Stagiers/stages1.jpg");
-  }
-  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo2 {
-    background-image: url("../images/Stagiers/stages2.jpg");
-  }
-  .stage .stagecontent .CarrouselContent .SliderCarrousel .slide.photo3 {
-    background-image: url("../images/Stagiers/stages3.jpg");
-  }
-  .stage .stagecontent .stagierContent {
+  .stagierContent {
     width: 100%;
     margin: 5px 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .stage .stagecontent .stagierContent .liste {
-    display: none;
-  }
-  .stage .stagecontent .stagierContent .stagier-info {
-    width: 90%;
-    background-color: black;
+  .stagierContent .stagier-info {
+    width: 80%;
     margin: 10px auto;
     padding: 30px 10px 5px;
   }
-  .stage .stagecontent .stagierContent .stagier-info .stagier {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .stage .stagecontent .stagierContent .stagier-info .stagier .stagierPhoto {
-    width: 110px;
-    height: 110px;
-    border: 2px solid white;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  .stage .stagecontent .stagierContent .stagier-info .stage-temoignage {
-    width: 90%;
-    background-color: white;
-    margin: 20px auto;
-    padding: 10px;
-  }
-  .stage .stagecontent .stagierContent .stagier-info .stage-temoignage h3 {
-    color: black;
-    margin-bottom: 10px;
-  }
-  .stage .stagecontent .stagierContent .stagier-info .stage-temoignage p {
-    color: black;
-    text-shadow: none;
+}
+
+/* @media (max-width: 700px) {
+  .stage {
+    margin: 30px 0;
+
+    h4 {
+      display: none;
+    }
+
+    .stagecontent {
+      width: 100%;
+
+    
+
+      .liste {
+        display: none;
+      }
+     
+      .petitmot {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        margin: 40px 0 20px;
+        p {
+          color: white;
+          font-size: 20px;
+          margin-bottom: 5px;
+          font-weight: 800;
+          text-shadow: none;
+          text-transform: uppercase;
+        }
+        hr {
+          width: 50%;
+          color: gray;
+          margin: 0 auto 5px;
+        }
+        :nth-child(3) {
+          font-weight: 300;
+        }
+      }
+     
+
+      .CarrouselContent {
+        overflow: hidden; //cache le contenu de surplus
+
+        .SliderCarrousel {
+          width: 300%;
+          display: flex;
+
+          .slide {
+            width: 100%;
+            min-height: 150px;
+            background-size: cover;
+            background-position: center;
+
+            &.photo1 {
+              background-image: url("../images/Stagiers/stages1.jpg");
+            }
+            &.photo2 {
+              background-image: url("../images/Stagiers/stages2.jpg");
+            }
+            &.photo3 {
+              background-image: url("../images/Stagiers/stages3.jpg");
+            }
+          }
+        }
+      }
+
+      //EXPECIENCES STAGE
+
+      .stagierContent {
+        width: 100%;
+        margin: 5px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .liste {
+          display: none;
+        }
+
+        .stagier-info {
+          width: 90%;
+          background-color: black;
+          margin: 10px auto;
+          padding: 30px 10px 5px;
+
+          .stagier {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .stagierPhoto {
+              width: 110px;
+              height: 110px;
+              border: 2px solid white;
+              border-radius: 50%;
+              margin-bottom: 20px;
+            }
+          }
+          .stage-temoignage {
+            width: 90%;
+            background-color: white;
+            margin: 20px auto;
+            padding: 10px;
+            h3 {
+              color: black;
+              margin-bottom: 10px;
+            }
+            p {
+              color: black;
+              text-shadow: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-/**************************************Format bureau*/
+//Format bureau
 @media (min-width: 701px) {
   .liste {
     width: 100%;
@@ -879,112 +1064,121 @@ section#Projet .swipe {
     padding: 25px;
     margin: 20px 0;
     box-shadow: 5px 5px 5px gray;
+    &:hover {
+      background-color: black;
+    }
+
+    ul {
+      list-style: none;
+    }
+    li {
+      padding: 10px 0;
+    }
+    a {
+      color: gray;
+      text-shadow: none;
+      &:hover {
+        color: white;
+        font-weight: 100;
+        cursor: pointer;
+        text-shadow: 1px 1px 3px black;
+        text-decoration: underline;
+      }
+    }
   }
-  .liste:hover {
-    background-color: black;
-  }
-  .liste ul {
-    list-style: none;
-  }
-  .liste li {
-    padding: 10px 0;
-  }
-  .liste a {
-    color: gray;
-    text-shadow: none;
-  }
-  .liste a:hover {
-    color: white;
-    font-weight: 100;
-    cursor: pointer;
-    text-shadow: 1px 1px 3px black;
-    text-decoration: underline;
-  }
+
   .petitmot {
     width: 100%;
     height: 50px;
     text-align: center;
     margin: 30px 0 40px;
-  }
-  .petitmot p {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 5px;
-    font-weight: 800;
-    text-shadow: none;
-    text-transform: uppercase;
-  }
-  .petitmot hr {
-    width: 50%;
-    color: gray;
-    margin: 0 auto 5px;
-  }
-  .petitmot :nth-child(3) {
-    font-weight: 300;
+    p {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 5px;
+      font-weight: 800;
+      text-shadow: none;
+      text-transform: uppercase;
+    }
+    hr {
+      width: 50%;
+      color: gray;
+      margin: 0 auto 5px;
+    }
+    :nth-child(3) {
+      font-weight: 300;
+    }
   }
   .stagierContent {
     width: 100%;
     margin: 5px 0;
     display: flex;
     flex-direction: row;
-  }
-  .stagierContent .stagier-info {
-    width: 50%;
-    background-color: black;
-    margin: 0 15px;
-    padding: 30px 10px 5px;
-  }
-  .stagierContent .stagier-info .stagier {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .stagierContent .stagier-info .stagier .stagierPhoto {
-    width: 110px;
-    height: 110px;
-    border: 2px solid white;
-    border-radius: 50%;
-    margin: 20px;
-  }
-  .stagierContent .stagier-info .stage-temoignage {
-    width: 90%;
-    background-color: white;
-    margin: 20px auto;
-    padding: 10px;
-  }
-  .stagierContent .stagier-info .stage-temoignage h3 {
-    color: black;
-    margin-bottom: 10px;
-  }
-  .stagierContent .stagier-info .stage-temoignage p {
-    color: black;
+    //flex-wrap: wrap;
+
+    .stagier-info {
+      width: 50%;
+      background-color: black;
+      margin: 0 15px;
+      padding: 30px 10px 5px;
+
+      .stagier {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .stagierPhoto {
+          width: 110px;
+          height: 110px;
+          border: 2px solid white;
+          border-radius: 50%;
+          margin: 20px;
+        }
+      }
+      .stage-temoignage {
+        width: 90%;
+        background-color: white;
+        margin: 20px auto;
+        padding: 10px;
+        h3 {
+          color: black;
+          margin-bottom: 10px;
+        }
+        p {
+          color: black;
+        }
+      }
+    }
   }
   .CarrouselContent {
-    overflow: hidden;
-  }
-  .CarrouselContent .SliderCarrousel {
-    width: 300%;
-    display: flex;
-  }
-  .CarrouselContent .SliderCarrousel .slide {
-    width: 100%;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-    margin: 25px 10px;
-  }
-  .CarrouselContent .SliderCarrousel .slide.photo1 {
-    background-image: url("../images/Stagiers/stages1.jpg");
-  }
-  .CarrouselContent .SliderCarrousel .slide.photo2 {
-    background-image: url("../images/Stagiers/stages2.jpg");
-  }
-  .CarrouselContent .SliderCarrousel .slide.photo3 {
-    background-image: url("../images/Stagiers/stages3.jpg");
+    overflow: hidden; //cache le contenu de surplus
+
+    .SliderCarrousel {
+      width: 300%;
+      display: flex;
+
+      .slide {
+        width: 100%;
+        min-height: 300px;
+        background-size: cover;
+        background-position: center;
+        margin: 25px 10px;
+
+        &.photo1 {
+          background-image: url("../images/Stagiers/stages1.jpg");
+        }
+        &.photo2 {
+          background-image: url("../images/Stagiers/stages2.jpg");
+        }
+        &.photo3 {
+          background-image: url("../images/Stagiers/stages3.jpg");
+        }
+      }
+    }
   }
 }
-
+ */
 section#Evenement {
   display: flex;
   justify-content: center;
@@ -1370,6 +1564,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     margin-bottom: 1vh;
     margin-top: 1vh;
     color: white;
+    width: 68vw;
   }
   .afficher-prof:first-child {
     display: flex;
@@ -1382,7 +1577,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     height: auto;
     align-self: center;
     border-radius: 20px;
-    margin: 2% 2% 0 0;
+    margin: 2% 2% 0 0 !important;
     border: 5px solid white;
     box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   }
@@ -1396,12 +1591,11 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     text-align: left;
     align-self: center;
     width: 64vw;
-    height: 20vh;
+    height: 30vh;
     padding: 2vw;
     box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     border-radius: 10px;
     border: 5px solid white;
-    background: linear-gradient(to bottom, #08F7FE 0%, #FE53BB 100%);
   }
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
@@ -1414,8 +1608,9 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     border: 5px solid white;
     border-radius: 20px;
+    margin-top: 2vh;
     height: 30vh;
-    background: linear-gradient(to bottom, #FE53BB 0%, #f5d300 100%);
+    padding: 0 1vw;
   }
   .prof-liste > li {
     display: flex;
