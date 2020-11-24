@@ -6,17 +6,17 @@
     <div class="stageCarrousel-container">
         <div class="mySlides fade">
             <img src="images/Stagiers/stages1.jpg"/>
-            <div class="text">Caption Text</div>
+            <div class="text"></div>
         </div>
 
         <div class="mySlides fade">
             <img src="images/Stagiers/stages2.jpg"/>
-            <div class="text">Caption Two</div>
+            <div class="text"></div>
         </div>
 
         <div class="mySlides fade">
             <img src="images/Stagiers/stages3.jpg"/>
-            <div class="text">Caption Three</div>
+            <div class="text"></div>
         </div>
 
         <!-- buttons avant et après -->
@@ -36,7 +36,7 @@
 
     <!-------------------------------------------------------Expériences de stage -->
     <div class="petitmot">
-        <p>Stages au milieu de travail</p>
+        <p>stage en milieu de travail</p>
         <hr>
         <p>Expériences</p>
     </div>
