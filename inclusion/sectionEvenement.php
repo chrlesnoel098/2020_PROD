@@ -93,7 +93,7 @@
 
 
 
-                    <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/#admission_programme" target="_blank"><button>Inscrivez-vous au TIM !</button></a>
+                    <!-- <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/#admission_programme" target="_blank"><button>Inscrivez-vous au TIM !</button></a> -->
                 </div>
             </div>
             <div class="calendrier">
