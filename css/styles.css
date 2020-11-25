@@ -1,9 +1,5 @@
 @charset "UTF-8";
 /*Feuille de style*/
-section {
-  padding-top: 0 !important;
-}
-
 section#Programme {
   display: flex;
   flex-wrap: wrap;
@@ -92,6 +88,10 @@ section#Programme #ToutesSessions li.session .fenetreCours .listeCours {
   padding: 0;
 }
 
+section#Programme #ToutesSessions li.session .fenetreCours .listeCours li .descriptionCours {
+  padding-top: 0 !important;
+}
+
 section#Programme #ToutesSessions li.session .fenetreCours .listeCours li .descriptionCours h3 {
   cursor: pointer;
   margin: 1em 0;
@@ -108,6 +108,10 @@ section#Programme #ToutesSessions li.session .fenetreCours .listeCours li .descr
   margin: 0;
   padding-left: 1.5em;
   overflow: hidden;
+}
+
+section#Programme #ToutesSessions li.session .fenetreCours .listeCours li .descriptionCours ul li:nth-child(4) {
+  margin-bottom: 1.5em;
 }
 
 section#Programme #ToutesSessions li.session .coursCachee {
@@ -139,6 +143,7 @@ section#Programme #ToutesSessions li.session .coursVisible {
   }
   section#Programme #ToutesSessions li.session .fenetreCours {
     min-height: 60vh;
+    align-items: flex-start;
   }
   section#Programme #ToutesSessions .descriptionCours {
     width: 100% !important;
@@ -383,7 +388,7 @@ section#Evenement {
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
-    top: 52px;
+    top: 50px;
     right: -100%;
     background: aqua;
     width: 100%;
@@ -395,23 +400,34 @@ section#Evenement {
   }
   header .menu-bar-movil .slideMenu .top-redes {
     display: flex;
+    background-color: black;
+    width: 15%;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 0 40px 100px;
+    align-items: center;
+    padding: 20px 10px;
   }
   header .menu-bar-movil .slideMenu .top-redes img {
     margin-bottom: 5px;
     width: 20px;
+    margin: 10px 0;
     transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
     -ms-transition: all 0.1s ease;
   }
   header .menu-bar-movil .slideMenu .top-redes img:hover {
-    width: 22px;
-    background-color: black;
+    width: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: aqua;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
   }
   header .menu-bar-movil .slideMenu .menu-principal {
     display: flex;
+    width: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -421,28 +437,35 @@ section#Evenement {
   }
   header .menu-bar-movil .slideMenu .menu-principal a {
     margin-bottom: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid black;
+    width: 100%;
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 600;
     transition: all 0.3s ease;
   }
   header .menu-bar-movil .slideMenu .menu-principal a:hover {
     font-weight: 800;
-    color: black;
+    color: white;
   }
   header .menu-bar-movil .slideMenu .fermer {
-    color: gray;
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 5px 8px;
+    margin: 380px 20px 0 0;
     position: relative;
-    right: 25px;
+    right: 15px;
     top: 20px;
     font-size: 20px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px black;
   }
   header .menu-bar-movil .slideMenu .fermer i:hover {
     cursor: pointer;
-    color: white;
-    padding: 3px 5px;
-    background-color: black;
-    box-shadow: 2px 2px 10px #494949;
+    color: #db69a2;
   }
 }
 
@@ -1035,253 +1058,6 @@ section#Projet .projetSwipe {
   }
 }
 
-/* @media (max-width: 700px) {
-  .stage {
-    margin: 30px 0;
-
-    h4 {
-      display: none;
-    }
-
-    .stagecontent {
-      width: 100%;
-
-    
-
-      .liste {
-        display: none;
-      }
-     
-      .petitmot {
-        width: 100%;
-        height: 50px;
-        text-align: center;
-        margin: 40px 0 20px;
-        p {
-          color: white;
-          font-size: 20px;
-          margin-bottom: 5px;
-          font-weight: 800;
-          text-shadow: none;
-          text-transform: uppercase;
-        }
-        hr {
-          width: 50%;
-          color: gray;
-          margin: 0 auto 5px;
-        }
-        :nth-child(3) {
-          font-weight: 300;
-        }
-      }
-     
-
-      .CarrouselContent {
-        overflow: hidden; //cache le contenu de surplus
-
-        .SliderCarrousel {
-          width: 300%;
-          display: flex;
-
-          .slide {
-            width: 100%;
-            min-height: 150px;
-            background-size: cover;
-            background-position: center;
-
-            &.photo1 {
-              background-image: url("../images/Stagiers/stages1.jpg");
-            }
-            &.photo2 {
-              background-image: url("../images/Stagiers/stages2.jpg");
-            }
-            &.photo3 {
-              background-image: url("../images/Stagiers/stages3.jpg");
-            }
-          }
-        }
-      }
-
-      //EXPECIENCES STAGE
-
-      .stagierContent {
-        width: 100%;
-        margin: 5px 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-        .liste {
-          display: none;
-        }
-
-        .stagier-info {
-          width: 90%;
-          background-color: black;
-          margin: 10px auto;
-          padding: 30px 10px 5px;
-
-          .stagier {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-
-            .stagierPhoto {
-              width: 110px;
-              height: 110px;
-              border: 2px solid white;
-              border-radius: 50%;
-              margin-bottom: 20px;
-            }
-          }
-          .stage-temoignage {
-            width: 90%;
-            background-color: white;
-            margin: 20px auto;
-            padding: 10px;
-            h3 {
-              color: black;
-              margin-bottom: 10px;
-            }
-            p {
-              color: black;
-              text-shadow: none;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-//Format bureau
-@media (min-width: 701px) {
-  .liste {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: white;
-    padding: 25px;
-    margin: 20px 0;
-    box-shadow: 5px 5px 5px gray;
-    &:hover {
-      background-color: black;
-    }
-
-    ul {
-      list-style: none;
-    }
-    li {
-      padding: 10px 0;
-    }
-    a {
-      color: gray;
-      text-shadow: none;
-      &:hover {
-        color: white;
-        font-weight: 100;
-        cursor: pointer;
-        text-shadow: 1px 1px 3px black;
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .petitmot {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    margin: 30px 0 40px;
-    p {
-      color: white;
-      font-size: 20px;
-      margin-bottom: 5px;
-      font-weight: 800;
-      text-shadow: none;
-      text-transform: uppercase;
-    }
-    hr {
-      width: 50%;
-      color: gray;
-      margin: 0 auto 5px;
-    }
-    :nth-child(3) {
-      font-weight: 300;
-    }
-  }
-  .stagierContent {
-    width: 100%;
-    margin: 5px 0;
-    display: flex;
-    flex-direction: row;
-    //flex-wrap: wrap;
-
-    .stagier-info {
-      width: 50%;
-      background-color: black;
-      margin: 0 15px;
-      padding: 30px 10px 5px;
-
-      .stagier {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-
-        .stagierPhoto {
-          width: 110px;
-          height: 110px;
-          border: 2px solid white;
-          border-radius: 50%;
-          margin: 20px;
-        }
-      }
-      .stage-temoignage {
-        width: 90%;
-        background-color: white;
-        margin: 20px auto;
-        padding: 10px;
-        h3 {
-          color: black;
-          margin-bottom: 10px;
-        }
-        p {
-          color: black;
-        }
-      }
-    }
-  }
-  .CarrouselContent {
-    overflow: hidden; //cache le contenu de surplus
-
-    .SliderCarrousel {
-      width: 300%;
-      display: flex;
-
-      .slide {
-        width: 100%;
-        min-height: 300px;
-        background-size: cover;
-        background-position: center;
-        margin: 25px 10px;
-
-        &.photo1 {
-          background-image: url("../images/Stagiers/stages1.jpg");
-        }
-        &.photo2 {
-          background-image: url("../images/Stagiers/stages2.jpg");
-        }
-        &.photo3 {
-          background-image: url("../images/Stagiers/stages3.jpg");
-        }
-      }
-    }
-  }
-}
- */
 section#Evenement {
   display: flex;
   justify-content: center;
@@ -1893,8 +1669,8 @@ div#projetAccordeon li .section-content {
 
 #ToutesSessions #accordeonSession {
   display: flex;
-  min-height: 70vh;
-  max-height: 70vh;
+  min-height: 85vh;
+  max-height: 85vh;
   margin: 0;
   padding: 0;
   overflow: hidden;

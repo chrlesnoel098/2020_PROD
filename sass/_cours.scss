@@ -4,10 +4,6 @@ section#Programme {
     flex-wrap: wrap;
     line-height: 1.6;
 
-    section{
-        padding-top: 0 !important;
-    }
-
     // Formatage du DIV contenant la description général de la technique***********************************************************
     #DescriptionGenerale {
         flex-basis: 100%;
@@ -97,7 +93,7 @@ section#Programme {
                     // Formatage de l'élément qui contient la description de un cours**********************************************
                     li {
                         .descriptionCours {
-                            //width: 60vw;
+                            padding-top: 0 !important;
 
                             h3 {
                                 cursor: pointer;
