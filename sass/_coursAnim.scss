@@ -1,0 +1,140 @@
+/* test d'accordéon */
+
+#ToutesSessions {
+    box-sizing: border-box;
+    #accordeonSession {
+
+        display: flex;
+        min-height: 70vh;
+        max-height: 70vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style-type: none;
+    }
+
+    li {
+        flex: 1;
+        display: flex;
+        align-items: stretch;
+        transition: all .5s ease;
+
+        &.coursActive {
+            flex: 20;
+            cursor: default;
+
+            .fenetreCours {
+                flex: 20;
+                display: flex;
+            }
+        }
+
+        .boutonSession {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            text-align: center;
+
+            h2 {
+                margin: 0;
+                white-space: nowrap;
+            }
+        }
+
+        .fenetreCours {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            display: none;
+            transition: all .25s .1s ease-out;
+        }
+    }
+
+}
+
+
+// // ******************************************************************Tablette******************************************************************
+@media (min-width: 521px) and (max-width: 980px) {
+    div#ToutesSessions {
+        #accordeonSession {
+            display: flex;
+            flex-direction: column;
+            max-height: none;
+        }
+    
+        li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+    
+            &.coursActive {
+                flex: 5;
+                .section-content {
+                    flex: 4;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+    
+            .boutonSession {
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .fenetreCours {
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    
+    }
+
+}
+
+
+
+
+// // ******************************************************************Mobile******************************************************************
+@media (max-width: 520px) {
+    div#ToutesSessions {
+        #accordeonSession {
+            display: flex;
+            flex-direction: column;
+            max-height: none;
+        }
+    
+        li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+    
+            &.coursActive {
+                flex: 20;
+                .section-content {
+                    flex: 20;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+    
+            .boutonSession {
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .fenetreCours {
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    
+    }
+}
+
