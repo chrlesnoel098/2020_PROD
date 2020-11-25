@@ -92,10 +92,6 @@ section#Programme #ToutesSessions li.session .fenetreCours .listeCours {
   padding: 0;
 }
 
-section#Programme #ToutesSessions li.session .fenetreCours .listeCours li .descriptionCours {
-  width: 60vw;
-}
-
 section#Programme #ToutesSessions li.session .fenetreCours .listeCours li .descriptionCours h3 {
   cursor: pointer;
   margin: 1em 0;
@@ -114,12 +110,8 @@ section#Programme #ToutesSessions li.session .fenetreCours .listeCours li .descr
   overflow: hidden;
 }
 
-section#Programme #ToutesSessions li.session .cachee {
+section#Programme #ToutesSessions li.session .coursCachee {
   display: none;
-}
-
-section#Programme #ToutesSessions li.session .visible {
-  display: flex;
 }
 
 section#Programme #ToutesSessions li.session .coursVisible {
@@ -1891,6 +1883,123 @@ div#projetAccordeon li .section-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+/* test d'accordéon */
+#ToutesSessions {
+  box-sizing: border-box;
+}
+
+#ToutesSessions #accordeonSession {
+  display: flex;
+  min-height: 70vh;
+  max-height: 70vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+#ToutesSessions li {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  transition: all .5s ease;
+}
+
+#ToutesSessions li.coursActive {
+  flex: 20;
+  cursor: default;
+}
+
+#ToutesSessions li.coursActive .fenetreCours {
+  flex: 20;
+  display: flex;
+}
+
+#ToutesSessions li .boutonSession {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+#ToutesSessions li .boutonSession h2 {
+  margin: 0;
+  white-space: nowrap;
+}
+
+#ToutesSessions li .fenetreCours {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  display: none;
+  transition: all .25s .1s ease-out;
+}
+
+@media (min-width: 521px) and (max-width: 980px) {
+  div#ToutesSessions #accordeonSession {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+  }
+  div#ToutesSessions li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  div#ToutesSessions li.coursActive {
+    flex: 5;
+  }
+  div#ToutesSessions li.coursActive .section-content {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+  }
+  div#ToutesSessions li .boutonSession {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  div#ToutesSessions li .fenetreCours {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  div#ToutesSessions #accordeonSession {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+  }
+  div#ToutesSessions li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  div#ToutesSessions li.coursActive {
+    flex: 20;
+  }
+  div#ToutesSessions li.coursActive .section-content {
+    flex: 20;
+    display: flex;
+    flex-direction: column;
+  }
+  div#ToutesSessions li .boutonSession {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  div#ToutesSessions li .fenetreCours {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
