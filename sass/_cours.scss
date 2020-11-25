@@ -1,12 +1,12 @@
 // Formatage de la section Programme*********************************************************************************************
-section{
-    padding-top: 0 !important;
-}
-
 section#Programme {
     display: flex;
     flex-wrap: wrap;
     line-height: 1.6;
+
+    section{
+        padding-top: 0 !important;
+    }
 
     // Formatage du DIV contenant la description général de la technique***********************************************************
     #DescriptionGenerale {
