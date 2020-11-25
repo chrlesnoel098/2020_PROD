@@ -12,22 +12,22 @@ for (const elemBouton of boutonSessions) {
 
 function afficherLesCours(bouton) {
     // Fermer la session ouverte
-    if(sessionOuverte && sessionOuverte != bouton.parentNode.querySelector("div")) {
+    if(sessionOuverte && sessionOuverte != bouton.parentNode.querySelector(".fenetreCours")) {
         sessionOuverte.classList.add("cachee");
         sessionOuverte.classList.remove("visible");
     }
     
     // Ouvrir une session fermée (qui vient d'être cliquée)
-    bouton.parentNode.querySelector("div").classList.add("visible");
-    bouton.parentNode.querySelector("div").classList.remove("cachee");
+    bouton.parentNode.querySelector(".fenetreCours").classList.add("visible");
+    bouton.parentNode.querySelector(".fenetreCours").classList.remove("cachee");
 
     // Fermer la même session ouverte (qui vient d'être cliquée)
-    if(sessionOuverte == bouton.parentNode.querySelector("div")) {
+    if(sessionOuverte == bouton.parentNode.querySelector(".fenetreCours")) {
         sessionOuverte.classList.add("cachee");
         sessionOuverte.classList.remove("visible");
     }
         
-    sessionOuverte = bouton.parentNode.querySelector("div");
+    sessionOuverte = bouton.parentNode.querySelector(".fenetreCours");
 }
 
 // Toggle l'affichage de la description d'un cours////////////////////////////////////////////////////////////////

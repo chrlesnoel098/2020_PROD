@@ -32,6 +32,14 @@ section#Programme {
         width: 100%;
         justify-content: space-evenly;
 
+        #accordeonSession {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: space-evenly;
+            padding: 0;
+            margin: 0;
+        }
+
 
         .listeBoutons {
             display: flex;
@@ -40,7 +48,7 @@ section#Programme {
         }
 
         // Formatage de la section contenant UNE session**********************************************
-        div.session {
+        li.session {
             display: flex;
 
             // Formatage du bouton**********************************************
