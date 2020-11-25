@@ -1,7 +1,7 @@
-let slidesIndex = 0; //Declaration de l`index
-showSlides(); // appeler la fonction
+let projetSlidesIndex = 0; //Declaration de l`index
+projetShowSlides(); // appeler la fonction
    
-function showSlides() 
+function projetShowSlides() 
 { 
     let i; 
   
@@ -14,16 +14,16 @@ function showSlides()
     } 
    
      // incrementation de 1 
-    slidesIndex++;  
+     projetSlidesIndex++;  
    
      // longueur max
-    if (slidesIndex > slides.length)  
+    if (projetSlidesIndex > slides.length)  
     { 
-        slidesIndex = 1; 
+        projetSlidesIndex = 1; 
     } 
    
-    slides[slidesIndex - 1].style.display = "flex"; 
+    slides[projetSlidesIndex - 1].style.display = "flex"; 
 
     // Change les images 2 secondes
-    setTimeout(showSlides, 8000);  
+    setTimeout(projetShowSlides, 6000);  
 } 
