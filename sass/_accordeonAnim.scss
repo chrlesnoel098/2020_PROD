@@ -1,6 +1,6 @@
 /* test d'accordéon */
 
-div#projetAccordeon {
+div#projetAccordeon /*, div#ToutesSessions */ {
     padding-top: 15%;
     box-sizing: border-box;
     ul {
@@ -76,3 +76,111 @@ div#projetAccordeon {
     }
 
 }
+
+
+// ******************************************************************Tablette******************************************************************
+@media (min-width: 521px) and (max-width: 980px) {
+    div#projetAccordeon /*, div#ToutesSessions */ {
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+    
+            &:hover {
+                background: darken(#222222, 3);
+            }
+    
+            &.projetActive {
+                flex: 5;
+                .section-content {
+                    flex: 4;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .section-title {
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+                h2 {
+                    transform: rotate(0deg);
+                    white-space: nowrap;
+                }
+            }
+            h3 {
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+            .section-content {
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    
+    }
+
+}
+
+
+
+
+// ******************************************************************Mobile******************************************************************
+@media (max-width: 520px) {
+    div#projetAccordeon /*, div#ToutesSessions */ {
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+    
+            &:hover {
+                background: darken(#222222, 3);
+            }
+    
+            &.projetActive {
+                flex: 5;
+                .section-content {
+                    flex: 4;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+    
+            .section-title {
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+                h2 {
+                    transform: rotate(0deg);
+                    white-space: nowrap;
+                }
+            }
+            h3 {
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+            .section-content {
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    
+    }
+
+}
+
