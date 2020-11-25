@@ -1,4 +1,3 @@
-
 // Toggle l'affichage de tous les cours d'une session ////////////////////////////////////////////////////////////
 let sessionOuverte = null;
 
@@ -29,6 +28,7 @@ function afficherLesCours(bouton) {
         
     sessionOuverte = bouton.parentNode.querySelector(".fenetreCours");
 }
+
 
 // Toggle l'affichage de la description d'un cours////////////////////////////////////////////////////////////////
 let coursOuvert = null;

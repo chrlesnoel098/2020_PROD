@@ -3,11 +3,7 @@
 section#Programme {
     display: flex;
     flex-wrap: wrap;
-
-    // Formatage du H1 contenant le titre de la section**************************************************************************
-    h1#SectionProgramme {
-        flex-basis: 100%;
-    }
+    line-height: 1.6;
 
     // Formatage du DIV contenant la description général de la technique***********************************************************
     #DescriptionGenerale {
@@ -32,179 +28,81 @@ section#Programme {
         width: 100%;
         justify-content: space-evenly;
 
-        #accordeonSession {
-            display: flex;
-            flex-basis: 100%;
-            justify-content: space-evenly;
-            padding: 0;
-            margin: 0;
-        }
-
-
-        .listeBoutons {
-            display: flex;
-            flex-basis: 100%;
-            justify-content: flex-end;
-        }
-
-        // Formatage de la section contenant UNE session**********************************************
-        li.session {
-            display: flex;
-
-            // Formatage du bouton**********************************************
-            .boutonSession {
+            #accordeonSession {
                 display: flex;
-                flex-wrap: nowrap;
-                justify-content: center;
-                width: 5em;
-                min-height: 70vh;
-                background-color: white;
-                //background: url(../images/disintegration.png);
-                background-position: center;
+                flex-direction: column;
+                flex-basis: 100%;
+                justify-content: space-evenly;
+                margin: 0;
                 padding: 0;
-                margin: 0 0.3em;
-                border: none;
-                
-                // .boutonSession:hover {
-                //     background-color: red;
-                // }
-                
-                h2 {
-                    writing-mode: vertical-rl;
-                    text-orientation: mixed;
-                    align-self: center;
-                    margin: 0 20px 0 0;
-                    //padding-bottom: 20px;
-                    margin: 0;
-                }
-            }
-            // Formatage de la DIV contenant tous les cours**********************************************
-            .fenetreCours {
-                padding: 0 1em;
-                background-color: rgba($color: white, $alpha: 0.2);
+                list-style-type: none;
+                overflow: hidden;
 
-                // Formatage de la liste de cours**********************************************
-                .listeCours {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    align-items: flex-start;
+                li.session {
+                    flex: 1;
+                    width: 100%;
+                    margin: 0.5em 0;
 
-                    list-style: none;
-                    padding: 0;
+                    &.active {
+                        flex: 5;
+                        .fenetreCours {
+                            flex: 4;
+                        }
+                    }
 
-                    // Formatage de l'élément qui contient la description de un cours**********************************************
-                    li {
-                        .descriptionCours {
-                            width: 60vw;
-                            height: fit-content;
-                            line-height: 1.6;
+                    .boutonSession {
+                        background-color: white;
+                        display: flex;
+                        flex: 1;
+                        justify-content: center;                    
+                    
+                        &:hover{
+                            background-color: black;
 
-                            h3:hover {
-                                color: black;
+                            h2 {
+                                color: inherit;
+                                text-shadow: 2px 2px 10px rgb(228, 228, 228);
                             }
+                        }
 
-                            ul {
-                                list-style: none;
-                                margin: 0;
-                                padding: 0;
-                                overflow: hidden;
+                        h2 {
+                            color: black;
+                        }
+                    }
 
-                                li {
-                                    padding-bottom: 0.5em;
+                    .fenetreCours {
+                        background-color: rgba($color: #ffffff, $alpha: 0.2);
+                        transition: all .25s .1s ease-out;
+                        .listeCours {
+                            margin: 0;
+                            padding: 0 1em;
+                            list-style-type: none;
+
+                            .descriptionCours {
+                                h3:hover {
+                                    color: black;
+                                    text-shadow: 2px 2px 10px rgb(228, 228, 228);
+
+                                }
+                                ul {
+                                    list-style-type: none;
+                                    margin: 0;
+                                    padding-left: 1.5em;
                                 }
                             }
                         }
-                    }
-                }
+                    }  
+                }    
             }
-            .cachee {
-                display: none;
-            }
-            .visible {
-                display: flex;
-            }
-            .coursVisible {
-                display: block;
-            }
-        }           
-    }
-}
-// ******************************************************************Tablette******************************************************************
-@media (min-width: 521px) and (max-width: 980px) {
 
-    section#Programme {
-        height: fit-content;
-        
-        #DescriptionGenerale {
-            flex-basis: 100%;
+        .cachee {
+            display: none;
+        }
+        .visible {
+            display: flex;
+        }
+        .coursVisible {
             display: block;
-        }
-
-        #ToutesSessions{
-            display: flex;
-            flex-direction: column;
-            flex-basis: 100%;
-            justify-content: space-evenly;
-    
-            div.session {
-                flex-direction: column;
-                .boutonSession {
-                    justify-content: center;
-                    background-color: white;
-                    min-height: auto;
-                    border: none;
-                    padding: 0;
-                    margin: 1em 0;
-                    width: 100%;
-                    order: 0;    
-                             
-                    h2 {
-                        writing-mode: horizontal-tb;
-                        width: 80vw;
-                        padding: 4vh 0;
-                        margin: 0;
-                    }
-                }
-            }
-        }
-    }   
-}
-
-// ******************************************************************Mobile******************************************************************
-@media (max-width: 520px) {
-    section#Programme {
-        height: fit-content;
-        
-        #DescriptionGenerale {
-            flex-basis: 100%;
-        }
-
-        #ToutesSessions{
-            display: flex;
-            flex-direction: column;
-            flex-basis: 100%;
-            justify-content: space-evenly;
-    
-            div.session {
-                flex-direction: column;
-                .boutonSession {
-                    justify-content: center;
-                    background-color: white;
-                    min-height: auto;
-                    border: none;
-                    margin: 1em 0;
-                    padding: 0;
-                    width: 100%;
-                    order: 0;
-                    h2 {
-                        writing-mode: horizontal-tb;
-                        padding: 3vh 0;
-                        margin: 0;
-                    }
-                }
-
-            }
-        }
-    }  
+        }        
+    }
 }
