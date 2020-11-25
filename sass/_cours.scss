@@ -115,6 +115,10 @@ section#Programme {
                                 margin: 0;
                                 padding-left: 1.5em;
                                 overflow: hidden;
+
+                                li:nth-child(4) {
+                                    margin-bottom: 1.5em;
+                                }
                             }
                         }
                     }
@@ -151,9 +155,11 @@ section#Programme {
                         writing-mode: horizontal-tb;
                         padding: 4vh 0;
                     }
+                    
                 }
                 .fenetreCours {
                     min-height: 60vh;
+                    align-items: flex-start;
                 }
             }
             .descriptionCours {
