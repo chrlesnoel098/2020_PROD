@@ -62,12 +62,16 @@
 
         .top-redes {
           display: flex;
+          background-color: black;
+          width: 15%;
           flex-direction: column;
           justify-content: center;
-          padding: 60px 0 40px 100px;
+          align-items: center;
+          padding: 20px 10px;
           img {
             margin-bottom: 5px;
             width: 20px;
+            margin: 10px 0;
             -webkit-transition: all 0.1s ease;
             -o-transition: all 0.1s ease;
             transition: all 0.1s ease;
@@ -75,13 +79,20 @@
             -ms-transition: all 0.1s ease;
           }
           img:hover {
-            width: 22px;
-            background-color: black;
+            width: 40px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: aqua;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
           }
         }
 
         .menu-principal {
           display: flex;
+          width: 50%;
           flex-direction: column;
           align-items: center;
           justify-content: center;
@@ -90,15 +101,18 @@
           left: -30px;
           a {
             margin-bottom: 10px;
+            line-height: 30px;
+            border-bottom: 1px solid black;
+            width: 100%;
             text-decoration: none;
-            color: white;
+            color: black;
             font-weight: 600;
             -webkit-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
             &:hover {
               font-weight: 800;
-              color: black;
+              color: white;
             }
           }
         }
