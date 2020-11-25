@@ -97,7 +97,7 @@ section#Programme {
                     // Formatage de l'élément qui contient la description de un cours**********************************************
                     li {
                         .descriptionCours {
-                            width: 60vw;
+                            //width: 60vw;
 
                             h3 {
                                 cursor: pointer;
@@ -120,11 +120,8 @@ section#Programme {
                     }
                 }
             }
-            .cachee {
+            .coursCachee {
                 display: none;
-            }
-            .visible {
-                display: flex;
             }
             .coursVisible {
                 display: block;

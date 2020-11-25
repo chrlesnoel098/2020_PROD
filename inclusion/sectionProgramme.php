@@ -52,7 +52,7 @@
                     <h2><?= $session; ?></h2>
                 </div>
                 <!-- DIV contenant le contenu de la session -->
-                <div class="fenetreCours cachee">
+                <div class="fenetreCours">
                     <!-- UL contenant tous les cours de la session -->
                     <ul class="listeCours">
                         <?php
@@ -65,7 +65,7 @@
                                 <!-- H3 contenant le nom du cours -->
                                 <h3><?= $unCours["nom"]; ?></h3>
                                 <!-- UL contenant la descripton cachée du cours -->
-                                <ul class="cachee">
+                                <ul class="coursCachee">
                                     <li>Sigle : <?= $unCours["sigle"]; ?></li>
                                     <li>Préalable : <?= $unCours["prealable"]; ?></li>
                                     <li>Pondération : <?= $unCours["ponderation"]; ?></li>
