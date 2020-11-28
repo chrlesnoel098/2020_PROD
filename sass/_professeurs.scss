@@ -8,9 +8,8 @@
     justify-content: center;
   }
   
-  
+ 
   .afficher-prof{
-  
   display: none;
   }
   
@@ -34,6 +33,7 @@
       align-self: center;
       margin-top: .1vh;
       color: white;
+      padding-bottom: 2vh;
     }
     p{
       margin-bottom: 1vh;
@@ -54,16 +54,13 @@
     }
   
   
-  .afficher-prof img{
+  .prof-image{
   width: 25vw;
   height: auto;
   align-self: center;
   //border-radius: 20px;
   margin: 2% 2% 0 0;
-  background:black;
- 
-  
-  
+
   }
   .afficher-prof h2{
     align-self: center;
@@ -77,32 +74,34 @@
   text-align: left;
   align-self: center;
   width: 60vw;
-  height: 15vh;
+  height: 18vh;
    padding: 2vh 2vw;
   margin-top: 2vh;
   background:black;
- 
   }
-  
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
   }
-  
-  
-  
+  .prof-fleche{
+    align-self: center;
+    position: relative;
+    height: 2.5vh;
+    width: auto;
+    margin-bottom: 1vh;
+  }
+
   .prof-liste{
     display: flex;
     list-style: none;
     align-self: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0 !important;
     padding: 2vh 2vw; 
     box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
     background: rgb(7,15,10);
     background: linear-gradient(183deg, rgba(7,15,10,0.09987745098039214) 0%, rgba  (8,9,9,0.6825105042016807) 100%);
-
     width: 70vw;
   }
   
@@ -111,13 +110,13 @@
     
     display: flex;
 
-    flex-direction:row;
+    flex-direction:column;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
     width: auto;
     height: auto;
-    padding: 1%;
+    padding-left: 1%;
   }
   
   .prof-liste a{
@@ -133,6 +132,8 @@
   color: white;
   }
 
+ 
+  
   
 }
   //////-------------------Tablette-------------------------///////////
@@ -193,7 +194,7 @@
     }
   
   
-  .afficher-prof img{
+  .prof-image{
   width: 20vw;
   height: auto;
   align-self: center;
@@ -223,7 +224,13 @@
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
   }
-  
+  .prof-fleche{
+    align-self: center;
+    position: relative;
+    height: 2.5vh;
+    width: auto;
+    margin-bottom: 1vh;
+  }
   
   
   .prof-liste{
@@ -327,7 +334,7 @@
 }
 
 
-.afficher-prof img{
+.prof-image{
   width: 12vw;
   height: auto;
   align-self: center;
@@ -356,7 +363,13 @@
 .afficher-prof p::-webkit-scrollbar {
   width: 1px;
 }
-
+.prof-fleche{
+  align-self: center;
+  position: relative;
+  height: 2.5vh;
+  width: auto;
+  margin-bottom: 1vh;
+}
 
 
 .prof-liste{
@@ -364,7 +377,6 @@
   list-style: none;
   align-items: center;
   flex-wrap: wrap;
-  //box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
   margin-top: 2vh;
   height: 30vh;
   padding:  1vh 1vw;

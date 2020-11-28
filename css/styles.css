@@ -1220,6 +1220,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     align-self: center;
     margin-top: .1vh;
     color: white;
+    padding-bottom: 2vh;
   }
   #prof-presentation p {
     margin-bottom: 1vh;
@@ -1233,12 +1234,11 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   .prof-liste li:first-child a {
     color: white;
   }
-  .afficher-prof img {
+  .prof-image {
     width: 25vw;
     height: auto;
     align-self: center;
     margin: 2% 2% 0 0;
-    background: black;
   }
   .afficher-prof h2 {
     align-self: center;
@@ -1252,7 +1252,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     text-align: left;
     align-self: center;
     width: 60vw;
-    height: 15vh;
+    height: 18vh;
     padding: 2vh 2vw;
     margin-top: 2vh;
     background: black;
@@ -1260,12 +1260,19 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
   }
+  .prof-fleche {
+    align-self: center;
+    position: relative;
+    height: 2.5vh;
+    width: auto;
+    margin-bottom: 1vh;
+  }
   .prof-liste {
     display: flex;
     list-style: none;
     align-self: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0 !important;
     padding: 2vh 2vw;
@@ -1276,13 +1283,13 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   }
   .prof-liste > li {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
     width: auto;
     height: auto;
-    padding: 1%;
+    padding-left: 1%;
   }
   .prof-liste a {
     width: 100%;
@@ -1340,7 +1347,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   .prof-liste li:first-child a {
     color: white;
   }
-  .afficher-prof img {
+  .prof-image {
     width: 20vw;
     height: auto;
     align-self: center;
@@ -1363,6 +1370,13 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   }
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
+  }
+  .prof-fleche {
+    align-self: center;
+    position: relative;
+    height: 2.5vh;
+    width: auto;
+    margin-bottom: 1vh;
   }
   .prof-liste {
     display: flex;
@@ -1441,7 +1455,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   .prof-liste li:first-child a {
     color: white;
   }
-  .afficher-prof img {
+  .prof-image {
     width: 12vw;
     height: auto;
     align-self: center;
@@ -1465,6 +1479,13 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   }
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
+  }
+  .prof-fleche {
+    align-self: center;
+    position: relative;
+    height: 2.5vh;
+    width: auto;
+    margin-bottom: 1vh;
   }
   .prof-liste {
     display: flex;
