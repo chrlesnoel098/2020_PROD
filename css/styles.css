@@ -254,6 +254,7 @@ section#Programme #ToutesSessions li.session .coursVisible {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  transition: background-image  2s ease-out;
 }
 
 * {
