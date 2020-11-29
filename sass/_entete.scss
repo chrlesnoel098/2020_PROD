@@ -63,5 +63,9 @@ background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  -webkit-transition: background-image ease-out;
+  -moz-transition: background-image ease-out;
+  -o-transition: background-image  2s ease-out;
+  transition: background-image  2s ease-out;
   }
 
