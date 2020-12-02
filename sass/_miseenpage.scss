@@ -62,9 +62,11 @@ section#Evenement{
 
 .site-main {
   max-width: 1920px;
-  margin: 0 auto;
-  margin-left: 8vw;
-  margin-right: 8vw;
+
+  //margin: 0 auto;
+  padding-left: 8vw;
+  padding-right: 8vw;
+
 }
 
 #background-noise {
