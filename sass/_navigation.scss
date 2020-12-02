@@ -1,3 +1,12 @@
+/* 
+*
+*    Section du site : La navigation bureau fixe.  
+*    Auteur: Charles Noël.
+*    Style général de la navigation bureau,
+*
+*/
+
+// Formatage de l'animation sur les couleurs du body event: scroll down*********************************************************************************************
 body {
   // padding: 0;
   // margin: 0;
@@ -9,23 +18,16 @@ body {
 
 @keyframes body {
   from {
-    // background: linear-gradient(180deg, rgba(109, 109, 109, 1) 0%, rgba(0, 0, 0, 1) 10%);
     background-color: linear-gradient(180deg, rgba(109, 109, 109, 1) 5%, rgba(0, 0, 0, 1) 10%);
-    //background-color: rgb(125, 80, 170);
-    //background-color: rgb(125, 80, 170);
   }
 
   10% {
     background-color: rgb(42, 160, 180);
-    //background-color: rgb(125, 80, 170);
-    //background-color: rgb(125, 80, 170);
   }
 
 
   70% {
-    // background-color: rgb(125, 80, 170);
-    // background-color: rgb(170, 154, 80);
-    //background-color: rgb(125, 80, 170);
+    background-color: rgb(219, 179, 0);
   }
 
   to {
@@ -33,19 +35,15 @@ body {
   }
 }
 
+// Formatage de l'animation sur les sections event: scroll down *********************************************************************************************
+
 section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
   opacity: 0;
 }
 
-// .bgBlue{
-//   opacity: 0;
-//   transform: translateY(0px);
-//   animation: sectionTransitionFade 2s forwards!important;
-// }
-
 #Programme.bgBlue{
-  transform: translateY(0px);
-  animation: sectionTransitionFade 2s forwards!important;
+  transform: translateX(-80px);
+  animation: sectionTransitionX 2s forwards!important;
 }
 
 #Professeur.bgBlue{
@@ -54,8 +52,8 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
 }
 
 #Projet.bgBlue{
-  transform: translateY(0px);
-  animation: sectionTransitionFade 2s forwards!important;
+  transform: translateX(-80px);
+  animation: sectionTransitionX 2s forwards!important;
 }
 
 #Stage.bgBlue{
@@ -64,16 +62,16 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
 }
 
 #Evenement.bgBlue{
-  transform: translateY(0px);
-  animation: sectionTransitionFade 2s forwards!important;
+  transform: translateX(100px);
+  animation: sectionTransitionX 2s forwards!important;
 }
 
-@keyframes sectionTransitionFade {
-to{
-  opacity: 1;
-  transform: translateY(-50px);
-}
-}
+// @keyframes sectionTransitionFade {
+// to{
+//   opacity: 1;
+//   transform: translateY(-50px);
+// }
+// }
 
 @keyframes sectionTransitionX {
   to{
@@ -81,6 +79,8 @@ to{
     transform: translateX(0px);
   }
   }
+
+// Formatage de l'animation de la barre de progression event: scroll down *********************************************************************************************
 
 .progress {
   height: 3px;
@@ -98,6 +98,8 @@ to{
     width: 100%;
   }
 }
+
+// Formatage de l'animation du cube event: scroll down *********************************************************************************************
 
 .cube-wrap {
   --size: 7vmin;
@@ -134,27 +136,27 @@ to{
 }
 
 .bottom {
-  background-color: #999;
+  background-color: rgb(0, 0, 0);
   transform: rotateX(90deg) translateZ(calc(var(--size) * -0.5));
 }
 
 .left {
-  background-color: #ccc;
+  background-color: rgb(255, 123, 123);
   transform: rotateY(90deg) translateZ(calc(var(--size) * 0.5));
 }
 
 .right {
-  background-color: #ddd;
+  background-color: #b0f5ff;
   transform: rotateY(90deg) translateZ(calc(var(--size) * -0.5));
 }
 
 .front {
-  background-color: #aaa;
+  background-color: rgb(236, 255, 125);
   transform: translateZ(calc(var(--size) * 0.5));
 }
 
 .back {
-  background-color: #bbb;
+  background-color: rgb(150, 248, 163);
   transform: translateZ(calc(var(--size) * -0.5));
 }
 

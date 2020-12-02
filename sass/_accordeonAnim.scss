@@ -1,6 +1,13 @@
-/* test d'accordéon */
+/* 
+*
+*    Section du site : Projet.   
+*    Auteur: Charles Noël,
+*    Template du style css de l'animation des accordéons.
+*    Bureau, mobile & tablette.
+*
+*/
 
-div#projetAccordeon /*, div#ToutesSessions */ {
+div#projetAccordeon {
     padding-top: 15%;
     box-sizing: border-box;
     ul {
@@ -87,25 +94,25 @@ div#projetAccordeon /*, div#ToutesSessions */ {
         }
     
         li {
-            flex: 1;
+            flex: 0 1;
             display: flex;
             flex-direction: column;
-    
+            transition: all .5s ease;
             &:hover {
                 background: darken(#222222, 3);
             }
     
             &.projetActive {
-                flex: 5;
+                flex: 0 5;
                 .section-content {
-                    flex: 4;
+                    flex: 0 4;
                     display: flex;
                     flex-direction: column;
                 }
             }
 
             .section-title {
-                flex: 1;
+                flex: 0 1;
                 flex-direction: column;
                 justify-content: center;
                 h2 {
@@ -118,7 +125,7 @@ div#projetAccordeon /*, div#ToutesSessions */ {
                 padding-bottom: 10%;
             }
             .section-content {
-                flex: 1;
+                flex: 0 1;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -141,7 +148,7 @@ div#projetAccordeon /*, div#ToutesSessions */ {
         }
     
         li {
-            flex: 1;
+            flex: 0 1;
             display: flex;
             flex-direction: column;
             align-items: stretch;
@@ -151,16 +158,16 @@ div#projetAccordeon /*, div#ToutesSessions */ {
             }
     
             &.projetActive {
-                flex: 5;
+                flex: 0 5;
                 .section-content {
-                    flex: 4;
+                    flex: 0 4;
                     display: flex;
                     flex-direction: column;
                 }
             }
     
             .section-title {
-                flex: 1;
+                flex: 0 1;
                 flex-direction: column;
                 justify-content: center;
                 h2 {
@@ -173,7 +180,7 @@ div#projetAccordeon /*, div#ToutesSessions */ {
                 padding-bottom: 10%;
             }
             .section-content {
-                flex: 1;
+                flex: 0 1;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
