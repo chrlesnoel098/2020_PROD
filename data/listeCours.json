@@ -2,7 +2,7 @@
     "Session 1": [
         {
             "nom": "Création vidéo",
-            "sigle": "582-000-MA",
+            "sigle": "582-1M1-MA",
             "prealable": "Aucun",
             "ponderation": "3-2-3",
             "heure": "75 heures",
@@ -10,7 +10,7 @@
         },
         {
             "nom": "Conception graphique et matricielle",
-            "sigle": "582-000-MA",
+            "sigle": "582-1M2-MA",
             "prealable": "Aucun",
             "ponderation": "3-3-3",
             "heure": "90 heures",
@@ -18,7 +18,7 @@
         },
         {
             "nom": "Mise en page Web",
-            "sigle": "582-000-MA",
+            "sigle": "582-1W1-MA",
             "prealable": "Aucun",
             "ponderation": "3-2-3",
             "heure": "75 heures",
@@ -26,7 +26,7 @@
         },
         {
             "nom": "Animation et Intéractivité en jeu",
-            "sigle": "582-000-MA",
+            "sigle": "582-1J1-MA",
             "prealable": "Aucun",
             "ponderation": "3-2-3",
             "heure": "75 heures",
@@ -37,7 +37,7 @@
     "Session 2": [
         {
             "nom": "Effets spéciaux et animation",
-            "sigle": "582-000-MA",
+            "sigle": "582-1M1-MA",
             "prealable": "Relatif : Création vidéo",
             "ponderation": "2-2-3",
             "heure": "60 heures",
@@ -45,7 +45,7 @@
         },
         {
             "nom": "Conception graphique et Imagerie vectorielle",
-            "sigle": "582-000-MA",
+            "sigle": "582-2M4-MA",
             "prealable": "Relatif : Conception graphique et imagerie matricielle",
             "ponderation": "3-3-3",
             "heure": "90 heures",
@@ -53,7 +53,7 @@
         },
         {
             "nom": "Animation et Intéractivité Web",
-            "sigle": "582-000-MA",
+            "sigle": "582-2W2-MA",
             "prealable": "Relatif : Mise en page Web (582-1W1-MA); Animation et interactivité en jeu (582-1J1-MA)",
             "ponderation": "3-2-3",
             "heure": "75 heures",
@@ -61,7 +61,7 @@
         },
         {
             "nom": "Création de jeu 2D",
-            "sigle": "582-000-MA",
+            "sigle": "582-2J2-MA",
             "prealable": "Relatif : Animation et interactivité en jeu (582-1J1-MA) ",
             "ponderation": "2-2-2",
             "heure": "60 heures",
@@ -72,7 +72,7 @@
     "Session 3": [
         {
             "nom": "Imagerie 3D",
-            "sigle": "582-000-MA",
+            "sigle": "582-3M5-MA",
             "prealable": "Relatif : Conception graphique et imagerie vectorielle (582-2M4-MA) ",
             "ponderation": "3-2-3",
             "heure": "75 heures",
@@ -80,7 +80,7 @@
         },
         {
             "nom": "Design d'Interactivité",
-            "sigle": "582-000-MA",
+            "sigle": "582-3C1-MA",
             "prealable": "Relatif : Conception graphique et imagerie vectorielle (582-2M4-MA) ",
             "ponderation": "3-2-3",
             "heure": "75 heures",
@@ -88,7 +88,7 @@
         },
         {
             "nom": "Création de sites Web dynamiques",
-            "sigle": "582-000-MA",
+            "sigle": "582-3W3-MA",
             "prealable": "Relatif : Animation et interactivité Web (582-2W2-MA) ",
             "ponderation": "3-3-3",
             "heure": "90 heures",
@@ -96,7 +96,7 @@
         },
         {
             "nom": "Création de jeu 3D",
-            "sigle": "582-000-MA",
+            "sigle": "582-3J3-MA",
             "prealable": "Relatif: Création de jeu 2D (582-2J2-MA)",
             "ponderation": "3-2-3",
             "heure": "75 heures",
@@ -107,7 +107,7 @@
     "Session 4": [
         {
             "nom": "Gestion de projet multimédias",
-            "sigle": "582-000-MA",
+            "sigle": "582-4C2-MA",
             "prealable": "Aucun",
             "ponderation": "2-1-2",
             "heure": "30 heures",
@@ -115,7 +115,7 @@
         },
         {
             "nom": "Conception d'Interfaces et développement Web",
-            "sigle": "582-000-MA",
+            "sigle": "582-4W4-MA",
             "prealable": "Absolu : Création de sites Web dynamiques (582-3W3-MA) ",
             "ponderation": "3-3-2",
             "heure": "90 heures",
@@ -123,7 +123,7 @@
         },
         {
             "nom": "Création de jeu en équipe",
-            "sigle": "582-000-MA",
+            "sigle": "582-4J4-MA",
             "prealable": "Relatif: Création de jeu 3D (582-3J3-MA) ",
             "ponderation": "2-5-5",
             "heure": "105 heures",
@@ -131,7 +131,7 @@
         },
         {
             "nom": "Interfaces Web réactives et animées",
-            "sigle": "582-000-MA",
+            "sigle": "582-4PA-MA",
             "prealable": "Relatif : Création de sites Web dynamiques (582-3W3-MA); En session 4, l'étudiant doit choisir entre ce cours et le cours Animation 3D.",
             "ponderation": "3-2-2",
             "heure": "75 heures",
@@ -139,7 +139,7 @@
         },
         {
             "nom": "Animation 3D",
-            "sigle": "582-000-MA",
+            "sigle": "582-4MB-MA",
             "prealable": "Relatif : Imagerie 3D (582-3M5-MA); En session 4, l'étudiant doit choisir entre ce cours et le cours Interfaces Web réactives et animées.",
             "ponderation": "3-2-2",
             "heure": "75 heures",
@@ -150,7 +150,7 @@
     "Session 5": [
         {
             "nom": "Méthodes de recherche et préparation au marché du travail",
-            "sigle": "582-000-MA",
+            "sigle": "582-5E1-MA",
             "prealable": "Aucun",
             "ponderation": "1-2-1",
             "heure": "30 heures",
@@ -158,7 +158,7 @@
         },
         {
             "nom": "Communication et dynamique d'une équipe de travail",
-            "sigle": "582-000-MA",
+            "sigle": "582-5N1-MA",
             "prealable": "Corequis : Projet Web en équipe (582-5W5-MA)",
             "ponderation": "1-2-1",
             "heure": "30 heures",
@@ -166,7 +166,7 @@
         },
         {
             "nom": "Projet Web en équipe",
-            "sigle": "582-000-MA",
+            "sigle": "582-5W5-MA",
             "prealable": "Corequis : Communication et dynamique d’une équipe de travail (350-5N1-MA); Relatif : Conception d’interfaces et développement Web (582-4W4-MA) ",
             "ponderation": "2-5-5",
             "heure": "105 heures",
@@ -174,7 +174,7 @@
         },
         {
             "nom": "Expérimentation en jeu - volet création",
-            "sigle": "582-000-MA",
+            "sigle": "582-5JA-MA",
             "prealable": "Relatif : Création de jeu en équipe (360-4J4-MA); En 5e session, l’étudiant doit choisir entre ce cours et le cours Expérimentation en jeu – volet programmation.",
             "ponderation": "3-3-2",
             "heure": "90 heures",
@@ -182,7 +182,7 @@
         },
         {
             "nom": "Expérimentation en jeu - volet programmation",
-            "sigle": "582-000-MA",
+            "sigle": "582-5JB-MA",
             "prealable": "Relatif : Création de jeu en équipe (360-4J4-MA); En 5ème session, l’étudiant doit choisir entre ce cours et le cours Expérimentation en jeu – volet création. ",
             "ponderation": "3-3-2",
             "heure": "90 heures",
@@ -190,7 +190,7 @@
         },
         {
             "nom": "Technologies émergentes et avancées - volet Création",
-            "sigle": "582-000-MA",
+            "sigle": "582-5PA-MA",
             "prealable": "Aucun. En session 5, l'étudiant doit choisir entre ce cours et le cours Technologies émergentes et avancées – volet Programmation. ",
             "ponderation": "2-2-2",
             "heure": "60 heures",
@@ -198,7 +198,7 @@
         },
         {
             "nom": "Technologies émergentes et avancées - volet Programmation",
-            "sigle": "582-000-MA",
+            "sigle": "582-5PB-MA",
             "prealable": "Aucun. En session 5, l'étudiant doit choisir entre ce cours et le cours Technologies émergentes et avancées – volet Création.",
             "ponderation": "2-2-2",
             "heure": "60 heures",
@@ -209,7 +209,7 @@
     "Session 6": [
         {
             "nom": "Stage",
-            "sigle": "582-000-MA",
+            "sigle": "582-6N3-MA",
             "prealable": "Absolu : Création de jeu en équipe Préalable (360-4J4-MA); Projet Web en équipe (582-5W5-MA).",
             "ponderation": "1-18-1",
             "heure": "285 heures",
