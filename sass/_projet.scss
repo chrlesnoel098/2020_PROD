@@ -1,10 +1,18 @@
-// Section SectionEtudiant*********************************************************************************************
+/* 
+*
+*    Section du site : Projet & vie étudiante.    
+*    Auteur: Charles Noël.
+*    Style général de la navigation bureau,
+*
+*/
+
 section#Projet {
 
     //min-height: 100vh;
 
-    h2#SectionProjet {
+    h1#SectionProjet {
         flex-basis: 100%;
+        padding-bottom: 5%;
     }
 
     .descriptionProjet {
@@ -30,14 +38,6 @@ section#Projet {
     .vignette-Projet {
         width: auto;
         height: auto;
-
-       
-  
-
-        // /* style temporaire */
-        // border: 5px solid rgb(111, 41, 97);
-        // border-radius: .5em;
-        // padding: 10px;
     }
         .image-carousselfade {
             flex-direction: row;
@@ -49,38 +49,17 @@ section#Projet {
         .info-Vignette {
            order: 1;
            align-self: flex-end;
-            // /* style temporaire */
-            // padding: 10px;
-            // background-color: rgba(111, 41, 97, .3);
-            // border: 2px solid rgba(111, 41, 97, .5);
-        }
-
-        .text {
-         
-            // /* style temporaire */
-            // padding: 10px;
-            // background-color: rgba(111, 41, 97, .3);
-            // border: 2px solid rgba(111, 41, 97, .5);
         }
 
         .image-Projet {
             order: 2;
             flex-grow: 4;
-            // /* style temporaire */
-            // padding: 10px;
-            // background-color: rgba(111, 41, 97, .3);
-            // border: 2px solid rgba(111, 41, 97, .5);
         }
 
         /* div text */
         img {
             width: 60vw;
             height: auto;
-            
-            // /* style temporaire */
-            // padding: 10px;
-            // background-color: rgba(111, 41, 97, .3);
-            // border: 2px solid rgba(111, 41, 97, .5);
         }
 
         .clip-polygon {
@@ -90,15 +69,15 @@ section#Projet {
       
 
         /* Animation */
-        .fade {
-            animation: fadeIn ease 3s;
+        .projetFadeIn {
+            animation: projetFadeIn ease 3s;
         }
 
-        .swipe {
-            animation: swipe ease 3s;
+        .projetSwipe {
+            animation: projetSwipe ease 3s;
         }
 
-        @keyframes fadeIn {
+        @keyframes projetFadeIn {
             from {
                 opacity: .4
             }
@@ -108,7 +87,7 @@ section#Projet {
             }
         }
 
-        @keyframes swipe {
+        @keyframes projetSwipe {
             from {
                 transform: translateX(-1000px);
             }
@@ -124,22 +103,38 @@ section#Projet {
 // ******************************************************************Tablette******************************************************************
 @media (min-width: 521px) and (max-width: 980px) {
 
-    section#SectionEtudiant {
-        background-color: orange;
-        height: fit-content;
+ /* caroussel vignette */
+ .vignette-Projet {
 
-    }
+   h2{
+font-size: 20px;
+   }
+   h3{
+    font-size: 15px;
+   }
+   p{
+font-size: 12px;
+   }
 }
 
-
+}
 
 
 // ******************************************************************Mobile******************************************************************
 @media (max-width: 520px) {
-    section#SectionEtudiant {
-        background-color: pink;
-        height: fit-content;
+  /* caroussel vignette */
+ .vignette-Projet {
+
+    h2{
+ font-size: 20px;
     }
+    h3{
+     font-size: 15px;
+    }
+    p{
+ font-size: 12px;
+    }
+ }
 }
 
 @media only screen and (max-width: 300px) {

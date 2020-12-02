@@ -1,13 +1,8 @@
-// Test
 // Formatage de la section Programme*********************************************************************************************
 section#Programme {
     display: flex;
     flex-wrap: wrap;
-
-    // Formatage du H1 contenant le titre de la section**************************************************************************
-    h1#SectionProgramme {
-        flex-basis: 100%;
-    }
+    line-height: 1.6;
 
     // Formatage du DIV contenant la description général de la technique***********************************************************
     #DescriptionGenerale {
@@ -29,77 +24,119 @@ section#Programme {
     #ToutesSessions {
         display: flex;
         flex-direction: row;
-        flex-basis: 100%;
+        width: 100%;
         justify-content: space-evenly;
+        margin-top: 1em;
 
-        .listeBoutons {
+        #accordeonSession {
             display: flex;
             flex-basis: 100%;
-            justify-content: flex-end;
+            justify-content: space-evenly;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
         }
 
         // Formatage de la section contenant UNE session**********************************************
-        div.session {
+        li.session {
             display: flex;
+            margin: 0.5em 0;
+
 
             // Formatage du bouton**********************************************
             .boutonSession {
                 display: flex;
                 flex-wrap: nowrap;
-                flex-basis: 20%;
+                justify-content: center;
+                width: 5em;
                 min-height: 70vh;
                 background-color: white;
-                border-radius: 20px;
-                //background: url(/images/disintegration.png) no-repeat;
                 padding: 0;
-                margin-left: auto;
-                margin-right: auto;
-                border: none;
+                margin: 0 0.3em;
+                cursor: pointer;
+
+                transition: all 200ms ease-in;
+                transform: scale(1);  
+                
+                &:hover {
+                    background-color: black;
+                    transform: scale(1.02);
+                    h2 {
+                        color: inherit;
+                        text-shadow: 2px 2px 10px rgb(228, 228, 228);
+                    }
+                }
                 
                 h2 {
-                    writing-mode: vertical-rl;
-                    text-orientation: mixed;
-                    align-self: flex-end;
-                    margin: 0 20px 0 0;
-                    padding-bottom: 20px;
+                    color: black;
+                    writing-mode: vertical-lr;
+                    //text-orientation: mixed;
+                    transform: rotate(180deg);
+                    align-self: center;
                     margin: 0;
                 }
             }
             // Formatage de la DIV contenant tous les cours**********************************************
             .fenetreCours {
                 padding: 0 1em;
+                background-color: rgba($color: black, $alpha: 0.2);
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
 
+                h2 {
+                    order: 1;
+                    align-self: flex-end;
+                    margin-bottom: 2em;
+                    font-size: 2em;
+                }
                 // Formatage de la liste de cours**********************************************
                 .listeCours {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
-                    align-items: flex-start;
+                    order: 0;
 
                     list-style: none;
                     padding: 0;
+                    margin: auto 0;
 
                     // Formatage de l'élément qui contient la description de un cours**********************************************
                     li {
                         .descriptionCours {
-                            width: 60vw;
-                            height: fit-content;
+                            padding-top: 0 !important;
+
+                            h3 {
+                                cursor: pointer;
+                                margin: 1em 0;
+                                transition: padding-left 0.2s;
+                            }
+                            h3:hover {
+                                color: black;
+                                padding-left: 1em; 
+        
+                            }
 
                             ul {
-                                list-style: none;
+                                list-style-type: none;
                                 margin: 0;
-                                padding: 0;
+                                padding-left: 1.5em;
                                 overflow: hidden;
+
+                                li:nth-child(4) {
+                                    margin-bottom: 1.5em;
+                                }
                             }
                         }
                     }
                 }
             }
-            .cachee {
+            .coursCachee {
                 display: none;
             }
-            .visible {
-                display: flex;
+            .coursVisible {
+                display: block;
             }
         }           
     }
@@ -108,38 +145,42 @@ section#Programme {
 @media (min-width: 521px) and (max-width: 980px) {
 
     section#Programme {
-        height: fit-content;
-        
-        #DescriptionGenerale {
-            flex-basis: 100%;
-            display: block;
-        }
 
         #ToutesSessions{
-            display: flex;
             flex-direction: column;
-            flex-basis: 100%;
-            justify-content: space-evenly;
+                #accordeonSession {
+                    flex-direction: column;
+                }
     
-            div.session {
+            li.session {
                 flex-direction: column;
                 .boutonSession {
-                    justify-content: center;
-                    background-color: white;
                     min-height: auto;
-                    border: none;
-                    padding: 0;
-                    margin: 1em 0;
                     width: 100%;
-                    order: 0;    
+                    margin: 0;
                              
                     h2 {
                         writing-mode: horizontal-tb;
-                        width: 80vw;
+                        transform: rotate(0);
                         padding: 4vh 0;
-                        margin: 0;
+                    }
+                    
+                }
+                .fenetreCours {
+                    min-height: 60vh;
+                    align-items: flex-start;
+
+                    h2 {
+                        display: none;
                     }
                 }
+            }
+            .descriptionCours {
+                h3 {
+                    margin: 1em 0;
+                }
+                width: 100% !important;
+                margin: 2em 0;
             }
         }
     }   
@@ -148,37 +189,41 @@ section#Programme {
 // ******************************************************************Mobile******************************************************************
 @media (max-width: 520px) {
     section#Programme {
-        height: fit-content;
-        
-        #DescriptionGenerale {
-            flex-basis: 100%;
-        }
 
         #ToutesSessions{
-            display: flex;
             flex-direction: column;
-            flex-basis: 100%;
-            justify-content: space-evenly;
+                #accordeonSession {
+                    flex-direction: column;
+                }
     
-            div.session {
+            li.session {
                 flex-direction: column;
                 .boutonSession {
-                    justify-content: center;
-                    background-color: white;
                     min-height: auto;
-                    border: none;
-                    margin: 1em 0;
-                    padding: 0;
                     width: 100%;
-                    order: 0;
+                    margin: 0;
+                             
                     h2 {
                         writing-mode: horizontal-tb;
-                        padding: 3vh 0;
-                        margin: 0;
+                        transform: rotate(0);
+                        padding: 4vh 0;
                     }
                 }
+                .fenetreCours {
+                    min-height: 60vh;
 
+                    h2 {
+                        display: none;
+                    }
+                }
+            }
+            .descriptionCours {
+                h3 {
+                    margin: 1em 0;
+                }
+                width: 100% !important;
+                margin: 2em 0;
             }
         }
-    }  
+    }   
 }

@@ -32,6 +32,9 @@
         <button>Voir tous cours</button>
     </div> -->
     <div id="ToutesSessions">
+        <!-- UL contenant toutes les sessions -->
+        <ul id="accordeonSession">
+
         <?php
             // Lire le fichier JSON dans une chaîne de caractères
             $listeCoursJSONString = file_get_contents("data/listeCours.json");
@@ -41,45 +44,53 @@
 
             // Parcourir le tableau associatif coursJSON
             foreach ($coursJSON as $session => $uneSession) :
-            ?>
-        <div class="session">
-            <button class="boutonSession">
-                <h2><?= $session; ?></h2>
-            </button>
-            <div class="fenetreCours cachee">
-                <ul class="listeCours">
-
-                    <!-- Chaque cours d'une session dans un LI -->
-                    <?php
-                        // Traverser le tableau numérique "uneSession"
-                        foreach ($uneSession as $Cours => $unCours) :
-                    ?>
-                    <li>
-                        <section class="descriptionCours">
-                            <h3><?= $unCours["nom"]; ?></h3>
-                            <ul class="cachee">
-                                <li>Sigle : <?= $unCours["sigle"]; ?></li>
-                                <li>Préalable : <?= $unCours["prealable"]; ?></li>
-                                <li>Pondération : <?= $unCours["ponderation"]; ?></li>
-                                <li>Nombre d'heures : <?= $unCours["heure"]; ?></li>
-                                <li><p>
-                                    <?= $unCours["description"]; ?>
-                                </p></li>
-                            </ul>
-                        </section>
-                    </li>
-
-                    <?php
-                        endforeach;
-                    ?>
-
-                </ul>
-            </div>
-        </div>
-
-        <?php
-            endforeach;
         ?>
+            <!-- LI contenant les informations de 1 session -->
+            <li class="session">
+                <!-- DIV contenant le nom de la session -->
+                <div class="boutonSession">
+                    <h2><?= $session; ?></h2>
+                </div>
+                <!-- DIV contenant le contenu de la session -->
+                <div class="fenetreCours">
+                    
+                    <h2><?= $session; ?></h2>
+                    <!-- UL contenant tous les cours de la session -->
+                    <ul class="listeCours">
+                        <?php
+                            // Traverser le tableau numérique "uneSession"
+                            foreach ($uneSession as $Cours => $unCours) :
+                        ?>
+                        <li>
+                            <!-- SECTION contenant les informations d'UN cours -->
+                            <section class="descriptionCours">
+                                <!-- H3 contenant le nom du cours -->
+                                <h3><?= $unCours["nom"]; ?></h3>
+                                <!-- UL contenant la descripton cachée du cours -->
+                                <ul class="coursCachee">
+                                    <li>Sigle : <?= $unCours["sigle"]; ?></li>
+                                    <li>Préalable : <?= $unCours["prealable"]; ?></li>
+                                    <li>Pondération : <?= $unCours["ponderation"]; ?></li>
+                                    <li>Nombre d'heures : <?= $unCours["heure"]; ?></li>
+                                    <li>
+                                        <p>
+                                            <?= $unCours["description"]; ?>
+                                        </p>
+                                    </li>
+   
+                                </ul>
+                            </section>
+                        </li>                                 
+                        <?php
+                            endforeach;
+                        ?>
+                    </ul>
+                </div>
+            </li>
+      <?php
+        endforeach;
+      ?>
+        </ul>
     </div>
 </section>
 

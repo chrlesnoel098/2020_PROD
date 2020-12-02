@@ -19,10 +19,11 @@
               
                 foreach ($unProf as $profDescription) :?> 
                 <div class="afficher-prof choix-prof" id="prof<?= $profDescription["valeur"];?>">
-                    <img src="images/profs/<?= $profDescription["photo"];?>" alt="<?= $profDescription["nom"];?>">
+                    <img class="prof-image" src="images/profs/<?= $profDescription["photo"];?>" alt="<?= $profDescription["nom"];?>">
                     <div id="prof-presentation">
                     <h2><?= $profDescription["nom"];?></h2> 
                     <p style="overflow: auto;"><?= $profDescription["description"];?></p> 
+                    <img class="prof-fleche" src="images/fleche.png" alt="fleche">
                     <h3><?= $profDescription["email"];?></h3> 
                     </div><!--fin presentation-->
                 </div>

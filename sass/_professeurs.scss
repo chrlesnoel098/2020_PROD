@@ -8,9 +8,8 @@
     justify-content: center;
   }
   
-  
+ 
   .afficher-prof{
-  
   display: none;
   }
   
@@ -34,6 +33,7 @@
       align-self: center;
       margin-top: .1vh;
       color: white;
+      padding-bottom: 2vh;
     }
     p{
       margin-bottom: 1vh;
@@ -54,16 +54,12 @@
     }
   
   
-  .afficher-prof img{
+  .prof-image{
   width: 25vw;
   height: auto;
   align-self: center;
-  //border-radius: 20px;
   margin: 2% 2% 0 0;
-  background:black;
- 
-  
-  
+
   }
   .afficher-prof h2{
     align-self: center;
@@ -74,35 +70,38 @@
     margin: 2vh 1vw;
   }
   .afficher-prof p{
+  color: #c5c2c2dc;
   text-align: left;
   align-self: center;
+  line-height: 1.6;
   width: 60vw;
-  height: 15vh;
-   padding: 2vh 2vw;
+  height: 18vh;
+  padding: 2vh 2vw;
   margin-top: 2vh;
   background:black;
- 
   }
-  
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
   }
-  
-  
-  
+  .prof-fleche{
+    align-self: center;
+    position: relative;
+    height: 2.5vh;
+    width: auto;
+    margin-bottom: 1vh;
+  }
+
   .prof-liste{
     display: flex;
+    flex-direction: column;
     list-style: none;
     align-self: center;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;;
     margin: 0 !important;
-    padding: 2vh 2vw; 
-    box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
+    padding: 1vh 1vw; 
     background: rgb(7,15,10);
-    background: linear-gradient(183deg, rgba(7,15,10,0.09987745098039214) 0%, rgba  (8,9,9,0.6825105042016807) 100%);
-
     width: 70vw;
   }
   
@@ -110,29 +109,32 @@
   .prof-liste>li{
     
     display: flex;
-
-    flex-direction:row;
+    flex-direction:column;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+    flex-grow: 1;
     width: auto;
     height: auto;
-    padding: 1%;
+    
   }
   
   .prof-liste a{
     width: 100%;
     cursor: pointer;
     height: auto;
-    margin-top: 2vh;
+    margin-top: .5vh;
     text-shadow: 1px 1px #fff8f856;
     font-size: 1rem;
   }
     
   .prof-liste a:hover{
   color: white;
+  text-shadow: 18px 0px 20px white, -16px 0px 17px white;
   }
 
+ 
+  
   
 }
   //////-------------------Tablette-------------------------///////////
@@ -193,7 +195,7 @@
     }
   
   
-  .afficher-prof img{
+  .prof-image{
   width: 20vw;
   height: auto;
   align-self: center;
@@ -210,6 +212,8 @@
     margin: 2vh 0;
   }
   .afficher-prof p{
+  color: #c5c2c2dc;  
+  line-height: 1.6;
   text-align: left;
   align-self: center;
   width: 60vw;
@@ -223,7 +227,13 @@
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
   }
-  
+  .prof-fleche{
+    align-self: center;
+    position: relative;
+    height: 2.5vh;
+    width: auto;
+    margin-bottom: 1vh;
+  }
   
   
   .prof-liste{
@@ -237,7 +247,6 @@
     margin: 0 !important;
     padding: 2vh 2vw; 
     background:black;
- 
     width: 70vw;
   }
   
@@ -265,9 +274,9 @@
     font-size: 1rem;
     justify-self: center;
   }
-    
-  .prof-liste a:hover{
+  .prof-liste a:hover{  
   color: white;
+  text-shadow: 18px 0px 20px white, -16px 0px 17px white;
   }
 }
 
@@ -327,7 +336,7 @@
 }
 
 
-.afficher-prof img{
+.prof-image{
   width: 12vw;
   height: auto;
   align-self: center;
@@ -344,6 +353,8 @@
   margin-left: 2vw;
 }
 .afficher-prof p{
+  color: #c5c2c2dc;
+  line-height: 1.6;
   text-align: left;
   align-self: center;
   width: 64vw;
@@ -356,7 +367,13 @@
 .afficher-prof p::-webkit-scrollbar {
   width: 1px;
 }
-
+.prof-fleche{
+  align-self: center;
+  position: relative;
+  height: 2.5vh;
+  width: auto;
+  margin-bottom: 1vh;
+}
 
 
 .prof-liste{
@@ -364,7 +381,6 @@
   list-style: none;
   align-items: center;
   flex-wrap: wrap;
-  //box-shadow: 5px 5px 5px 0px #00020f70, inset 4px 4px 15px 0px #040d22, 5px 5px 15px 5px rgba(0,0,0,0);
   margin-top: 2vh;
   height: 30vh;
   padding:  1vh 1vw;
@@ -396,5 +412,6 @@
   
 .prof-liste a:hover{
   color: white;
-}
+  text-shadow: 18px 0px 20px white, -16px 0px 17px white;
+  }
 }

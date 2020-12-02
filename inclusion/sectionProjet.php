@@ -23,11 +23,11 @@
                                 <!-- Modele image et texte -->
                                 <div class="image-carousselfade">
                                     <div class="image-Projet">
-                                        <img src="images/testImageBd/<?= $uneVignette["image"]; ?>" alt="" class="clip-polygon fade">
+                                        <img src="images/testImageBd/<?= $uneVignette["image"]; ?>" alt="" class="clip-polygon projetFadeIn">
                                     </div>
                                     <div class="info-Vignette">
                                         <h2><?= $evenement; ?></h2>
-                                        <div class="text swipe">
+                                        <div class="text projetSwipe">
                                             <h3><?= $uneVignette["evenement"]; ?></h3>
                                             <p><?= $uneVignette["description"]; ?></p>
                                         </div>
