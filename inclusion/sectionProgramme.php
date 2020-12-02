@@ -53,6 +53,8 @@
                 </div>
                 <!-- DIV contenant le contenu de la session -->
                 <div class="fenetreCours">
+                    
+                    <h2><?= $session; ?></h2>
                     <!-- UL contenant tous les cours de la session -->
                     <ul class="listeCours">
                         <?php

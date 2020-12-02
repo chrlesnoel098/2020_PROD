@@ -69,8 +69,9 @@ section#Programme {
                 
                 h2 {
                     color: black;
-                    writing-mode: vertical-rl;
-                    text-orientation: mixed;
+                    writing-mode: vertical-lr;
+                    //text-orientation: mixed;
+                    transform: rotate(180deg);
                     align-self: center;
                     margin: 0;
                 }
@@ -78,17 +79,28 @@ section#Programme {
             // Formatage de la DIV contenant tous les cours**********************************************
             .fenetreCours {
                 padding: 0 1em;
-                background-color: rgba($color: white, $alpha: 0.2);
-                //width: 100%;
+                background-color: rgba($color: black, $alpha: 0.2);
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
 
+                h2 {
+                    order: 1;
+                    align-self: flex-end;
+                    margin-bottom: 2em;
+                    font-size: 2em;
+                }
                 // Formatage de la liste de cours**********************************************
                 .listeCours {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
+                    order: 0;
 
                     list-style: none;
                     padding: 0;
+                    margin: auto 0;
 
                     // Formatage de l'élément qui contient la description de un cours**********************************************
                     li {
@@ -149,6 +161,7 @@ section#Programme {
                              
                     h2 {
                         writing-mode: horizontal-tb;
+                        transform: rotate(0);
                         padding: 4vh 0;
                     }
                     
@@ -156,6 +169,10 @@ section#Programme {
                 .fenetreCours {
                     min-height: 60vh;
                     align-items: flex-start;
+
+                    h2 {
+                        display: none;
+                    }
                 }
             }
             .descriptionCours {
@@ -188,11 +205,16 @@ section#Programme {
                              
                     h2 {
                         writing-mode: horizontal-tb;
+                        transform: rotate(0);
                         padding: 4vh 0;
                     }
                 }
                 .fenetreCours {
                     min-height: 60vh;
+
+                    h2 {
+                        display: none;
+                    }
                 }
             }
             .descriptionCours {
