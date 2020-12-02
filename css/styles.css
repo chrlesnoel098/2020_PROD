@@ -69,23 +69,36 @@ section#Programme #ToutesSessions li.session .boutonSession:hover h2 {
 
 section#Programme #ToutesSessions li.session .boutonSession h2 {
   color: black;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
   align-self: center;
   margin: 0;
 }
 
 section#Programme #ToutesSessions li.session .fenetreCours {
   padding: 0 1em;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section#Programme #ToutesSessions li.session .fenetreCours h2 {
+  order: 1;
+  align-self: flex-end;
+  margin-bottom: 2em;
+  font-size: 2em;
 }
 
 section#Programme #ToutesSessions li.session .fenetreCours .listeCours {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  order: 0;
   list-style: none;
   padding: 0;
+  margin: auto 0;
 }
 
 section#Programme #ToutesSessions li.session .fenetreCours .listeCours li .descriptionCours {
@@ -139,11 +152,15 @@ section#Programme #ToutesSessions li.session .coursVisible {
   }
   section#Programme #ToutesSessions li.session .boutonSession h2 {
     writing-mode: horizontal-tb;
+    transform: rotate(0);
     padding: 4vh 0;
   }
   section#Programme #ToutesSessions li.session .fenetreCours {
     min-height: 60vh;
     align-items: flex-start;
+  }
+  section#Programme #ToutesSessions li.session .fenetreCours h2 {
+    display: none;
   }
   section#Programme #ToutesSessions .descriptionCours {
     width: 100% !important;
@@ -171,10 +188,14 @@ section#Programme #ToutesSessions li.session .coursVisible {
   }
   section#Programme #ToutesSessions li.session .boutonSession h2 {
     writing-mode: horizontal-tb;
+    transform: rotate(0);
     padding: 4vh 0;
   }
   section#Programme #ToutesSessions li.session .fenetreCours {
     min-height: 60vh;
+  }
+  section#Programme #ToutesSessions li.session .fenetreCours h2 {
+    display: none;
   }
   section#Programme #ToutesSessions .descriptionCours {
     width: 100% !important;
@@ -314,9 +335,8 @@ section#Evenement {
 
 .site-main {
   max-width: 1920px;
-  margin: 0 auto;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
 }
 
 #background-noise {
@@ -373,7 +393,6 @@ section#Evenement {
     justify-content: space-between;
     align-items: center;
     min-height: 50px;
-    border-bottom: 1px solid gray;
     background-color: black;
   }
   header .menu-bar-movil .logo img {
@@ -388,21 +407,20 @@ section#Evenement {
   header .menu-bar-movil .burger-menu {
     cursor: pointer;
     font-size: 30px;
-    color: hotpink;
+    color: #ffffff;
     position: relative;
     right: 20px;
   }
   header .menu-bar-movil .burger-menu:active {
-    color: aqua;
+    color: #b0f5ff;
   }
   header .menu-bar-movil .slideMenu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     position: absolute;
     top: 50px;
     right: -100%;
-    background: aqua;
+    background-color: #b0f5ff;
     width: 100%;
     height: 100vh;
     transition: all 0.3s ease;
@@ -413,11 +431,12 @@ section#Evenement {
   header .menu-bar-movil .slideMenu .top-redes {
     display: flex;
     background-color: black;
-    width: 15%;
+    width: 10%;
+    height: 40%;
+    margin: auto 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
   }
   header .menu-bar-movil .slideMenu .top-redes img {
     margin-bottom: 5px;
@@ -431,7 +450,7 @@ section#Evenement {
     width: 40px;
     padding: 5px;
     border-radius: 5px;
-    background-color: aqua;
+    background-color: #7dddec;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -439,13 +458,11 @@ section#Evenement {
   }
   header .menu-bar-movil .slideMenu .menu-principal {
     display: flex;
-    width: 50%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 0 0 0;
     position: relative;
-    left: -30px;
   }
   header .menu-bar-movil .slideMenu .menu-principal a {
     margin-bottom: 10px;
@@ -460,6 +477,7 @@ section#Evenement {
   header .menu-bar-movil .slideMenu .menu-principal a:hover {
     font-weight: 800;
     color: white;
+    margin-left: 25px;
   }
   header .menu-bar-movil .slideMenu .fermer {
     background-color: black;
@@ -1094,9 +1112,6 @@ section#Evenement div.information h1 {
 }
 
 section#Evenement div.information div.infoEvenement {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   border: 1px solid black;
   min-height: 45vh;
   margin: 1em 0;
@@ -1104,13 +1119,25 @@ section#Evenement div.information div.infoEvenement {
 }
 
 section#Evenement div.information div.infoEvenement .info {
+  display: flex;
   padding: 1em;
   flex-basis: 100%;
 }
 
-section#Evenement div.information div.infoEvenement .info li {
+section#Evenement div.information div.infoEvenement .info h3 {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+section#Evenement div.information div.infoEvenement .info ul {
+  padding: 0.5em 0 0 2em;
+}
+
+section#Evenement div.information div.infoEvenement .info ul li {
   color: inherit;
   text-shadow: none;
+  list-style-type: none;
 }
 
 section#Evenement div.information div.infoEvenement .info span {
@@ -1272,7 +1299,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     color: #c5c2c2dc;
     text-align: left;
     align-self: center;
-    line-height: 1.6;
+    line-height: 2vh;
     width: 60vw;
     height: 18vh;
     padding: 2vh 2vw;
@@ -1297,8 +1324,8 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 !important;
-    padding: 1vh 1vw;
+    margin-right: 0 !important;
+    padding: 2vh 1vw;
     background: #070f0a;
     width: 70vw;
   }
@@ -1316,7 +1343,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     width: 100%;
     cursor: pointer;
     height: auto;
-    margin-top: .5vh;
+    margin-top: 1vh;
     text-shadow: 1px 1px #fff8f856;
     font-size: 1rem;
   }
@@ -1405,26 +1432,24 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   .prof-liste {
     display: flex;
     list-style: none;
-    align-self: center;
-    align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-items: stretch;
+    align-self: center;
+    justify-content: stretch;
     margin: 0 !important;
     padding: 2vh 2vw;
     background: black;
     width: 70vw;
   }
   .prof-liste > li {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex: 4;
     list-style: none;
     flex-wrap: wrap;
     width: auto;
     height: auto;
-    padding: 1%;
-    justify-self: center;
+    padding: 0;
+    justify-self: flex-start;
+    padding: 2%;
+    align-self: center;
   }
   .prof-liste a {
     width: 100%;
@@ -1433,7 +1458,8 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     margin-top: 2vh;
     text-shadow: 1px 1px #fff8f856;
     font-size: 1rem;
-    justify-self: center;
+    text-align: center;
+    padding: 0;
   }
   .prof-liste a:hover {
     color: white;
@@ -1719,7 +1745,6 @@ div#projetAccordeon li .section-content {
   }
 }
 
-/* test d'accordéon */
 #ToutesSessions {
   box-sizing: border-box;
 }
@@ -1738,16 +1763,16 @@ div#projetAccordeon li .section-content {
   flex: 1;
   display: flex;
   align-items: stretch;
-  transition: all .5s ease;
+  transition: all 2s ease;
 }
 
 #ToutesSessions li.coursActive {
-  flex: 20;
+  flex: 20 0;
   cursor: default;
 }
 
 #ToutesSessions li.coursActive .fenetreCours {
-  flex: 20;
+  flex: 20 0;
   display: flex;
 }
 
@@ -1776,30 +1801,29 @@ div#projetAccordeon li .section-content {
 
 @media (min-width: 521px) and (max-width: 980px) {
   div#ToutesSessions #accordeonSession {
-    display: flex;
     flex-direction: column;
     max-height: none;
   }
   div#ToutesSessions li {
-    flex: 1;
-    display: flex;
+    flex: 0 1;
     flex-direction: column;
+    transition: all 2s ease;
   }
   div#ToutesSessions li.coursActive {
-    flex: 5;
+    flex: 0 5;
   }
-  div#ToutesSessions li.coursActive .section-content {
-    flex: 4;
+  div#ToutesSessions li.coursActive .fenetreCours {
+    flex: 0 4;
     display: flex;
     flex-direction: column;
   }
   div#ToutesSessions li .boutonSession {
-    flex: 1;
+    flex: 0 1;
     flex-direction: column;
     justify-content: center;
   }
   div#ToutesSessions li .fenetreCours {
-    flex: 1;
+    flex: 0 1;
     flex-direction: column;
     justify-content: center;
   }

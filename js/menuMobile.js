@@ -5,7 +5,7 @@
 		elem_menu: document.querySelectorAll('#slideMenu .menu-principal a'), 
 		slideMenu: document.getElementById('slideMenu'), 
 		boutton_fermer: document.getElementById('fermer'),
-		menu_activo: false 
+		menu_activo: false, 
 	}
 	
 	
@@ -24,7 +24,8 @@
 			if ( propMenu.menu_activo == false ) {
 				propMenu.menu_activo = true;
 				propMenu.slideMenu.className = propMenu.slideMenu.className + ' active';
-	
+				
+				
 			} else{
 				propMenu.menu_activo = false;
 				propMenu.slideMenu.className = propMenu.slideMenu.className.replace('active', '');
