@@ -45,8 +45,8 @@
 display: flex;
 justify-content: center;
 align-items: center;
-width: 25vw;
-height: 25vw;
+width: 30vw;
+height: 30vw;
 background-image: url(../images/LogoTIM.png);
 background-image:url(../images/logoTIM.svg);
 background-repeat: no-repeat;
@@ -57,15 +57,12 @@ background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35vw;
-  height: 35vw;
+  width: 30vw;
+  height: 30vw;
   background-image: url(../images/Techniques.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  -webkit-transition: background-image ease-out;
-  -moz-transition: background-image ease-out;
-  -o-transition: background-image  2s ease-out;
-  transition: background-image  2s ease-out;
+  transition: background-image  2s;
   }
 
