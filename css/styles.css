@@ -69,23 +69,36 @@ section#Programme #ToutesSessions li.session .boutonSession:hover h2 {
 
 section#Programme #ToutesSessions li.session .boutonSession h2 {
   color: black;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
   align-self: center;
   margin: 0;
 }
 
 section#Programme #ToutesSessions li.session .fenetreCours {
   padding: 0 1em;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section#Programme #ToutesSessions li.session .fenetreCours h2 {
+  order: 1;
+  align-self: flex-end;
+  margin-bottom: 2em;
+  font-size: 2em;
 }
 
 section#Programme #ToutesSessions li.session .fenetreCours .listeCours {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  order: 0;
   list-style: none;
   padding: 0;
+  margin: auto 0;
 }
 
 section#Programme #ToutesSessions li.session .fenetreCours .listeCours li .descriptionCours {
@@ -139,11 +152,15 @@ section#Programme #ToutesSessions li.session .coursVisible {
   }
   section#Programme #ToutesSessions li.session .boutonSession h2 {
     writing-mode: horizontal-tb;
+    transform: rotate(0);
     padding: 4vh 0;
   }
   section#Programme #ToutesSessions li.session .fenetreCours {
     min-height: 60vh;
     align-items: flex-start;
+  }
+  section#Programme #ToutesSessions li.session .fenetreCours h2 {
+    display: none;
   }
   section#Programme #ToutesSessions .descriptionCours {
     width: 100% !important;
@@ -171,10 +188,14 @@ section#Programme #ToutesSessions li.session .coursVisible {
   }
   section#Programme #ToutesSessions li.session .boutonSession h2 {
     writing-mode: horizontal-tb;
+    transform: rotate(0);
     padding: 4vh 0;
   }
   section#Programme #ToutesSessions li.session .fenetreCours {
     min-height: 60vh;
+  }
+  section#Programme #ToutesSessions li.session .fenetreCours h2 {
+    display: none;
   }
   section#Programme #ToutesSessions .descriptionCours {
     width: 100% !important;
@@ -185,12 +206,14 @@ section#Programme #ToutesSessions li.session .coursVisible {
   }
 }
 
+/** conteneur pour le formatage de la section**/
 .site-branding {
   display: flex;
   justify-content: center;
   position: relative;
 }
 
+/** creation du cercle de couleur pour l'animation **/
 #logo-cercle {
   display: flex;
   justify-content: center;
@@ -205,6 +228,7 @@ section#Programme #ToutesSessions li.session .coursVisible {
   animation: rotation 10s infinite linear;
 }
 
+/* animation de la rotation du cercle */
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -214,6 +238,7 @@ section#Programme #ToutesSessions li.session .coursVisible {
   }
 }
 
+/** formatage + style div noire contenant le logo **/
 .site-title {
   display: flex;
   justify-content: center;
@@ -229,14 +254,16 @@ section#Programme #ToutesSessions li.session .coursVisible {
   background-color: black;
   color: linear-gradient(90deg, #71cf94 0%, #e4ed0e 22%, #eeb813 39%, #dca332 56%, #c18362 75%, #00d4ff 100%);
   box-shadow: 0px 0px 14px 0px #f8f8f8;
+  /** contenu de la div noire**/
+  /* animation de transition pour le logo tim*/
 }
 
-.site-title > a {
+.site-title a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25vw;
-  height: 25vw;
+  width: 30vw;
+  height: 30vw;
   background-image: url(../images/LogoTIM.png);
   background-image: url(../images/logoTIM.svg);
   background-repeat: no-repeat;
@@ -244,17 +271,17 @@ section#Programme #ToutesSessions li.session .coursVisible {
   background-position: center;
 }
 
-.site-title > a:hover {
+.site-title a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35vw;
-  height: 35vw;
+  width: 30vw;
+  height: 30vw;
   background-image: url(../images/Techniques.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  transition: background-image  2s ease-out;
+  transition: background-image  2s;
 }
 
 /* 
@@ -314,9 +341,8 @@ section#Evenement {
 
 .site-main {
   max-width: 1920px;
-  margin: 0 auto;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
 }
 
 #background-noise {
@@ -373,7 +399,6 @@ section#Evenement {
     justify-content: space-between;
     align-items: center;
     min-height: 50px;
-    border-bottom: 1px solid gray;
     background-color: black;
   }
   header .menu-bar-movil .logo img {
@@ -388,12 +413,12 @@ section#Evenement {
   header .menu-bar-movil .burger-menu {
     cursor: pointer;
     font-size: 30px;
-    color: hotpink;
+    color: #ffffff;
     position: relative;
     right: 20px;
   }
   header .menu-bar-movil .burger-menu:active {
-    color: aqua;
+    color: #b0f5ff;
   }
   header .menu-bar-movil .slideMenu {
     display: flex;
@@ -402,7 +427,7 @@ section#Evenement {
     position: absolute;
     top: 50px;
     right: -100%;
-    background: aqua;
+    background-color: #b0f5ff;
     width: 100%;
     height: 100vh;
     transition: all 0.3s ease;
@@ -417,7 +442,6 @@ section#Evenement {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
   }
   header .menu-bar-movil .slideMenu .top-redes img {
     margin-bottom: 5px;
@@ -431,7 +455,7 @@ section#Evenement {
     width: 40px;
     padding: 5px;
     border-radius: 5px;
-    background-color: aqua;
+    background-color: #7dddec;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -439,13 +463,11 @@ section#Evenement {
   }
   header .menu-bar-movil .slideMenu .menu-principal {
     display: flex;
-    width: 50%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 0 0 0;
     position: relative;
-    left: -30px;
   }
   header .menu-bar-movil .slideMenu .menu-principal a {
     margin-bottom: 10px;
@@ -1094,9 +1116,6 @@ section#Evenement div.information h1 {
 }
 
 section#Evenement div.information div.infoEvenement {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   border: 1px solid black;
   min-height: 45vh;
   margin: 1em 0;
@@ -1104,13 +1123,25 @@ section#Evenement div.information div.infoEvenement {
 }
 
 section#Evenement div.information div.infoEvenement .info {
+  display: flex;
   padding: 1em;
   flex-basis: 100%;
 }
 
-section#Evenement div.information div.infoEvenement .info li {
+section#Evenement div.information div.infoEvenement .info h3 {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+section#Evenement div.information div.infoEvenement .info ul {
+  padding: 0.5em 0 0 2em;
+}
+
+section#Evenement div.information div.infoEvenement .info ul li {
   color: inherit;
   text-shadow: none;
+  list-style-type: none;
 }
 
 section#Evenement div.information div.infoEvenement .info span {
@@ -1211,77 +1242,73 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
 }
 
 @media (max-width: 520px) {
+  /*conteneur de la section*/
   #desktop-conteneur {
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  /*classe pour opouvoir faire fonctionner le JS*/
   .afficher-prof {
     display: none;
   }
+  /*classe utiliser ajuster l'emplaacement de la div du prof choisi */
   .choix-prof {
     align-self: center;
     align-content: center;
     flex-direction: column;
   }
+  /* le style de tout la carte du prof affichée*/
   #prof-presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
   }
-  #prof-presentation h2 {
-    align-self: center;
-    margin-bottom: .1vh;
-    color: white;
-  }
-  #prof-presentation h3 {
-    align-self: center;
-    margin-top: .1vh;
-    color: white;
-    padding-bottom: 2vh;
-  }
-  #prof-presentation p {
-    margin-bottom: 1vh;
-    margin-top: 1vh;
-    width: 70vw;
-    color: white;
-  }
+  /* pour faire appaitre une carte par défaut */
   .afficher-prof:first-child {
     display: flex;
   }
+  /* le nom de la carte par défaut allumée */
   .prof-liste li:first-child a {
     color: white;
   }
+  /* style de l'image du professeur */
   .prof-image {
-    width: 25vw;
-    height: auto;
+    width: 20vw;
+    height: 20vh;
+    object-fit: cover;
     align-self: center;
     margin: 2% 2% 0 0;
   }
+  /* style pour le nom du prof */
   .afficher-prof h2 {
     align-self: center;
-    margin: 2vh 1vw;
+    margin: 1vh 1vw;
   }
+  /* style pour le email du prof */
   .afficher-prof h3 {
     align-self: center;
-    margin: 2vh 1vw;
+    margin: .5vh 1vw;
   }
+  /* style pour le texte du prof */
   .afficher-prof p {
     color: #c5c2c2dc;
     text-align: left;
     align-self: center;
-    line-height: 1.6;
+    line-height: 2vh;
     width: 60vw;
     height: 18vh;
     padding: 2vh 2vw;
     margin-top: 2vh;
     background: black;
   }
+  /* efface la scroll bar du texte*/
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
   }
+  /*tite flèche qui dit que ça continue plus bas*/
   .prof-fleche {
     align-self: center;
     position: relative;
@@ -1289,6 +1316,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     width: auto;
     margin-bottom: 1vh;
   }
+  /* stlye et formatage de la liste de noms */
   .prof-liste {
     display: flex;
     flex-direction: column;
@@ -1297,12 +1325,13 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 !important;
-    padding: 1vh 1vw;
+    margin-right: 0 !important;
+    padding: 2vh 1vw;
     background: #070f0a;
-    width: 70vw;
+    width: 60vw;
+    /* effet de lumiere au hover de la liste*/
   }
-  .prof-liste > li {
+  .prof-liste li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1316,7 +1345,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     width: 100%;
     cursor: pointer;
     height: auto;
-    margin-top: .5vh;
+    margin-top: 10%;
     text-shadow: 1px 1px #fff8f856;
     font-size: 1rem;
   }
@@ -1327,63 +1356,58 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
 }
 
 @media (min-width: 521px) and (max-width: 980px) {
+  /*conteneur de la section*/
   #desktop-conteneur {
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  /*classe pour pouvoir faire fonctionner le JS*/
   .afficher-prof {
     display: none;
   }
+  /* classe de positionnement pour les carte de prof qui apparaisse avec le js*/
   .choix-prof {
     align-self: center;
     align-content: center;
     flex-direction: column;
   }
+  /*formatage de la carte de presentation des profs */
   #prof-presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
   }
-  #prof-presentation h2 {
-    align-self: center;
-    margin-bottom: 1vh;
-    color: white;
-  }
-  #prof-presentation h3 {
-    align-self: center;
-    margin-top: 1vh;
-    color: white;
-  }
-  #prof-presentation p {
-    margin-bottom: 1vh;
-    margin-top: 1vh;
-    width: 70vw;
-    color: white;
-  }
+  /* affichage par defaut la premiere carte de prof*/
   .afficher-prof:first-child {
     display: flex;
   }
+  /* highlight du nom de la carte par defaut */
   .prof-liste li:first-child a {
     color: white;
   }
+  /* foramtage de l'image du prof */
   .prof-image {
+    object-fit: cover;
     width: 20vw;
-    height: auto;
+    height: 30vh;
     align-self: center;
   }
+  /* foramtage du nom du prof */
   .afficher-prof h2 {
     align-self: center;
     margin-top: 2vh;
   }
+  /* foramtage du email du prof */
   .afficher-prof h3 {
     align-self: center;
     margin: 2vh 0;
   }
+  /* foramtage du texte du prof */
   .afficher-prof p {
-    color: #c5c2c2dc;
+    color: #e0d9d9;
     line-height: 1.6;
     text-align: left;
     align-self: center;
@@ -1391,49 +1415,50 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     height: 15vh;
     padding: 2vh 2vw;
     background: black;
+    margin-bottom: 0.5vh;
   }
+  /* cacher la scroll bar du texte */
   .afficher-prof p::-webkit-scrollbar {
     width: 1px;
   }
+  /* tite fleche */
   .prof-fleche {
     align-self: center;
     position: relative;
-    height: 2.5vh;
+    height: 1.5vh;
     width: auto;
     margin-bottom: 1vh;
   }
+  /* formatage et style de la liste des noms des profs */
   .prof-liste {
     display: flex;
     list-style: none;
-    align-self: center;
-    align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-items: stretch;
+    align-self: center;
+    justify-content: stretch;
     margin: 0 !important;
     padding: 2vh 2vw;
     background: black;
-    width: 70vw;
+    width: 60vw;
   }
-  .prof-liste > li {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .prof-liste li {
+    flex: 4;
     list-style: none;
     flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    padding: 1%;
-    justify-self: center;
+    width: 25%;
+    height: 33%;
+    padding: 0;
+    justify-self: flex-start;
+    padding: 2%;
+    align-self: center;
   }
   .prof-liste a {
     width: 100%;
     cursor: pointer;
-    height: auto;
-    margin-top: 2vh;
+    height: 100%;
     text-shadow: 1px 1px #fff8f856;
     font-size: 1rem;
-    justify-self: center;
+    padding: 0;
   }
   .prof-liste a:hover {
     color: white;
@@ -1442,12 +1467,15 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
 }
 
 @media (min-width: 981px) {
+  /* conteneur de la section */
   #desktop-conteneur {
     margin: 2%;
   }
+  /*classe pour pouvoir faire fonctionner le JS*/
   .afficher-prof {
     display: none;
   }
+  /*classe formater les div de JS*/
   .choix-prof {
     align-content: center;
     flex-direction: row;
@@ -1458,22 +1486,6 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     justify-content: flex-start;
     align-content: flex-start;
   }
-  #prof-presentation h2 {
-    align-self: flex-start;
-    margin-bottom: .1vh;
-    color: white;
-  }
-  #prof-presentation h3 {
-    align-self: flex-start;
-    margin-top: .1vh;
-    color: white;
-  }
-  #prof-presentation p {
-    margin-bottom: 1vh;
-    margin-top: 1vh;
-    color: white;
-    width: 68vw;
-  }
   .afficher-prof:first-child {
     display: flex;
   }
@@ -1481,27 +1493,33 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     color: white;
   }
   .prof-image {
-    width: 12vw;
-    height: auto;
+    width: 10vw;
+    height: 25vh;
+    object-fit: cover;
+    margin: 0 !important;
     align-self: center;
-    margin: 0 2 !important;
   }
   .afficher-prof h2 {
     align-self: center;
-    margin-left: 2vw;
+    margin-left: 1vw !important;
+    margin-bottom: 0 !important;
   }
   .afficher-prof h3 {
     align-self: center;
     margin-left: 2vw;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
   .afficher-prof p {
     color: #c5c2c2dc;
     line-height: 1.6;
     text-align: left;
     align-self: center;
-    width: 64vw;
-    height: 20vh;
+    width: 65vw;
+    height: 25vh;
     padding: 2vw;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
     background: black;
   }
   .afficher-prof p::-webkit-scrollbar {
@@ -1513,6 +1531,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     height: 2.5vh;
     width: auto;
     margin-bottom: 1vh;
+    margin-bottom: 0 !important;
   }
   .prof-liste {
     display: flex;
@@ -1523,10 +1542,10 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     height: 30vh;
     padding: 1vh 1vw;
     background: black;
+    width: 75vw;
   }
-  .prof-liste > li {
+  .prof-liste li {
     display: flex;
-    flex-grow: 6;
     flex-direction: row;
     justify-content: center;
     list-style: none;
@@ -1542,7 +1561,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     margin-top: 2vh;
     text-shadow: 1px 1px #fff8f856;
   }
-  .prof-liste a:hover {
+  .prof-liste .prof-liste a:hover {
     color: white;
     text-shadow: 18px 0px 20px white, -16px 0px 17px white;
   }
@@ -1719,7 +1738,6 @@ div#projetAccordeon li .section-content {
   }
 }
 
-/* test d'accordéon */
 #ToutesSessions {
   box-sizing: border-box;
 }
@@ -1738,16 +1756,16 @@ div#projetAccordeon li .section-content {
   flex: 1;
   display: flex;
   align-items: stretch;
-  transition: all .5s ease;
+  transition: all 2s ease;
 }
 
 #ToutesSessions li.coursActive {
-  flex: 20;
+  flex: 20 0;
   cursor: default;
 }
 
 #ToutesSessions li.coursActive .fenetreCours {
-  flex: 20;
+  flex: 20 0;
   display: flex;
 }
 
@@ -1776,30 +1794,29 @@ div#projetAccordeon li .section-content {
 
 @media (min-width: 521px) and (max-width: 980px) {
   div#ToutesSessions #accordeonSession {
-    display: flex;
     flex-direction: column;
     max-height: none;
   }
   div#ToutesSessions li {
-    flex: 1;
-    display: flex;
+    flex: 0 1;
     flex-direction: column;
+    transition: all 2s ease;
   }
   div#ToutesSessions li.coursActive {
-    flex: 5;
+    flex: 0 5;
   }
-  div#ToutesSessions li.coursActive .section-content {
-    flex: 4;
+  div#ToutesSessions li.coursActive .fenetreCours {
+    flex: 0 4;
     display: flex;
     flex-direction: column;
   }
   div#ToutesSessions li .boutonSession {
-    flex: 1;
+    flex: 0 1;
     flex-direction: column;
     justify-content: center;
   }
   div#ToutesSessions li .fenetreCours {
-    flex: 1;
+    flex: 0 1;
     flex-direction: column;
     justify-content: center;
   }
