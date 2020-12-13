@@ -1497,16 +1497,17 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     height: 25vh;
     object-fit: cover;
     margin: 0 !important;
+    margin-top: 2vh !important;
     align-self: center;
   }
   .afficher-prof h2 {
-    align-self: center;
-    margin-left: 1vw !important;
-    margin-bottom: 0 !important;
+    align-self: flex-start;
+    margin-left: 0vw !important;
+    margin-bottom: 0vh !important;
+    padding-bottom: 1.7vh;
   }
   .afficher-prof h3 {
-    align-self: center;
-    margin-left: 2vw;
+    align-self: flex-start;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -1530,7 +1531,6 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     position: relative;
     height: 2.5vh;
     width: auto;
-    margin-bottom: 1vh;
     margin-bottom: 0 !important;
   }
   .prof-liste {
