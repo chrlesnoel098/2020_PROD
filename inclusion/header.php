@@ -9,7 +9,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
     <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#000000">
@@ -32,9 +31,10 @@
         </div>
     <!-- Navigation bureau -->
         <nav id="site-navigation" class="main-navigation">
-
+        <div class="progress"></div>
             <div class="menu-menu-1-container">
                 <ul id="primary-menu" class="menu nav-menu">
+     
                     <li><a class="links" href="#" aria-current="page"><div class="progress"></div><div class="cube-wrap"><div class="cube"><div class="side top"></div><div class="side bottom"></div><div class="side front"></div><div class="side back"></div><div class="side left"></div><div class="side right"></div></div></div></a></li>
                     <li><a class="links" href="#SectionProgramme">Programme</a></li>
                     <li><a class="links" href="#SectionProfesseur">Professeur</a></li>
