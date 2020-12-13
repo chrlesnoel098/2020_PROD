@@ -531,10 +531,10 @@ body {
     background-color: #2aa0b4;
   }
   70% {
-    background-color: #d400db;
+    background-color: #db9600;
   }
   to {
-    background-color: #918f20;
+    background-color: #912045;
   }
 }
 
@@ -577,7 +577,7 @@ section #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme {
 .progress {
   height: 100%;
   width: 0%;
-  opacity: 0.4;
+  opacity: 0.3;
   background-color: #00b1c9;
   position: fixed;
   bottom: 0;
@@ -587,7 +587,7 @@ section #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme {
 
 @keyframes progress {
   to {
-    background-color: #f38200;
+    background-color: #e6b104;
     width: 100%;
   }
 }
@@ -1502,16 +1502,17 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     height: 25vh;
     object-fit: cover;
     margin: 0 !important;
+    margin-top: 2vh !important;
     align-self: center;
   }
   .afficher-prof h2 {
-    align-self: center;
-    margin-left: 1vw !important;
-    margin-bottom: 0 !important;
+    align-self: flex-start;
+    margin-left: 0vw !important;
+    margin-bottom: 0vh !important;
+    padding-bottom: 1.7vh;
   }
   .afficher-prof h3 {
-    align-self: center;
-    margin-left: 2vw;
+    align-self: flex-start;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -1535,7 +1536,6 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     position: relative;
     height: 2.5vh;
     width: auto;
-    margin-bottom: 1vh;
     margin-bottom: 0 !important;
   }
   .prof-liste {
@@ -1566,7 +1566,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
     margin-top: 2vh;
     text-shadow: 1px 1px #fff8f856;
   }
-  .prof-liste .prof-liste a:hover {
+  .prof-liste a:hover {
     color: white;
     text-shadow: 18px 0px 20px white, -16px 0px 17px white;
   }
