@@ -10,11 +10,15 @@
 
 // *************************************************************Général*****************************************************************
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap');
+
 * {
   padding: 0;
   padding: 0;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; /* webkit=para navegadores antiguos y moz para los actuales*/
+  -webkit-box-sizing: border-box;
+  /* webkit=para navegadores antiguos y moz para los actuales*/
   box-sizing: border-box;
 }
 
@@ -24,13 +28,19 @@ html {
 }
 
 h1 {
+  font-family: Oswald, sans-serif;
+  font-size: 5em;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 5.4px;
   color: whitesmoke;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-size: 3vh;
-  text-decoration: none;
-  text-shadow: 2px 2px 10px rgb(73, 73, 73);
+  font-size: 8vh;
+  text-shadow: 2px 2px 10px rgb(37, 37, 37);
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
 }
 
 h2,
@@ -40,8 +50,7 @@ p,
 a,
 li {
   color: rgb(223, 223, 223);
-  text-decoration: none;
-  text-shadow: 2px 2px 10px rgb(73, 73, 73);
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 
 button.boutonSession h2 {
@@ -49,14 +58,15 @@ button.boutonSession h2 {
 }
 
 
-section{
+section {
 
-  padding-top: 25%!important;
+  padding-top: 25% !important;
   // margin-bottom: 10%;
 }
-section#Evenement{
 
-  padding-top: 35%!important;
+section#Evenement {
+
+  padding-top: 35% !important;
   padding-bottom: 15%;
 }
 
@@ -85,12 +95,13 @@ section#Evenement{
 
 // ******************************************************************Tablette******************************************************************
 @media (min-width: 521px) and (max-width: 980px) {
-  section{
+  section {
 
     padding-top: 55%;
     padding-bottom: 10%;
   }
-  section#Evenement{
+
+  section#Evenement {
 
     padding-top: 85%;
     padding-bottom: 15%;
@@ -99,12 +110,13 @@ section#Evenement{
 
 // ******************************************************************Mobile******************************************************************
 @media (max-width: 520px) {
-  section{
+  section {
 
     padding-top: 75%;
     padding-bottom: 10%;
   }
-  section#Evenement{
+
+  section#Evenement {
 
     padding-top: 85%;
     padding-bottom: 15%;
@@ -120,10 +132,10 @@ section#Evenement{
 // *************************************************************Stage*****************************************************************
 
 /* style correction img */
-.mySlides{
-img {
-  object-fit: cover;
-} 
+.mySlides {
+  img {
+    object-fit: cover;
+  }
 }
 
 // *************************************************************Footer*****************************************************************

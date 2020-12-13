@@ -17,10 +17,7 @@ section#Projet {
 
     .descriptionProjet {
         list-style: none;
-        /* style temporaire */
-        padding: 10px;
-        background-color: rgba(111, 41, 97, .3);
-        border: 2px solid rgba(111, 41, 97, .5);
+
     }
 
     .descriptionProjet h3:hover{
@@ -58,6 +55,7 @@ section#Projet {
 
         /* div text */
         img {
+            padding-left: 15%;
             width: 60vw;
             height: auto;
         }

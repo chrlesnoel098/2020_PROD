@@ -81,20 +81,22 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
   }
 
 // Formatage de l'animation de la barre de progression event: scroll down *********************************************************************************************
-
+// opacite 
+// les couleurs weirds
 .progress {
-  height: 3px;
+  height: 100%;
   width: 0%;
-  background-color: #fff;
+  opacity: 0.;
+  background-color: #00b1c9;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
-  animation: progress 1s linear;
+  animation: progress 0.8s linear;
 }
 
 @keyframes progress {
   to {
-    background-color: rgb(20, 255, 226);
+    background-color: #f38200;
     width: 100%;
   }
 }

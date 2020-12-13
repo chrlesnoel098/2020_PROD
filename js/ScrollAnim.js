@@ -33,7 +33,7 @@ function changeLinkState() {
 
   while (--indexSection && window.scrollY + 50 < sections[indexSection].offsetTop) {}
 
-  // sections.forEach((section) => section.classList.remove('bgBlue')); // remove .active
+  sections.forEach((section) => section.classList.remove('bgBlue')); // remove .active
   sections[indexSection].classList.add('bgBlue'); // ajout .active
 
 
