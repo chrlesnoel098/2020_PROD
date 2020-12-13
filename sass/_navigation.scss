@@ -15,7 +15,6 @@ body {
   animation: body 1s linear;
 }
 
-
 @keyframes body {
   from {
     background-color: linear-gradient(180deg, rgba(109, 109, 109, 1) 5%, rgba(0, 0, 0, 1) 10%);
@@ -27,7 +26,7 @@ body {
 
 
   70% {
-    background-color: rgb(219, 179, 0);
+    background-color: rgb(219, 150, 0);
   }
 
   to {
@@ -86,7 +85,7 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
 .progress {
   height: 100%;
   width: 0%;
-  opacity: 0.;
+  opacity: 0.3;
   background-color: #00b1c9;
   position: fixed;
   bottom: 0;
@@ -96,7 +95,7 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
 
 @keyframes progress {
   to {
-    background-color: #f38200;
+    background-color: #e6b104;
     width: 100%;
   }
 }
