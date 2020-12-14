@@ -1,6 +1,8 @@
-{
+
+{  
     "Party Tim XX": [
         {
+            "_comment": "Auteur: Charles Noël, on ajoute le nom de l'image, ensuite le nom de l'évènement et finalement la description de celle-ci",
             "image": "img1.jpg",
             "evenement": "Réunion officielle des finissants de 2020",
             "description": "Le Tim c'est beaucoup plus qu'une simple institution!"
@@ -8,11 +10,13 @@
     ],
     "Game Jam": [
         {
+            "_comment": "Auteur: Charles Noël, on ajoute le nom de l'image, ensuite le nom de l'évènement et finalement la description de celle-ci",
             "image": "img2.jpg",
             "evenement": "GameJam 2019 équipe 1e position",
             "description": "Année gagnante pour l'équipe"
         },
         {
+            "_comment": "Auteur: Charles Noël, on ajoute le nom de l'image, ensuite le nom de l'évènement et finalement la description de celle-ci",
             "image": "img3.jpg",
             "evenement": "GameJam 2019 équipe 2e position",
             "description": "Bravo à l'équipe ... et la participation de ..."
@@ -20,6 +24,7 @@
     ],
     "Vie Étudiante": [
         {
+            "_comment": "Auteur: Charles Noël, on ajoute le nom de l'image, ensuite le nom de l'évènement et finalement la description de celle-ci",
             "image": "img4.jpg",
             "evenement": "Le quotidien d'un étudiant au TIM",
             "description": "boire beaucoup de café !! "

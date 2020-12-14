@@ -10,23 +10,26 @@
 
 // *************************************************************Général*****************************************************************
 
+// importation de font secondaire de google font
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap');
 
+// formatage de tous le site
 * {
   padding: 0;
   padding: 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  /* webkit=para navegadores antiguos y moz para los actuales*/
   box-sizing: border-box;
 }
 
+// formatage du html
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
 
+// formatage général des titres de section
 h1 {
   font-family: Oswald, sans-serif;
   font-size: 5em;
@@ -38,11 +41,13 @@ h1 {
   text-shadow: 2px 2px 10px rgb(37, 37, 37);
 }
 
+// formatage général des sous-titres de section
 h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
 }
 
+// formatage général du texte
 h2,
 h3,
 h4,
@@ -59,9 +64,7 @@ button.boutonSession h2 {
 
 
 section {
-
   padding-top: 25% !important;
-  // margin-bottom: 10%;
 }
 
 section#Evenement {
@@ -72,8 +75,6 @@ section#Evenement {
 
 .site-main {
   max-width: 1920px;
-
-  //margin: 0 auto;
   padding-left: 8vw;
   padding-right: 8vw;
 
@@ -123,12 +124,6 @@ section#Evenement {
   }
 }
 
-
-// }
-// *************************************************************Programme*****************************************************************
-
-// *************************************************************Équipe*****************************************************************
-
 // *************************************************************Stage*****************************************************************
 
 /* style correction img */
@@ -137,5 +132,3 @@ section#Evenement {
     object-fit: cover;
   }
 }
-
-// *************************************************************Footer*****************************************************************

@@ -1,3 +1,4 @@
+ <!-- inclusion php -->
 <?php
     include ("./inclusion/header.php");
     include ("./inclusion/sectionProgramme.php");
