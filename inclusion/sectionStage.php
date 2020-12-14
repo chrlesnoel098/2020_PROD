@@ -42,6 +42,7 @@
         </div>
 
 <!------------------------------------------------------ Json -------- -->
+<div class="stagierContent">
 <?php
     // Lire le fichier JSON dans une chaîne de caractères
     $stageExpeJSONString = file_get_contents("data/stageExperiences.json");
@@ -53,9 +54,7 @@
     foreach ($experienceJSON as $experience => $uneExperience) :
         foreach ($uneExperience as $unePersonne) :
 ?>
-
-       
-        <div class="stagierContent">
+    
                 <div class="stagier-info">
                     <div class="stagier">
                         <img src="images/Stagiers/<?= $unePersonne["image"]; ?>" class="stagierPhoto" alt="photo du stagier">
@@ -68,7 +67,7 @@
                     </div>  
                 </div>
         <?php
-        endforeach;
+            endforeach;
         endforeach;
         ?>
 
