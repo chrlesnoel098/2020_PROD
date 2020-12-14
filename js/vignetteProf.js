@@ -1,5 +1,10 @@
+/**
+ * Script par Bernard Dwyer-Beaudet
+ * executive producer Marilou Denis 
+ */
 
-let choixDuProf = null; // au debut pas de prof choisi 
+
+let choixDuProf = "fficher-prof"; // au debut pas de prof choisi 
 
 const listeProf = document.querySelectorAll(".choix-prof"); //conserver le id du choix de prof 
 const listeProfafficher = document.querySelectorAll(".afficher-prof"); // passer le id du prof a afficher 
