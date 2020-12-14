@@ -206,6 +206,7 @@ section#Programme #ToutesSessions li.session .coursVisible {
   }
 }
 
+/** Style par Bernard Dwyer-Beaudet **/
 /** conteneur pour le formatage de la section**/
 .site-branding {
   display: flex;
@@ -1241,6 +1242,7 @@ section#Evenement div.calendrier table.mois tbody .semaine .aujourdhui {
   }
 }
 
+/**Css par Bernard Dwyer-Beaudet*/
 @media (max-width: 520px) {
   /*conteneur de la section*/
   #desktop-conteneur {
