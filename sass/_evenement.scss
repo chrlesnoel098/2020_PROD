@@ -12,12 +12,14 @@ section#Evenement {
             margin-bottom: 0.5em;
         }
 
+        // Formattage de la DIV contant toutes les informations
         div.infoEvenement {
             border: 1px solid black;
             min-height: 45vh;
             margin: 1em 0;
             background: rgba($color: #ffffff, $alpha: 0.5);
 
+            // Formattage de la DIV contenant UNE seule info
             .info {
                 display: flex;
                 padding: 1em;
@@ -44,25 +46,14 @@ section#Evenement {
                     font-size: 0.7em;
                 }
             }
-
-            a {
-                button {
-                    flex-basis: 100%;
-                width: 25em;
-                height: 2.5em;
-                border-radius: 50px;
-                border: none;
-                cursor: pointer;
-                }
-            }
-
-
         }
     }
 
+    // Formattage de la DIV contenant le calendrier
     div.calendrier {
         flex-basis: 50%;
 
+        // Formattage de la table
         table.mois {
             width: 100%;
             height: 50vh;
@@ -81,6 +72,7 @@ section#Evenement {
                     }
                 }
 
+                // Donne une couleur différente aux jours des autres mois
                 .autreMois {
                     background-color: rgb(228, 228, 228);
                 }
@@ -103,6 +95,7 @@ section#Evenement {
                             }
                         }
 
+                        // Donne une couleur différente à la journée actuelle
                         .aujourdhui {
                             background-color: rgb(202, 202, 202);
                         }

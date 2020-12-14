@@ -26,11 +26,6 @@
         </ul>
 
     </div>
-    <!-- <div class="listeBoutons">
-        <button>Voir les cours de création</button>
-        <button>Voir les cours de programmation</button>
-        <button>Voir tous cours</button>
-    </div> -->
     <div id="ToutesSessions">
         <!-- UL contenant toutes les sessions -->
         <ul id="accordeonSession">

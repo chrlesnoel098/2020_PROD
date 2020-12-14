@@ -1,5 +1,6 @@
         <!-- Début de la section Evenement -->
         <section id="Evenement">
+        <!-- DIV contenant les informations des évènements -->
             <div class="information">
                 <h1 id="SectionEvenement">Évènement</h1>
                 <div class="infoEvenement">
@@ -72,9 +73,11 @@
 
                          foreach ($EvenementJSON as $evenement => $unEvenement) :
                             foreach ($unEvenement as $infoEvenement) :
+                                // Formatte la date dans le format : 1 janvier
                                 setlocale(LC_TIME,"fr");
                                 $today = utf8_encode(strftime("%e %B"));
 
+                                // Si la date d'aujourd'hui est la même que la date d'un évènement dans le fichier json, l'évènement s'affiche
                                 if($infoEvenement["date"] == $today) :
                     
                     ?>
@@ -90,12 +93,9 @@
                         endforeach;
                     ?>
                     
-
-
-
-                    <!-- <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/#admission_programme" target="_blank"><button>Inscrivez-vous au TIM !</button></a> -->
                 </div>
             </div>
+            <!-- DIV contenant le calendrier. Le calendrier est générer dynamiquement dans un TABLE. La date d'aujourd'hui est mise en valeur -->
             <div class="calendrier">
                 <table class="mois">
                     <tbody>
