@@ -298,7 +298,6 @@ section#Programme #ToutesSessions li.session .coursVisible {
 * {
   padding: 0;
   padding: 0;
-  /* webkit=para navegadores antiguos y moz para los actuales*/
   box-sizing: border-box;
 }
 
@@ -531,14 +530,22 @@ body {
     background-color: #2aa0b4;
   }
   70% {
-    background-color: #db9600;
+    background-color: #db7c00;
+  }
+  80% {
+    background-color: #912045;
   }
   to {
     background-color: #912045;
   }
 }
 
-section #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme {
+section #Professeur,
+#Projet,
+#Professeur,
+#Stage,
+#Evenement,
+#Programme {
   opacity: 0;
 }
 
@@ -586,9 +593,12 @@ section #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme {
 }
 
 @keyframes progress {
-  to {
-    background-color: #e6b104;
+  70% {
     width: 100%;
+  }
+  to {
+    background-color: #e6e204;
+    width: 0%;
   }
 }
 
@@ -652,11 +662,11 @@ section #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme {
 }
 
 :root * {
-  /* Pause the animation */
+  /* Pause de l'animation */
   animation-play-state: paused;
-  /* Bind the animation to scroll */
+  /* Bind de l'animation to scroll */
   animation-delay: calc(var(--scroll) * -1s);
-  /* These last 2 properites clean up overshoot weirdness */
+  /* Ces 2 dernières propriétés nettoient l'étrangeté de dépassement */
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }
@@ -758,50 +768,58 @@ section #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme {
   .main-navigation ul li:nth-child(7) {
     right: 1%;
     top: 67%;
+    border-radius: 25%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
     transition: 0.5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(7):hover {
-    opacity: 0.2;
     border-radius: 25%;
+    padding: 0.1%;
+    background-color: #7dddec;
   }
   .main-navigation ul li:nth-child(8) {
     right: 1%;
     top: 75%;
+    border-radius: 25%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
     transition: 0.5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(8):hover {
-    opacity: 0.2;
     border-radius: 25%;
+    padding: 0.1%;
+    background-color: #7dddec;
   }
   .main-navigation ul li:nth-child(9) {
     right: 1%;
     top: 83%;
+    border-radius: 25%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
     transition: 0.5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(9):hover {
-    opacity: 0.2;
     border-radius: 25%;
+    padding: 0.1%;
+    background-color: #7dddec;
   }
   .main-navigation ul li:nth-child(10) {
     right: 1%;
     top: 90%;
+    border-radius: 25%;
     writing-mode: vertical-lr;
     text-orientation: mixed;
     transition: 0.5s;
     z-index: 3;
   }
   .main-navigation ul li:nth-child(10):hover {
-    opacity: 0.2;
     border-radius: 25%;
+    padding: 0.1%;
+    background-color: #7dddec;
   }
 }
 

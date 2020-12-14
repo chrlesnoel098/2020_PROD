@@ -6,10 +6,10 @@
 *
 */
 
+// ******************************************************************Navigation général******************************************************************
+
 // Formatage de l'animation sur les couleurs du body event: scroll down*********************************************************************************************
 body {
-  // padding: 0;
-  // margin: 0;
   min-height: auto;
   background-color: rgb(20, 20, 20);
   animation: body 1s linear;
@@ -26,7 +26,11 @@ body {
 
 
   70% {
-    background-color: rgb(219, 150, 0);
+    background-color: rgb(219, 124, 0);
+  }
+
+  80% {
+    background-color: #912045;
   }
 
   to {
@@ -36,52 +40,49 @@ body {
 
 // Formatage de l'animation sur les sections event: scroll down *********************************************************************************************
 
-section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
+section #Professeur,
+#Projet,
+#Professeur,
+#Stage,
+#Evenement,
+#Programme {
   opacity: 0;
 }
 
-#Programme.bgBlue{
+#Programme.bgBlue {
   transform: translateX(-80px);
-  animation: sectionTransitionX 2s forwards!important;
+  animation: sectionTransitionX 2s forwards !important;
 }
 
-#Professeur.bgBlue{
+#Professeur.bgBlue {
   transform: translateX(-80px);
-  animation: sectionTransitionX 2s forwards!important;
+  animation: sectionTransitionX 2s forwards !important;
 }
 
-#Projet.bgBlue{
+#Projet.bgBlue {
   transform: translateX(-80px);
-  animation: sectionTransitionX 2s forwards!important;
+  animation: sectionTransitionX 2s forwards !important;
 }
 
-#Stage.bgBlue{
+#Stage.bgBlue {
   transform: translateX(100px);
-  animation: sectionTransitionX 2s forwards!important;
+  animation: sectionTransitionX 2s forwards !important;
 }
 
-#Evenement.bgBlue{
+#Evenement.bgBlue {
   transform: translateX(100px);
-  animation: sectionTransitionX 2s forwards!important;
+  animation: sectionTransitionX 2s forwards !important;
 }
-
-// @keyframes sectionTransitionFade {
-// to{
-//   opacity: 1;
-//   transform: translateY(-50px);
-// }
-// }
 
 @keyframes sectionTransitionX {
-  to{
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
-  }
+}
 
-// Formatage de l'animation de la barre de progression event: scroll down *********************************************************************************************
-// opacite 
-// les couleurs weirds
+// Formatage de l'animation de la barre de progression d'arrière-plan event: scroll down *********************************************************************************************
+
 .progress {
   height: 100%;
   width: 0%;
@@ -94,9 +95,12 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
 }
 
 @keyframes progress {
-  to {
-    background-color: #e6b104;
+  70%{
     width: 100%;
+  }
+  to {
+    background-color: #e6e204;
+    width: 0%;
   }
 }
 
@@ -162,14 +166,16 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
 }
 
 :root * {
-  /* Pause the animation */
+  /* Pause de l'animation */
   animation-play-state: paused;
-  /* Bind the animation to scroll */
+  /* Bind de l'animation to scroll */
   animation-delay: calc(var(--scroll) * -1s);
-  /* These last 2 properites clean up overshoot weirdness */
+  /* Ces 2 dernières propriétés nettoient l'étrangeté de dépassement */
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }
+
+// ******************************************************************Navigation Bureau******************************************************************
 
 @media screen and (min-width: 980px) {
 
@@ -184,10 +190,8 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
 
       a {
         color: whitesmoke;
-        // text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 3px;
-        // font-size: 2em;
         font-size: 3vh;
         text-decoration: none;
         text-shadow: 2px 2px 10px rgb(73, 73, 73);
@@ -234,7 +238,7 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
       text-orientation: mixed;
       transform: rotate(180deg);
       transition: 0.1s;
-     
+
 
       &:hover {
         top: 29%;
@@ -299,14 +303,16 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
     li:nth-child(7) {
       right: 1%;
       top: 67%;
+      border-radius: 25%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
       transition: 0.5s;
       z-index: 3;
 
       &:hover {
-        opacity: 0.2;
         border-radius: 25%;
+        padding: 0.1%;
+        background-color: #7dddec;
 
       }
     }
@@ -315,14 +321,16 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
     li:nth-child(8) {
       right: 1%;
       top: 75%;
+      border-radius: 25%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
       transition: 0.5s;
       z-index: 3;
 
       &:hover {
-        opacity: 0.2;
         border-radius: 25%;
+        padding: 0.1%;
+        background-color: #7dddec;
       }
     }
 
@@ -330,14 +338,16 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
     li:nth-child(9) {
       right: 1%;
       top: 83%;
+      border-radius: 25%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
       transition: 0.5s;
       z-index: 3;
 
       &:hover {
-        opacity: 0.2;
         border-radius: 25%;
+        padding: 0.1%;
+        background-color: #7dddec;
       }
     }
 
@@ -345,14 +355,16 @@ section  #Professeur, #Projet, #Professeur, #Stage, #Evenement, #Programme{
     li:nth-child(10) {
       right: 1%;
       top: 90%;
+      border-radius: 25%;
       writing-mode: vertical-lr;
       text-orientation: mixed;
       transition: 0.5s;
       z-index: 3;
 
       &:hover {
-        opacity: 0.2;
         border-radius: 25%;
+        padding: 0.1%;
+        background-color: #7dddec;
       }
     }
   }
