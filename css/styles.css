@@ -424,6 +424,32 @@ section#Evenement {
     width: 100%;
     height: 100vh;
     transition: all 0.3s ease;
+    /* .fermer {
+          background-color: black;
+          color: white;
+          width: 30px;
+          height: 30px;
+          padding: 5px 8px;
+
+          margin: 380px 20px 0 0;
+          position: relative;
+          right: 15px;
+          top: 20px;
+          font-size: 20px;
+          border-radius: 3px;
+          box-shadow: 5px 5px 10px rgb(0, 0, 0);
+          i:hover {
+            cursor: pointer;
+            color: rgb(219, 105, 162);
+          }
+        } */
+    /************/
+    /* .fermer {
+        display: none;
+        &.active {
+          right: 0; //show menu
+        } */
+    /************/
   }
   header .menu-bar-movil .slideMenu.active {
     right: 0;
@@ -478,24 +504,6 @@ section#Evenement {
     font-weight: 800;
     color: white;
     margin-left: 25px;
-  }
-  header .menu-bar-movil .slideMenu .fermer {
-    background-color: black;
-    color: white;
-    width: 30px;
-    height: 30px;
-    padding: 5px 8px;
-    margin: 380px 20px 0 0;
-    position: relative;
-    right: 15px;
-    top: 20px;
-    font-size: 20px;
-    border-radius: 3px;
-    box-shadow: 5px 5px 10px black;
-  }
-  header .menu-bar-movil .slideMenu .fermer i:hover {
-    cursor: pointer;
-    color: #db69a2;
   }
 }
 
@@ -916,7 +924,7 @@ section#Projet .projetSwipe {
   }
 }
 
-/************ALL ************/
+/************ format générale ************/
 * {
   box-sizing: border-box;
 }
