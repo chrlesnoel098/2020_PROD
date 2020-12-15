@@ -1,3 +1,9 @@
+<!-- 
+    Section de la page qui les cours diviser par session avec affichage dynamique
+    Auteur : Lauryan Gervais
+    Version 14/12/2020
+ -->
+
 <!-- Début de la section programme -->
 <section id="Programme">
     <h1 id="SectionProgramme">Programme</h1>
