@@ -56,6 +56,7 @@ section#Projet {
         padding-left: 15%;
         width: 60vw;
         height: auto;
+        object-fit: cover;
     }
 
     .clip-polygon {
@@ -99,6 +100,20 @@ section#Projet {
 // ******************************************************************Tablette******************************************************************
 @media (min-width: 521px) and (max-width: 980px) {
 
+    section#Projet {
+        .image-carousselfade {
+            flex-direction: column;
+        }
+    img {
+        padding-top: 5%;
+        padding-left: 0%;
+        width: 80vw;
+
+    }
+
+    }
+
+
     /* caroussel vignette */
     .vignette-Projet {
 
@@ -120,7 +135,16 @@ section#Projet {
 
 // ******************************************************************Mobile******************************************************************
 @media (max-width: 520px) {
-
+    section#Projet {
+        .image-carousselfade {
+            flex-direction: column;
+        }
+        img {
+            width: 110vw;
+            padding-left: 0%;
+            padding-top: 5%;
+        }
+    }
     /* caroussel vignette */
     .vignette-Projet {
 
@@ -140,6 +164,14 @@ section#Projet {
 
 // ******************************************************************Mobile petit format******************************************************************
 @media only screen and (max-width: 300px) {
+    section#Projet {
+        .image-carousselfade {
+            flex-direction: column;
+        }
+        img {
+            width: 90vw;
+        }
+    }
     .text {
         font-size: 11px
     }
