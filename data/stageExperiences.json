@@ -4,13 +4,13 @@
             "image": "avatar1.JPG",
             "nom": "Lauryan Gervais",
             "typeStage": "Back-end",
-            "temoignage": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
+            "temoignage": "Il est arrivé à plusieurs reprises que les recherchistes souhaitaient travailler exclusivement avec moi. Mes collègues m’ont bien fait sentir leur appréciation de mon travail et m’ont félicité à plusieurs reprises. "
         },
         {
             "image": "avatar2.JPG",
             "nom": "Charles Noël",
             "typeStage": "Front-end",
-            "temoignage": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
+            "temoignage": "Les stages ont un impact positif sur mon avenir. À quoi bon tout ce bagage académique si je ne pouvais pas mettre en pratique et valider mes connaissances le plus rapidement possible?"
         }
     ]
 }

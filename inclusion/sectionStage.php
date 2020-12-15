@@ -64,7 +64,7 @@
                         <p><?= $unePersonne["typeStage"]; ?></p>
                     </div>
                     <div class="stage-temoignage">
-                        <h3>Témoigne</h3>
+                        <h3>Témoignage</h3>
                         <p><?= $unePersonne["temoignage"]; ?></p>
                     </div>  
                 </div>
