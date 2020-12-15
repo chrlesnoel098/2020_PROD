@@ -83,8 +83,8 @@
                                         <?php
                                     endforeach;
                                         ?>
-                                        <ul>
+                                        </ul>
                             </div>
 
                         </section>
-                        <!-- fin de la section programme -->
+                        <!-- fin de la section projet -->

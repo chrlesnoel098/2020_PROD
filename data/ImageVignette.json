@@ -1,5 +1,21 @@
 
 {  
+
+    "Les Projets": [
+        {
+            "_comment": "Auteur: Charles Noël, on ajoute le nom de l'image, ensuite le nom de l'évènement et finalement la description de celle-ci",
+            "image": "img5.png",
+            "evenement": "Alexis le draveur disponible sur la bibliothèque de GameJam!",
+            "description": "Par :Michael Campisi, François Desroches, Maxime Rioux et Denis Stathatos"
+        },
+        {
+            "_comment": "Auteur: Charles Noël, on ajoute le nom de l'image, ensuite le nom de l'évènement et finalement la description de celle-ci",
+            "image": "img6.png",
+            "evenement": "Heros, court métrage 3D disponible sur la bibliothèque de création 3D!",
+            "description": "Par : Jeremie Jeannotte, Simon Desilets, Marie Eve Nielly, Roxanne Regimbald"
+        }
+    ],
+
     "Party Tim XX": [
         {
             "_comment": "Auteur: Charles Noël, on ajoute le nom de l'image, ensuite le nom de l'évènement et finalement la description de celle-ci",
