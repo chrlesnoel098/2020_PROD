@@ -65,8 +65,13 @@
                     </ul>
                 </div>
             </nav>
-
-
+          
+        <!-- Menu de navigation avec icone de burger Menu -->
+        <div class="menu-bar-movil">
+            <a href="#" class="logo">
+                <img src="images/LogoTIM.png" alt="Logo du DEC Technique d'intégration multimédia">
+            </a>
+          
             <!-- burger Menu -->
             <div class="menu-bar-movil">
                 <a href="#" class="logo">

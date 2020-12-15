@@ -1,29 +1,20 @@
-//Carrousel dynamique
-/* var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-} */
+/*
+ * fichier slider.js fait par Alejandra Miranda Reyes
+ * 
+ * Gère l'affichage des photos dans lle carrousel à l'aide des flèches gauche/droit clickeables 
+ *
+ */
 
 //carrousel statique
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Contrôles suivant et précédent
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// Commandes des images miniatures
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }

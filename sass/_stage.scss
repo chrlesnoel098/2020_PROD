@@ -1,5 +1,5 @@
-/************ format générale ************/
-
+//Fait par Alejandr Miranda Reyes
+/****************************************************************** format bureau ************************************/
 * {
   box-sizing: border-box;
 }
@@ -50,7 +50,6 @@
     right: 0;
     border-radius: 3px 0 0 3px;
   }
-  /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -166,7 +165,7 @@
   }
 }
 
-/********************************FORMAT TABLETTE ET MOBILE*******/
+/*************************************************************************FORMAT TABLETTE ET MOBILE*******/
 
 @media (max-width: 790px) {
   .stageCarrousel-container {

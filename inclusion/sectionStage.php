@@ -1,8 +1,10 @@
+
+<!-- Section réalisée par Alejandra Miranda Reyes -->
 <!-- Début de la section Stage -->
 <section class="stage" id="Stage">
     <h1 id="SectionStage">Stages</h1>
 
-    <!-------------------------------------------------------- Carrousel container----->
+    <!-------------------------------------------------------- Carrousel container----------------------------------->
     <div class="stageCarrousel-container">
         <div class="mySlides fade">
             <img src="images/Stagiers/stages1.jpg"/>
@@ -34,14 +36,14 @@
 
 
 
-<!-------------------------------------------------------Expériences de stage -->
+<!-------------------------------------------------------Expériences de stage --------------------------------------->
 <div class="petitmot">
             <p>stage en milieu de travail</p>
             <hr>
             <p>Expériences</p>
         </div>
 
-<!------------------------------------------------------ Json -------- -->
+<!------------------------------------------------------ Json ------------------------------------------------------>
 <div class="stagierContent">
 <?php
     // Lire le fichier JSON dans une chaîne de caractères
