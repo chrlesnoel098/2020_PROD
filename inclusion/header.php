@@ -12,18 +12,18 @@
     <title>TIM</title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
-    <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#000000">
     <!-- font globale -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- feuille de style css -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/fontawesome.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -58,10 +58,10 @@
                         <li><a class="links" href="#SectionProjet">Étudiant</a></li>
                         <li><a class="links" href="#SectionStage">Stage</a></li>
                         <li><a class="links" href="#SectionEvenement">Évènement</a></li>
-                        <li><a target="_blank" href="https://www.facebook.com/maisonneuvetim/"><img src="./images/icone-facebook.png" alt=""></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/maisonneuvetim/"><img src="./images/icone-instagram.png" alt=""></a></li>
-                        <li><a target="_blank" href="https://www.youtube.com/user/TIMaisonneuve"><img src="./images/icone-youtube.png" alt=""></a></li>
-                        <li><a target="_blank" href="https://discord.com/invite/53vFvr9"><img src="./images/icone-discord.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/maisonneuvetim/"><img src="images/icone-facebook.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/maisonneuvetim/"><img src="images/icone-instagram.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/user/TIMaisonneuve"><img src="images/icone-youtube.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://discord.com/invite/53vFvr9"><img src="images/icone-discord.png" alt=""></a></li>
                     </ul>
                 </div>
             </nav>
@@ -88,10 +88,10 @@
 
                 <div class="slideMenu" id="slideMenu">
                     <div class="top-redes">
-                        <a target="_blank" href="https://www.facebook.com/maisonneuvetim/"><img src="./images/icone-facebook.png" alt=""></a>
-                        <a target="_blank" href="https://www.instagram.com/maisonneuvetim/"><img src="./images/icone-instagram.png" alt=""></a>
-                        <a target="_blank" href="https://www.youtube.com/user/TIMaisonneuve"><img src="./images/icone-youtube.png" alt=""></a>
-                        <a target="_blank" href="https://discord.com/invite/53vFvr9"><img src="./images/icone-discord.png" alt=""></a>
+                        <a target="_blank" href="https://www.facebook.com/maisonneuvetim/"><img src="images/icone-facebook.png" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/maisonneuvetim/"><img src="images/icone-instagram.png" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/user/TIMaisonneuve"><img src="images/icone-youtube.png" alt=""></a>
+                        <a target="_blank" href="https://discord.com/invite/53vFvr9"><img src="images/icone-discord.png" alt=""></a>
                     </div>
 
                     <nav class="menu-principal">
