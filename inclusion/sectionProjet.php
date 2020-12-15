@@ -8,7 +8,7 @@
                             <div class="vignette-Projet">
                                 <?php
                                 // Lire le fichier JSON dans une chaîne de caractères
-                                $listeImagesJSONString = file_get_contents("./data/imageVignette.json");
+                                $listeImagesJSONString = file_get_contents("data/imageVignette.json");
 
                                 // Décoder la chaîne JSON dans une structure de données PHP
                                 $imagesJSON = json_decode($listeImagesJSONString, true);
@@ -24,7 +24,7 @@
                                         <!-- Modele image et texte -->
                                         <div class="image-carousselfade">
                                             <div class="image-Projet">
-                                                <img src="./images/testImageBd/<?= $uneVignette["image"]; ?>" alt="" class="clip-polygon projetFadeIn">
+                                                <img src="images/testImageBd/<?= $uneVignette["image"]; ?>" alt="" class="clip-polygon projetFadeIn">
                                             </div>
                                             <div class="info-Vignette">
                                                 <h2><?= $evenement; ?></h2>
@@ -46,11 +46,11 @@
 
                             </div>
 
-                                <!-- les projets -->
+                            <!-- les projets -->
                             <div id="projetAccordeon">
                                 <?php
                                 // Lire le fichier JSON dans une chaîne de caractères
-                                $listeProjetsJSONString = file_get_contents("./data/listeProjets.json");
+                                $listeProjetsJSONString = file_get_contents("data/listeProjets.json");
 
                                 // Décoder la chaîne JSON dans une structure de données PHP
                                 $projetJSON = json_decode($listeProjetsJSONString, true);
@@ -83,7 +83,7 @@
                                         <?php
                                     endforeach;
                                         ?>
-                                        </ul>
+                                    </ul>
                             </div>
 
                         </section>

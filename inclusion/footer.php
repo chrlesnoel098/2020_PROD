@@ -4,14 +4,14 @@
         
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/scrollAnim.js"></script>
-    <script src="./js/menuMobile.js"></script>
-    <script src="./js/scriptAccordion.js"></script>
-    <script src="./js/evenementInfo.js"></script>
-    <script src="./js/vignetteEtudiant.js"></script>
-    <script src="./js/vignetteProf.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/navProjet.js"></script>
+    <script src="js/scrollAnim.js"></script>
+    <script src="js/menuMobile.js"></script>
+    <script src="js/scriptAccordion.js"></script>
+    <script src="js/evenementInfo.js"></script>
+    <script src="js/vignetteEtudiant.js"></script>
+    <script src="js/vignetteProf.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/navProjet.js"></script>
     </div> <!--fin de background-noise  -->   
 
 </body>
