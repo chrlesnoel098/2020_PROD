@@ -7,9 +7,6 @@
 */
 
 section#Projet {
-
-    //min-height: 100vh;
-
     h1#SectionProjet {
         flex-basis: 100%;
         padding-bottom: 5%;
@@ -17,13 +14,10 @@ section#Projet {
 
     .descriptionProjet {
         list-style: none;
-        /* style temporaire */
-        padding: 10px;
-        background-color: rgba(111, 41, 97, .3);
-        border: 2px solid rgba(111, 41, 97, .5);
+
     }
 
-    .descriptionProjet h3:hover{
+    .descriptionProjet h3:hover {
         color: rgba(131, 115, 115, 0.603);
         cursor: pointer;
     }
@@ -39,104 +33,112 @@ section#Projet {
         width: auto;
         height: auto;
     }
-        .image-carousselfade {
-            flex-direction: row;
-            display: none;
-       
+
+    .image-carousselfade {
+        flex-direction: row;
+        display: none;
+
+    }
+
+
+    .info-Vignette {
+        order: 1;
+        align-self: flex-end;
+    }
+
+    .image-Projet {
+        order: 2;
+        flex-grow: 4;
+    }
+
+    /* div text */
+    img {
+        padding-left: 15%;
+        width: 60vw;
+        height: auto;
+    }
+
+    .clip-polygon {
+        border-radius: 61% 39% 27% 73% / 31% 46% 54% 69%;
+    }
+
+
+
+    /* Animation */
+    .projetFadeIn {
+        animation: projetFadeIn ease 3s;
+    }
+
+    .projetSwipe {
+        animation: projetSwipe ease 3s;
+    }
+
+    @keyframes projetFadeIn {
+        from {
+            opacity: .4
         }
 
-
-        .info-Vignette {
-           order: 1;
-           align-self: flex-end;
-        }
-
-        .image-Projet {
-            order: 2;
-            flex-grow: 4;
-        }
-
-        /* div text */
-        img {
-            width: 60vw;
-            height: auto;
-        }
-
-        .clip-polygon {
-            border-radius: 61% 39% 27% 73% / 31% 46% 54% 69%;
-        }
-
-      
-
-        /* Animation */
-        .projetFadeIn {
-            animation: projetFadeIn ease 3s;
-        }
-
-        .projetSwipe {
-            animation: projetSwipe ease 3s;
-        }
-
-        @keyframes projetFadeIn {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes projetSwipe {
-            from {
-                transform: translateX(-1000px);
-            }
-
-            to {
-                transform: translateX(0);
-            }
+        to {
+            opacity: 1
         }
     }
+
+    @keyframes projetSwipe {
+        from {
+            transform: translateX(-1000px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+}
 
 
 
 // ******************************************************************Tablette******************************************************************
 @media (min-width: 521px) and (max-width: 980px) {
 
- /* caroussel vignette */
- .vignette-Projet {
+    /* caroussel vignette */
+    .vignette-Projet {
 
-   h2{
-font-size: 20px;
-   }
-   h3{
-    font-size: 15px;
-   }
-   p{
-font-size: 12px;
-   }
-}
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
 
 }
 
 
 // ******************************************************************Mobile******************************************************************
 @media (max-width: 520px) {
-  /* caroussel vignette */
- .vignette-Projet {
 
-    h2{
- font-size: 20px;
+    /* caroussel vignette */
+    .vignette-Projet {
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 12px;
+        }
     }
-    h3{
-     font-size: 15px;
-    }
-    p{
- font-size: 12px;
-    }
- }
 }
 
+// ******************************************************************Mobile petit format******************************************************************
 @media only screen and (max-width: 300px) {
     .text {
         font-size: 11px

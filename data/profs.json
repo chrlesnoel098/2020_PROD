@@ -12,7 +12,7 @@
     {
         "nom": "Caroline Martin",
         "photo": "Caroline.jpg",
-        "description": "j'aime les peanuts",
+        "description": "On me traite de Geek car <br><br> je programme en PHP depuis pratiquement sa création et bien avant sa réelle utilisation dans les sites Web<br><br>j'aime, voire je suis passionnée par la programmation informatique<br><br>je joue à D&D<br><br>Mais, je ne suis pas que cela !",
         "email": "cmartin@cmaisonneuve.qc.ca",
         "valeur": "1" 
     },
