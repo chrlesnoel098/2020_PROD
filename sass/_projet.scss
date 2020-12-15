@@ -100,6 +100,7 @@ section#Projet {
 @media (min-width: 521px) and (max-width: 980px) {
 
     section#Projet {
+        height: auto;
         .image-carousselfade {
             flex-direction: column;
         }
@@ -136,6 +137,7 @@ section#Projet {
 // ******************************************************************Mobile******************************************************************
 @media (max-width: 520px) {
     section#Projet {
+        height: auto;
         .image-carousselfade {
             flex-direction: column;
         }
@@ -166,6 +168,7 @@ section#Projet {
 // ******************************************************************Mobile petit format******************************************************************
 @media only screen and (max-width: 300px) {
     section#Projet {
+        height: auto;
         .image-carousselfade {
             flex-direction: column;
         }
