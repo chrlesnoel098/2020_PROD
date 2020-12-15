@@ -1,33 +1,8 @@
-//Toggle l'affichage de tous les cours d'une session ////////////////////////////////////////////////////////////
-// let sessionOuverte = null;
-
-// let boutonSessions = document.querySelectorAll(".session");
-
-// for (const elemBouton of boutonSessions) {
-//     elemBouton.addEventListener("click", function(){
-//         afficherLesCours(this)
-//     });
-// }
-
-// function afficherLesCours(bouton) {
-//     //Fermer la session ouverte
-//     if(sessionOuverte && sessionOuverte != bouton.parentNode.querySelector(".fenetreCours")) {
-//         sessionOuverte.classList.add("cachee");
-//         sessionOuverte.classList.remove("visible");
-//     }
-    
-//     // Ouvrir une session fermée (qui vient d'être cliquée)
-//     bouton.parentNode.querySelector(".fenetreCours").classList.add("visible");
-//     bouton.parentNode.querySelector(".fenetreCours").classList.remove("cachee");
-
-//     // Fermer la même session ouverte (qui vient d'être cliquée)
-//     if(sessionOuverte == bouton.parentNode.querySelector(".fenetreCours")) {
-//         sessionOuverte.classList.add("cachee");
-//         sessionOuverte.classList.remove("visible");
-//     }
-        
-//     sessionOuverte = bouton.parentNode.querySelector(".fenetreCours");
-// }
+/*
+    Fichier JS qui toggle l'affichage de la liste de cours et de la description des cours
+    Auteur : Lauryan Gervais
+    Version 14/12/2020
+*/
 
 var sectionSession = $('li.session');
 
@@ -70,3 +45,36 @@ function afficherUnCours(elem) {
         
     coursOuvert = elem.parentNode.querySelector("ul");
 }
+
+
+
+//Toggle l'affichage de tous les cours d'une session ////////////////////////////////////////////////////////////
+// let sessionOuverte = null;
+
+// let boutonSessions = document.querySelectorAll(".session");
+
+// for (const elemBouton of boutonSessions) {
+//     elemBouton.addEventListener("click", function(){
+//         afficherLesCours(this)
+//     });
+// }
+
+// function afficherLesCours(bouton) {
+//     //Fermer la session ouverte
+//     if(sessionOuverte && sessionOuverte != bouton.parentNode.querySelector(".fenetreCours")) {
+//         sessionOuverte.classList.add("cachee");
+//         sessionOuverte.classList.remove("visible");
+//     }
+    
+//     // Ouvrir une session fermée (qui vient d'être cliquée)
+//     bouton.parentNode.querySelector(".fenetreCours").classList.add("visible");
+//     bouton.parentNode.querySelector(".fenetreCours").classList.remove("cachee");
+
+//     // Fermer la même session ouverte (qui vient d'être cliquée)
+//     if(sessionOuverte == bouton.parentNode.querySelector(".fenetreCours")) {
+//         sessionOuverte.classList.add("cachee");
+//         sessionOuverte.classList.remove("visible");
+//     }
+        
+//     sessionOuverte = bouton.parentNode.querySelector(".fenetreCours");
+// }

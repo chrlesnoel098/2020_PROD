@@ -1,3 +1,9 @@
+<!-- 
+    Section de la page qui contient les informations d'évènements et un calendrier php dynamique
+    Auteur : Lauryan Gervais
+    Version 14/12/2020
+ -->
+
         <!-- Début de la section Evenement -->
         <section id="Evenement">
         <!-- DIV contenant les informations des évènements -->
